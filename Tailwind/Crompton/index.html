@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crompton Greaves Consumers Electricals Limited: Shop Fans, Lights...</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="https://www.crompton.co.in/cdn/shop/files/favicon.ico">
+</head>
+<body>
+    <style>
+        .hero{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .imgbox{
+            transition: transform 0.3s ease-in-out;
+        }
+        .imgbox:hover{
+            transform: scale(1.1)
+        }
+        .clip{
+            position: relative;
+            display: inline-block;
+        }
+        .overlay{
+            position: absolute;
+            color: white;
+            top: 5%;
+            left: 3%;
+        }
+    </style>
+    <div class="navbar w-[100%] h-23 flex fixed z-999  bg-white max-sm:w-340 max-sm:h-35 max-2xl:w-520 max-2xl:h-24">
+        <img src="/Images/crompton-greaves-logo.png" alt="" class="w-50 h-10 ml-25 mt-7 max-sm:w-85 max-sm:h-20">
+        <ul class="ml-25 flex font-medium text-lg tracking-wider w-175 justify-between mt-8 max-sm:hidden">
+            <li><a href="">CATEGORIES</a></li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 16 16" class="-ml-6 mt-1 cursor-pointer"><path fill="#000" fill-rule="evenodd" d="m8 10.207l3.854-3.853l-.707-.708L8 8.793L4.854 5.646l-.708.708z" clip-rule="evenodd"/></svg>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">CUSTOMER CARE</a></li>
+            <li><a href="">INVESTORS</a></li>
+            <li><a href="">MORE</a></li>
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 16 16" class="-ml-6 mt-1 cursor-pointer "><path fill="#000" fill-rule="evenodd" d="m8 10.207l3.854-3.853l-.707-.708L8 8.793L4.854 5.646l-.708.708z" clip-rule="evenodd"/></svg>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16" class="mt-8   cursor-pointer sm:hidden max-sm:w-40 max-sm:h-15 max-sm:ml-80"><path fill="#000" fill-rule="evenodd" d="M1.25 3.25A.75.75 0 0 1 2 2.5h12A.75.75 0 0 1 14 4H2a.75.75 0 0 1-.75-.75m0 4.75A.75.75 0 0 1 2 7.25h12a.75.75 0 0 1 0 1.5H2A.75.75 0 0 1 1.25 8M2 12a.75.75 0 0 0 0 1.5h12a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mt-8 ml-55 cursor-pointer max-sm:w-40 max-sm:h-15 max-sm:-ml-10 max-2xl:ml-30"><path fill="#000" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
+        <div class="line w-0.25 ml-5 mt-7 h-7 bg-black max-sm:h-15 max-sm:w-0.5"></div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="mt-7 ml-5 cursor-pointer max-sm:w-40 max-sm:h-17"><path fill="#000" d="M9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l5.6 5.6q.275.275.275.7t-.275.7t-.7.275t-.7-.275l-5.6-5.6q-.75.6-1.725.95T9.5 16m0-2q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/></svg>
+    </div>
+    <p class="w-[100%] h-0.25 bg-black pt-23.25 max-2xl:w-355 max-2xl:pt-24.5 max-2xl:h-0.25 max-sm:hidden"></p>
+
+    <div class="butterfly max-2xl:w-355 max-sm:hidden">
+        <img src="/Images/bf_logo-updated@3x.jpg" alt="" class="w-30 mr-20 mt-2 justify-self-end">
+    </div>
+
+    <div class="hero max-sm:w-341 max-2xl:w-355 max-sm:pt-38">
+        <div class="banner-item slick-slide" data-slick-index="2" aria-hidden="true" style="width: 100%;"><a class="video_url" href="/collections/chimneys "></a>
+            <video playsinline="" muted="" loop="" width="1900" height="800" class="img-fluid hide_mobile lazyloaded videoBanner-3">
+              <source src="https://cdn.shopify.com/videos/c/o/v/90363d72be3a49a0bd1ec8e9eb0d5ce7.mp4" type="video/mp4">
+            </video><a class="video_url" href="/collections/chimneys"></a>
+        </div>  
+    </div>
+
+    <div class="heading text-center text-4xl m-10 font-medium max-sm:w-330 max-sm:text-5xl max-2xl:w-345">Explore Our Range</div>
+
+    <div class="lists ml-90 flex m-20 max-sm:w-240  max-sm:ml-62 max-sm:flex-wrap max-2xl:w-300 max-2xl:ml-35">
+        <div class="fan w-23 h-23 rounded-full max-sm:w-45 max-sm:h-45 max-2xl:w-30 max-2xl:h-30"style="background: rgb(8,109,153);background: linear-gradient(180deg, rgba(8,109,153,1) 0%, rgba(6,123,158,1) 47%, rgba(5,154,173,1) 79%);box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24" class="pt-3 ml-3 cursor-pointer max-sm:w-35 max-sm:mt-3 max-sm:h-35 max-2xl:w-25 max-2xl:h-25"><path fill="#fff" d="M2.44 9.879a.91.91 0 0 0 .074.834a.12.12 0 0 1 .043.119l-.008.03a.11.11 0 0 0 .083.138l6.751 1.582a.18.18 0 0 0 .215-.13l.1-.384l.63.167a1.7 1.7 0 0 0 .562 1.455l-.353.547l-.335-.216a.18.18 0 0 0-.245.049l-3.929 5.71a.113.113 0 0 0 .032.159l.04.026a.12.12 0 0 1 .05.117c-.026.178.18.456.505.667a.91.91 0 0 0 .816.187a.12.12 0 0 1 .127 0l.026.017a.11.11 0 0 0 .16-.04l3.59-5.93a.177.177 0 0 0-.06-.24l-.334-.216l.353-.547a1.71 1.71 0 0 0 1.557-.086l.412.505l-.309.25a.18.18 0 0 0-.029.25l4.218 5.5a.11.11 0 0 0 .16.019l.037-.031a.12.12 0 0 1 .126-.01c.161.079.49-.03.791-.275s.475-.545.43-.718a.12.12 0 0 1 .036-.122l.023-.02a.11.11 0 0 0 .014-.16l-4.529-5.25a.18.18 0 0 0-.249-.021l-.308.252l-.41-.505a2 2 0 0 0 .17-.213a1.7 1.7 0 0 0 .234-1.3l.6-.233l.143.37a.18.18 0 0 0 .228.106l6.533-2.312a.11.11 0 0 0 .067-.146l-.017-.046a.12.12 0 0 1 .03-.123a.91.91 0 0 0-.018-.837c-.14-.362-.372-.62-.55-.631a.12.12 0 0 1-.105-.072l-.01-.028a.113.113 0 0 0-.149-.063l-6.389 2.686a.18.18 0 0 0-.1.23l.144.372l-.608.235a1.65 1.65 0 0 0-1.31-.846l-.036-.651l.4-.022a.18.18 0 0 0 .17-.184l-.18-6.928a.11.11 0 0 0-.119-.11h-.048a.12.12 0 0 1-.108-.065c-.084-.16-.414-.264-.8-.242s-.7.16-.77.328a.12.12 0 0 1-.1.078h-.03a.11.11 0 0 0-.105.122l.58 6.906a.18.18 0 0 0 .19.164l.4-.022l.034.644a1.72 1.72 0 0 0-1.086.748a2 2 0 0 0-.124.243l-.628-.167l.1-.385a.18.18 0 0 0-.123-.218L3.166 8.984a.11.11 0 0 0-.14.078l-.012.047a.12.12 0 0 1-.1.082c-.173.03-.375.313-.474.688m8.391 5.249l-.333.515a.29.29 0 0 1-.4.085l-.3-.193a.29.29 0 0 1-.086-.4l.332-.515a.275.275 0 0 1 .307-.1l-.422.652a.176.176 0 0 0 .053.242l.15.1a.177.177 0 0 0 .243-.052l.421-.653a.28.28 0 0 1 .035.319m3.41-.737l.386.475a.29.29 0 0 1-.042.406l-.276.225a.29.29 0 0 1-.406-.041l-.387-.476a.275.275 0 0 1 0-.323l.49.6a.177.177 0 0 0 .247.026l.14-.114a.175.175 0 0 0 .024-.246l-.49-.6a.27.27 0 0 1 .313.068m.352-3.471l.571-.221a.29.29 0 0 1 .373.165l.13.333a.29.29 0 0 1-.166.373l-.57.22a.275.275 0 0 1-.31-.1l.725-.28a.176.176 0 0 0 .1-.226l-.065-.167a.176.176 0 0 0-.227-.1l-.724.28a.275.275 0 0 1 .163-.277M11.4 9.513l-.033-.612a.29.29 0 0 1 .272-.3l.356-.02a.29.29 0 0 1 .3.272l.034.612a.28.28 0 0 1-.188.263l-.043-.775a.175.175 0 0 0-.184-.165l-.18.01a.175.175 0 0 0-.165.184l.043.775a.27.27 0 0 1-.212-.244m-2.678 1.54l.592.157a.275.275 0 0 1 .193.26l-.75-.2a.175.175 0 0 0-.215.125l-.046.173a.175.175 0 0 0 .124.214l.751.2a.275.275 0 0 1-.3.13l-.589-.156a.29.29 0 0 1-.2-.353l.091-.345a.29.29 0 0 1 .35-.205"/></svg>
+        </div>
+        <div class="bulb w-23 h-23 rounded-full ml-5 max-sm:w-45 max-sm:h-45 max-sm:ml-10 max-2xl:w-30 max-2xl:h-30" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+            <img src="/Images/bulb.png" alt="" class="w-14 m-3 ml-4 cursor-pointer max-sm:w-35 max-sm:mt-3 max-sm:h-35 max-2xl:w-20 max-2xl:h-20">
+        </div>
+        <div class="bulb w-23 h-23 rounded-full ml-5 max-sm:w-45 max-sm:h-45 max-sm:ml-10 max-2xl:w-30 max-2xl:h-30" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+            <img src="/Images/gyser.png" alt="" class="w-7 m-3 ml-8 mt-6 cursor-pointer max-sm:w-20 max-sm:mt-10 ml-13 max-sm:h-25 max-2xl:w-10 max-2xl:h-18 max-2xl:ml-10">
+        </div>
+        <div class="bulb w-23 h-23 rounded-full ml-5 max-sm:w-45 max-sm:h-45 max-sm:ml-10 max-sm:mb-10 max-2xl:w-30 max-2xl:h-30" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+            <img src="/Images/washing machine.png" alt="" class="w-7 m-3 ml-8 mt-6 cursor-pointer max-sm:w-20 max-sm:mt-10 ml-13 max-sm:h-25 max-2xl:w-13 max-2xl:h-18 max-2xl:ml-8">
+        </div>
+        <div class="bulb w-23 h-23 rounded-full ml-5 max-sm:w-45 max-sm:h-45 max-2xl:w-30 max-2xl:h-30" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+            <img src="/Images/iron.png" alt="" class="w-12 m-3 ml-5 mt-6 cursor-pointer max-sm:w-22 max-sm:mt-8 ml-8 max-sm:h-22 max-2xl:w-12 max-2xl:h-12 max-2xl:ml-8 max-2xl:mt-8">
+        </div>
+        <div class="bulb w-23 h-23 rounded-full ml-5 max-sm:w-45 max-sm:h-45 max-sm:ml-10 max-2xl:w-30 max-2xl:h-30" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+            <img src="/Images/Mixture.png" alt="" class="w-7 m-3 ml-8 mt-6 cursor-pointer max-sm:w-15 max-sm:mt-9 ml-15 max-sm:h-22 max-2xl:w-10 max-2xl:h-18 max-2xl:ml-10">
+        </div>
+        <div class="bulb w-23 h-23 rounded-full ml-5 max-sm:w-45 max-sm:h-45 max-sm:ml-10 max-2xl:w-30 max-2xl:h-30" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+            <img src="/Images/chimney.png" alt="" class="w-12 m-3 ml-6 mt-6 cursor-pointer max-sm:w-20 max-sm:mt-10 ml-11 max-sm:h-22 max-2xl:w-15 max-2xl:h-18 max-2xl:ml-8">
+        </div>
+        <div class="bulb w-23 h-23 rounded-full ml-5 max-sm:w-45 max-sm:h-45 max-sm:ml-10 max-2xl:w-30 max-2xl:h-30" style="box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;">
+            <img src="/Images/motor.jpg" alt="" class="w-12 m-3 ml-6 mt-7 cursor-pointer max-sm:w-20 max-sm:mt-10 ml-11 max-sm:h-22 max-2xl:w-15 max-2xl:h-15 max-2xl:ml-8">
+        </div>
+    </div>
+
+    <div class="heading flex ml-25 mr-25 justify-between mb-10 max-sm:w-290 max-2xl:w-310">
+        <h1 class="text-3xl tracking-wider font-medium max-sm:text-5xl">Fans</h1>
+        <button class="text-white text-xl px-6 cursor-pointer py-3 rounded-full max-sm:px-9 max-sm:py-5 max-sm:text-2xl" style="background: rgb(8,109,153);background: linear-gradient(21deg, rgba(8,109,153,1) 0%, rgba(6,123,158,1) 47%, rgba(5,154,173,1) 79%); box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >View All</button>
+    </div>
+
+    <div class="cards flex ml-25 mr-25 justify-between mb-20 max-sm:flex-wrap max-sm:w-310 max-2xl:w-330 max-2xl:ml-12 max-sm:mx-15">
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-150 max-sm:h-200">
+            <div class="first flex max-sm:ml-8 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/SilentproBlossomsmart_Denimblue_1_angle_1.png" alt="" class="w-60 ml-10 max-sm:w-110 max-sm:h-110 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton Silent Pro Blossom Smart Ceiling Fan</div>
+            <div class="price flex max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-2 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-10">MRP ₹16,999.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                <div class="color w-11 h-29 rounded-full bg-white max-sm:ml-50 max-sm:mt-10">
+                    <div class="one w-7 h-7 m-2 bg-[#516285] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 bg-[#f0f0f0] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 bg-[#4f2624] rounded-full"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-145 max-sm:h-200">
+            <div class="first flex max-sm:ml-8 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/tablefan_d7b420ed-2fdd-4920-90c4-7a6a375741ba.png" alt="" class="w-60 ml-10 max-sm:w-110 max-sm:h-110 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton Hiflow Neo Table Fan</div>
+            <div class="price flex max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-8 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-16">MRP ₹3,149.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                <div class="color w-11 h-36 rounded-full bg-white max-sm:ml-50 max-sm:mt-10">
+                    <div class="one w-7 h-7 m-2 mt-1 bg-[#6b0103] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 mt-1 bg-[#9e796a] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 mt-1 bg-[#678cbf] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 mt-1 border-1 rounded-full">+1</div>
+                </div>
+            </div>
+        </div>
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-150 max-sm:mt-10 max-sm:h-200">
+            <div class="first flex max-sm:ml-8 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/pedstalfan.png" alt="" class="w-60 ml-10 max-sm:w-110 max-sm:h-110 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton Hiflo Wave Plus Pedestal Fan</div>
+            <div class="price flex max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-2 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-10">MRP ₹4,449.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                <div class="color w-11 h-29 rounded-full bg-white max-sm:ml-50 max-sm:mt-10">
+                    <div class="one w-7 h-7 m-2 bg-[#b8d1e3] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 bg-[#4f2624] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 bg-[#f0f0f0] rounded-full"></div>
+                </div>
+            </div>
+        </div>
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-145 max-sm:h-200 max-sm:mt-10">
+            <div class="first flex max-sm:ml-8 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/wallfan.png" alt="" class="w-60 ml-10 max-sm:w-110 max-sm:h-110 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton Hiflo Wave Plus Wall Mounted Fan</div>
+            <div class="price flex max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-2 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-10">MRP ₹3,699.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                <div class="color w-11 h-29 rounded-full bg-white max-sm:ml-50 max-sm:mt-10">
+                    <div class="one w-7 h-7 m-2 bg-[#c2844e] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 bg-[#f0f0f0] rounded-full"></div>
+                    <div class="one w-7 h-7 m-2 bg-[#b8d1e3] rounded-full"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="heading text-center text-4xl m-10 font-medium mb-20 max-sm:w-330 max-sm:text-5xl max-2xl:w-330">Experience Crompton</div>
+
+    <div class="page2 h-215 w-[100%] max-sm:h-30 max-2xl:w-200 max-2xl:h-120 max-2xl:ml-60">
+        <img src="/Images/Livingroom_1660x-compressed_1660x.jpeg" alt="" class="w-[86%] ml-25 rounded-4xl absolute max-sm:hidden">
+        <div class="buttons w-100 h-17 rounded-full absolute bg-white border-1 border-gray-400 -mt-7 ml-140 flex max-sm:w-150 max-sm:ml-40 max-sm:h-20 max-2xl:ml-70">
+            <div class="button1 w-37 rounded-full m-2 h-12 bg-[#005994] max-sm:h-15 max-sm:w-54">
+                <p class="text-white text-xl ml-4 mt-2 cursor-pointer max-sm:text-3xl">Living Room</p>
+            </div>
+            <p class="text-[#005994] mt-4 ml-3 font-medium text-xl cursor-pointer max-sm:text-3xl max-sm:ml-8">Bathroom</p>
+            <p class="text-[#005994] mt-4 ml-8 font-medium text-xl cursor-pointer max-sm:text-3xl max-sm:ml-10">Kitchen</p>
+        </div>
+    </div>
+
+    <div class="page3 ml-25 mr-25 h-190 max-sm:w-310 max-sm:h-240 max-2xl:w-325 max-2xl:ml-10 max-2xl:h-185">
+        <div class="left">
+            <img src="/Images/Best_Seller_Optimus_Neo_650x_e3b903ac-57f7-4a4d-b72e-a6c901c8a2b1_650x (1).jpeg" alt="" class="w-140 h-180 rounded-4xl absolute">
+            <p class="absolute text-2xl font-medium text-white ml-10 mt-130">Crompton Optimus Neo I Tower Air Co...</p>
+            <button class="text-white text-xl px-6 cursor-pointer py-3 rounded-full absolute mt-150 ml-10 border-1 border-white" style="background: rgb(8,109,153);background: linear-gradient(21deg, rgba(8,109,153,1) 0%, rgba(6,123,158,1) 47%, rgba(5,154,173,1) 79%); box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+        </div>
+        <div class="right ml-10 ml-150">
+            <div class="heading text-4xl m-10 font-medium mb-10 max-sm:text-5xl max-2xl:text-5xl">Meet Our Bestsellers</div>
+            <p class="text-xl max-sm:text-2xl">
+                Experience the perfect blend of functionality and style with our range of top-selling products tailored for the modern Indian home. From premium lighting solutions that illuminate your home, to designer fans that are also energy efficient, or cutting-edge kitchen appliances, designed to make your life easier and more enjoyable. Elevate your living space with our carefully curated collection of bestsellers
+            </p>
+            <div class="button w-35 h-13 mt-12 rounded-full flex" style="box-shadow: inset 2px 4px 4px #00000026, 2px 4px 4px #0003;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 16 16" class="m-3 ml-5"><path fill="#000" fill-rule="evenodd" d="M14.75 8a.75.75 0 0 1-.75.75H3.81l2.72 2.72a.75.75 0 1 1-1.06 1.06l-4-4a.75.75 0 0 1 0-1.06l4-4a.75.75 0 0 1 1.06 1.06L3.81 7.25H14a.75.75 0 0 1 .75.75" clip-rule="evenodd"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 16 16" class="m-3 ml-7"><path fill="#000" fill-rule="evenodd" d="M1.25 8A.75.75 0 0 1 2 7.25h10.19L9.47 4.53a.75.75 0 0 1 1.06-1.06l4 4a.75.75 0 0 1 0 1.06l-4 4a.75.75 0 1 1-1.06-1.06l2.72-2.72H2A.75.75 0 0 1 1.25 8" clip-rule="evenodd"/></svg>
+            </div>
+            <div class="items flex mt-15">
+                <img src="/Images/Best_Seller_Solarium_Qube_IOT_2048x_9a18be15-fac7-4bd3-a000-00613affdf2a_650x.jpeg" alt="" class="h-75 rounded-2xl max-sm:w-65">
+                <img src="/Images/Best_Seller_Energion_650x_4d78ae6d-debb-445d-be38-53962a4b0632_650x.jpeg" alt="" class="h-75 rounded-2xl ml-5 max-sm:w-65">
+                <img src="/Images/Untitled-4_650x_43195830-086d-461e-a2f8-88956fd5e4c3_650x.jpeg" alt="" class="h-75 rounded-2xl ml-5 max-sm:hidden">
+            </div>
+        </div>
+    </div>
+
+    <div class="sun flex ml-150 max-sm:w-170 max-sm:ml-125 max-2xl:w-100 ">
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 32 32" class="mt-12"><path fill="#f0b112" d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6M5.394 6.813L6.81 5.399l3.505 3.506L8.9 10.319zM2 15.005h5v2H2zm3.394 10.193L8.9 21.692l1.414 1.414l-3.505 3.506zM15 25.005h2v5h-2zm6.687-1.9l1.414-1.414l3.506 3.506l-1.414 1.414zm3.313-8.1h5v2h-5zm-3.313-6.101l3.506-3.506l1.414 1.414l-3.506 3.506zM15 2.005h2v5h-2z"/></svg>
+        <div class="heading text-center text-4xl m-10 font-medium mb-20 max-sm:text-5xl">Hot Picks</div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 32 32" class="mt-12"><path fill="#f0b112" d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6M5.394 6.813L6.81 5.399l3.505 3.506L8.9 10.319zM2 15.005h5v2H2zm3.394 10.193L8.9 21.692l1.414 1.414l-3.505 3.506zM15 25.005h2v5h-2zm6.687-1.9l1.414-1.414l3.506 3.506l-1.414 1.414zm3.313-8.1h5v2h-5zm-3.313-6.101l3.506-3.506l1.414 1.414l-3.506 3.506zM15 2.005h2v5h-2z"/></svg>
+    </div>
+
+    <div class="cards flex ml-25 mr-25 justify-between mb-20 max-sm:flex-wrap max-sm:w-310 max-2xl:w-335 max-2xl:ml-13 max-sm:mx-15">
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-150 max-sm:h-200">
+            <div class="first flex max-sm:ml-8 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/1.png" alt="" class="w-60 ml-10 max-sm:w-110 max-sm:h-110 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton Insta Fervor 9 Fins 2400 W Oil Filled Room Heater</div>
+            <div class="price flex  max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-2 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-10">MRP ₹14,800.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-145 max-sm:h-200">
+            <div class="first flex max-sm:ml-15 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/2.png" alt="" class="w-50 ml-15 pt-5 max-sm:w-95 max-sm:h-95 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton ActiveHot Cool Touch Electric Kettle | 1.2 Litres</div>
+            <div class="price flex  max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-2 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-10">MRP ₹2,300.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-150 max-sm:h-200 max-sm:mt-10">
+            <div class="first flex max-sm:ml-8 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/3.png" alt="" class="w-60 ml-10 max-sm:w-110 max-sm:h-110 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton IHL 152 1500 W Immersion Water Heater</div>
+            <div class="price flex  max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-2 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-10">MRP ₹9,10.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                
+            </div>
+        </div>
+        <div class="card1 w-79 h-120 rounded-2xl bg-[#ededed] max-sm:w-145 max-sm:h-200 max-sm:mt-10">
+            <div class="first flex max-sm:ml-8 max-sm:mt-7">
+                <label for="checkbox">
+                    <input type="checkbox" class="ml-5 w-4 h-4 mt-4 max-sm:w-6 max-sm:h-6">
+                </label>
+                <p class="text-sm tracking-wider mt-3 ml-2 max-sm:text-xl max-sm:ml-3 max-sm:mt-4">ADD TO COMPARE</p>
+            </div>
+            <div class="imgbox h-63 w-[100%] max-sm:h-110">
+                <img src="/Images/4.png" alt="" class="w-60 ml-10 max-sm:w-110 max-sm:h-110 max-sm:ml-20">
+            </div>
+            <div class="line w-[100%] h-1 bg-white"></div>
+            <div class="name text-lg ml-4 mt-3 tracking-wider text-gray-500 font-medium leading-snug max-sm:text-3xl max-sm:ml-5 max-sm:mt-5">Crompton IHL 251 1500 W Immersion Water Heater With...</div>
+            <div class="price flex  max-sm:ml-5">
+                <div class="rs w-65">
+                    <p class="ml-4 mt-2 text-[#04578f] font-semibold text-lg max-sm:text-3xl max-sm:mt-10">MRP ₹1,020.00</p>
+                    <button class="ml-4 mt-3 font-medium tracking-wider text-md px-9 cursor-pointer py-2 rounded-full bg-white max-sm:px-12 max-sm:py-4 max-sm:text-xl" style=" box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;" >Know More</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="heading text-center text-4xl m-10 font-medium mb-20 max-sm:w-280 max-sm:text-5xl max-2xl:w-330 ">Driving With Innovation</div>
+
+    <div class="clip ml-25 mr-25 max-sm:w-320 max-sm:ml-10 max-sm:mr-10 max-2xl:w-335 max-2xl:ml-10 max-2xl:mr-10">
+        <video class="hide_mobile" id="videoElementId2" playsinline="" autoplay="" muted="" loop="">
+            <source data-src="https://cdn.shopify.com/videos/c/o/v/454d1ed301494fcc80485b117d953aeb.mp4" type="video/mp4" src="https://cdn.shopify.com/videos/c/o/v/454d1ed301494fcc80485b117d953aeb.mp4">
+        </video>
+        <video class="hide_desktop lazy" id="videoElementId3" playsinline="" autoplay="" muted="" loop="">
+            <source data-src="https://cdn.shopify.com/videos/c/o/v/ff2b9aa64bea4a4390899c5056a6faf3.mp4" type="video/mp4" >
+        </video>
+        <div class="overlay flex">
+            <div class="texts mt-25">
+                <p class="text-5xl ml-14">Customised</p>
+                <h1 class="text-7xl ml-14 font-bold mt-8">Bath Modes</h1>
+                <p class="ml-14 mt-5 text-2xl">Embrance the pinnacle of innovation with <br>state-of-the-art features that allow you to <br>choose from a range of customised bathing <br>modes.</p>
+            </div>
+            <div class="icons ml-40">
+                <img src="/Images/comfort_white_new.gif" alt="" class="w-25">
+                <img src="/Images/custom_white_new.png" alt="" class="w-25 mt-5">
+                <img src="/Images/hygine_white_new.png" alt="" class="w-25 mt-5">
+                <img src="/Images/hotspring_white_new.gif" alt="" class="w-25 mt-5">
+            </div>
+            <div class="img">
+                <img src="/Images/gyser (1).png" alt="" class="w-100 ml-10 mt-10">
+            </div>
+        </div>
+    </div>
+
+    <div class="blue w-[87%] -mt-12 mx-25 h-45 rounded-4xl bg-[#005994] mb-15 flex max-sm:w-315 max-sm:ml-13 max-2xl:w-330 max-2xl:ml-13 max-2xl:-mt-20">
+        <img src="/Images/Group_53382.png" alt="" class="w-25 h-25 m-9">
+        <div class="texts">
+            <p class="text-3xl text-white font-medium mt-12">Need help deciding on the right products?</p>
+            <p class="text-2xl text-white mt-2">Try our product selection guide to help you in your decision making</p>
+        </div>
+        <div class="button w-40 ml-54 pl-8 h-12 pt-2 font-medium rounded-full mt-16 bg-white text-[#005994] text-xl cursor-pointer max-sm:ml-38" style="box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;">Start Now</div>
+    </div>
+
+    <div class="heading text-center text-4xl m-10 font-medium mb-20 max-sm:w-315 max-sm:text-5xl max-2xl:w-340">India’s No.1 Ceiling Fan Brand</div>
+
+    <div class="icons ml-55 mr-25 flex max-sm:w-290 max-sm:ml-30 max-2xl:w-300 max-2xl:ml-40">
+        <div class="part1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 14 14"><path fill="none" stroke="#0c4b6d" stroke-linecap="round" stroke-linejoin="round" d="M.5 13.29H8m-1 0v-2.5H1.5v2.5M7.787 1.002L4.202 4.587a1 1 0 0 0 0 1.414l1.584 1.584a1 1 0 0 0 1.414 0L10.785 4a1 1 0 0 0 0-1.414L9.2 1.002a1 1 0 0 0-1.414 0ZM9 5.79l4.5 4.5" stroke-width="1"/></svg>
+            <p class="text-lg -ml-5 mt-6 tracking-wider max-sm:w-60 max-sm:text-3xl ">1 Fan Sold Every</p>
+            <h1 class="text-[#005994] text-6xl mt-5 ml-5 font-bold max-sm:text-7xl ">2</h1>
+            <p class="text-xl tracking-wider mt-3 max-sm:text-4xl max-sm:-ml-3">Seconds</p>
+        </div>
+        <div class="line w-0.5 h-30 bg-gray-400 ml-30 mt-45"></div>
+        <div class="part1 ml-50 max-sm:ml-30">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="#0c4b6d" d="M8 3.68v2h3v5.268a2 2 0 0 0-1 1.732v1h4v-1a2 2 0 0 0-1-1.732V5.68h3v-2h-6zm-2 9a4 1.5 0 0 0-4 1.5a4 1.5 0 0 0 4 1.5a4 1.5 0 0 0 4-1.5a4 1.5 0 0 0-4-1.5m12 0a4 1.5 0 0 0-4 1.5a4 1.5 0 0 0 4 1.5a4 1.5 0 0 0 4-1.5a4 1.5 0 0 0-4-1.5m-8 2v1a2 2 0 0 0 1 1.732a2 2 0 0 0 2 0a2 2 0 0 0 1-1.732v-1zm-.537 1.887l-1.733 1l.5.867l1.733-1zm5.074 0l-.5.867l1.732 1l.5-.867zM11.5 18.32v2h1v-2z"/></svg>
+            <p class="text-lg ml-1 mt-6 tracking-wider max-sm:w-50 max-sm:text-3xl ">More than</p>
+            <h1 class="text-[#005994] text-6xl mt-5 -ml-9 w-55 font-bold max-sm:text-7xl max-sm:w-65">4,000 +</h1>
+            <p class="text-xl tracking-wider mt-3 mr-20 max-sm:text-4xl max-sm:-ml-3">Products</p>
+        </div>
+        <div class="line w-0.5 h-30 bg-gray-400 ml-30 mt-45"></div>
+        <div class="part1 ml-50 max-sm:ml-20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="#0c4b6d" d="M15.152 9.032a2.643 2.643 0 1 0 .111-3.881c.182.32.318.669.4 1.038a1.643 1.643 0 1 1-.052 1.83a3.7 3.7 0 0 1-.459 1.013M8.737 5.15a2.643 2.643 0 1 0 .111 3.881a3.7 3.7 0 0 1-.458-1.012a1.642 1.642 0 0 1-3.033-.876a1.643 1.643 0 0 1 2.98-.954c.082-.37.218-.718.4-1.038m-4.036 5.146c-.3.08-.596.18-.891.278l-.254.084a2.63 2.63 0 0 0-1.73 1.843l-.298 2.133c-.113.816.325 1.674 1.22 1.887q.371.091.885.175a.5.5 0 1 0 .159-.988a11 11 0 0 1-.813-.16c-.303-.072-.516-.374-.46-.777l.283-2.049c.141-.52.54-1.05 1.066-1.223c.314-.103 1.094-.25 1.094-.25c.42.25.57.351.57.351a.5.5 0 0 0 .435-.9q-.152-.077-.296-.164c-.297-.176-.58-.344-.97-.24m15.489.278c-.295-.099-.59-.197-.891-.278c-.39-.104-.673.064-.97.24q-.144.087-.296.164a.5.5 0 0 0 .435.9s.15-.101.57-.351c0 0 .78.147 1.094.25c.526.173.924.703 1.066 1.223l.283 2.049c.056.403-.157.705-.46.777q-.335.082-.813.16a.5.5 0 1 0 .16.988q.512-.085.884-.175c.895-.213 1.333-1.07 1.22-1.887l-.299-2.133a2.62 2.62 0 0 0-1.73-1.843z" opacity="0.5"/><path fill="#0c4b6d" d="M12 3.25a3.75 3.75 0 1 0 0 7.5a3.75 3.75 0 0 0 0-7.5M9.75 7a2.25 2.25 0 1 1 4.5 0a2.25 2.25 0 0 1-4.5 0m5.485 4.415c-.61-.173-1.187.034-1.582.297c-.36.238-.942.524-1.653.524s-1.294-.286-1.653-.524c-.396-.263-.973-.47-1.583-.297a12 12 0 0 0-.477.145l-.96.315a3.72 3.72 0 0 0-2.454 2.616l-.01.04l-.408 2.95c-.161 1.164.462 2.393 1.744 2.698c1.17.279 3.052.571 5.8.571c2.749 0 4.631-.292 5.801-.57c1.282-.306 1.906-1.535 1.744-2.698l-.408-2.95l-.01-.04a3.72 3.72 0 0 0-2.455-2.617l-.959-.315q-.237-.077-.477-.146m-.753 1.546c.174-.115.298-.117.345-.103q.21.06.417.127l.96.315c.72.237 1.264.812 1.458 1.523l.397 2.864c.075.544-.21.939-.606 1.033c-1.047.25-2.812.53-5.453.53s-4.407-.28-5.454-.53c-.395-.094-.68-.489-.606-1.033l.397-2.864A2.23 2.23 0 0 1 7.796 13.3l.96-.315q.206-.068.416-.127c.048-.014.17-.012.345.103c.501.333 1.372.775 2.483.775s1.98-.442 2.482-.775"/></svg>
+            <p class="text-lg mt-6 tracking-wider max-sm:w-50 max-sm:text-3xl ">More than</p>
+            <h1 class="text-[#005994] text-6xl mt-5 ml-5 font-bold w-50 max-sm:text-7xl max-sm:w-65">10Cr +</h1>
+            <p class="text-xl tracking-wider mt-3 max-sm:text-4xl max-sm:-ml-3">Households</p>
+        </div>
+    </div>
+
+    <div class="location w-[87%] ml-25 h-105 border-2 border-gray-400 rounded-3xl mt-20 flex max-sm:w-290 max-2xl:w-305">
+        <div class="left w-[40%] h-[100%] ml-10">
+            <p class="mt-20 text-2xl font-medium tracking-wider">Find Your</p>
+            <p class="text-4xl text-[#08558c] font-medium mt-1">Nearest Store</p>
+            <form>
+                <label for="category"></label>
+                <select id="category" name=" Choose Category" class="w-100 text-xl text-gray-600 border-1 px-2 py-3 rounded-full mt-5">
+                    <option value="">Choose Category</option>
+                    <option value="">Fans</option>
+                    <option value="">Lights</option>
+                    <option value="">Water Heater</option>
+                    <option value="">Air Cooler</option>
+                    <option value="">Home Appliances</option>
+                    <option value="">Kitchen Appliances</option>
+                    <option value="">Built-in-appliances</option>
+                    <option value="">Pumps</option>
+                </select>
+                <br><br>
+            </form>
+            <div class="enter w-100 text-xl border-2 border-[#08558c] h-14 rounded-full flex justify-between">
+                <input type="text" placeholder="Enter city, state or zip" class=" ml-5" style="outline: none;">
+                <div class="find w-31 h-[100%] bg-[#08558c] rounded-r-full flex cursor-pointer">
+                    <p class="text-white text-xl font-medium mt-3 ml-3">Find Us</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mt-4 ml-2"><path fill="#fff" d="M2.25 12c0 5.385 4.365 9.75 9.75 9.75s9.75-4.365 9.75-9.75S17.385 2.25 12 2.25S2.25 6.615 2.25 12m10.22-4.03a.75.75 0 0 1 1.06 0l3.5 3.5a.75.75 0 0 1 0 1.06l-3.5 3.5a.75.75 0 1 1-1.06-1.06l2.22-2.22H7.5a.75.75 0 0 1 0-1.5h7.19l-2.22-2.22a.75.75 0 0 1 0-1.06"/></svg>
+                </div>
+            </div>
+        </div>
+        <div class="right w-[60%] h-[100%] rounded-r-3xl">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1585.4309346703615!2d72.87546710844973!3d19.072023853944014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c892c11d8eb1%3A0x5ef64bbf6a9c8b09!2sCrompton%20Greaves%20Consumer%20Electricals%20Limited!5e0!3m2!1sen!2sin!4v1691059153841!5m2!1sen!2sin" width="600" height="450" style="border:0;position: absolute;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-[50.5%] rounded-r-3xl h-[57%] max-sm:w-169 max-sm:h-105 max-2xl:w-177 max-2xl:h-104"></iframe>
+        </div>
+
+    </div>
+
+    <div class="footer w-[100%] h-220 bg-[#08558c] flex pt-25 pl-25 mt-25 max-sm:w-341 max-sm:flex-wrap max-sm:h-430 max-2xl:w-355">
+        <div class="part1 max-sm:ml-18">
+            <p class="text-white text-2xl font-medium tracking-wider max-sm:text-4xl">Our Categories</p>
+            <ul class="text-xl text-gray-400 font-medium max-sm:text-3xl">
+                <li class="mt-5">Fans</li>
+                <li class="mt-1">Lights</li>
+                <li class="mt-1">Water Heaters</li>
+                <li class="mt-1">Air Coolers</li>
+                <li class="mt-1">Home Appliances</li>
+                <li class="mt-1">Kitchen Appliances</li>
+                <li class="mt-1">Built-in Kitchen Appliances</li>
+                <li class="mt-1">Pumps</li>
+            </ul>
+
+            <p class="text-white text-2xl font-medium tracking-wider mt-30 max-sm:text-4xl">Partner Connect</p>
+            <ul class="text-xl text-gray-400 font-medium max-sm:text-3xl">
+                <li class="mt-5">Dealer Portal</li>
+                <li class="mt-1">Vendor Portal</li>
+            </ul>
+            <p class="text-white text-lg tracking-wider mt-6 font-medium max-sm:text-3xl">Find us on</p>
+            <div class="apps flex mt-4">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="mr-2 max-sm:w-20 max-sm:h-20"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M17 2h-3a5 5 0 0 0-5 5v3H6v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="mr-2 max-sm:w-20 max-sm:h-20"><g fill="none" stroke="#fff" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 16a4 4 0 1 0 0-8a4 4 0 0 0 0 8"/><path d="M3 16V8a5 5 0 0 1 5-5h8a5 5 0 0 1 5 5v8a5 5 0 0 1-5 5H8a5 5 0 0 1-5-5Z"/><path stroke-linecap="round" stroke-linejoin="round" d="m17.5 6.51l.01-.011"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="mr-2 max-sm:w-20 max-sm:h-20"><g fill="#fff" fill-rule="evenodd" clip-rule="evenodd"><path d="M10.386 8.357A.75.75 0 0 0 9.25 9v6a.75.75 0 0 0 1.136.643l5-3a.75.75 0 0 0 0-1.286zM13.542 12l-2.792 1.675v-3.35z"/><path d="M17.03 4.641a64.5 64.5 0 0 0-10.06 0l-2.241.176a2.975 2.975 0 0 0-2.703 2.475a28.6 28.6 0 0 0 0 9.416a2.975 2.975 0 0 0 2.703 2.475l2.24.176c3.349.262 6.713.262 10.062 0l2.24-.176a2.975 2.975 0 0 0 2.703-2.475c.52-3.117.52-6.299 0-9.416a2.975 2.975 0 0 0-2.703-2.475zM7.087 6.137a63 63 0 0 1 9.828 0l2.24.175c.676.053 1.229.56 1.34 1.228a27 27 0 0 1 0 8.92a1.475 1.475 0 0 1-1.34 1.228l-2.24.175a63 63 0 0 1-9.828 0l-2.24-.175a1.475 1.475 0 0 1-1.34-1.228a27 27 0 0 1 0-8.92a1.475 1.475 0 0 1 1.34-1.228z"/></g></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16" class="mr-2 max-sm:w-20 max-sm:h-20"><path fill="#fff" d="M9.294 6.928L14.357 1h-1.2L8.762 6.147L5.25 1H1.2l5.31 7.784L1.2 15h1.2l4.642-5.436L10.751 15h4.05zM7.651 8.852l-.538-.775L2.832 1.91h1.843l3.454 4.977l.538.775l4.491 6.47h-1.843z"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16" class="mr-2 max-sm:w-20 max-sm:h-20"><path fill="#fff" d="M3.44 4.89c.8 0 1.44-.65 1.44-1.44s-.65-1.44-1.44-1.44S2 2.66 2 3.45s.65 1.44 1.44 1.44m2.81 1.09V14h2.48v-3.96c0-1.05.2-2.06 1.49-2.06s1.29 1.2 1.29 2.12V14H14V9.6c0-2.16-.46-3.82-2.98-3.82c-1.21 0-2.02.66-2.35 1.29h-.03v-1.1H6.26Zm-4.05 0h2.49V14H2.2z"/></svg>
+            </div>
+
+
+        </div>
+        <div class="part1 ml-18 max-sm:ml-30">
+            <p class="text-white text-2xl font-medium tracking-wider max-sm:text-4xl">Need Help</p>
+            <ul class="text-xl text-gray-400 font-medium max-sm:text-3xl">
+                <li class="mt-5">Privacy Policy</li>
+                <li class="mt-1">Warranty & Support</li>
+                <li class="mt-1">Service Center</li>
+                <li class="mt-1">Contact Us</li>
+                <li class="mt-1">ISO Certificates</li>
+            </ul>
+        </div>
+        <div class="part1 ml-18 max-sm:ml-15">
+            <p class="text-white text-2xl font-medium tracking-wider max-sm:text-4xl">Crompton</p>
+            <ul class="text-xl text-gray-400 font-medium max-sm:text-3xl">
+                <li class="mt-5">About Us</li>
+                <li class="mt-1">Investors</li>
+                <li class="mt-1">Careers</li>
+                <li class="mt-1">Store Locator</li>
+                <li class="mt-1">Blog</li>
+                <li class="mt-1">Terms of Service</li>
+                <li class="mt-1">News & Media</li>
+                <li class="mt-1">EPR Policy</li>
+                <li class="mt-1">Sitemap</li>
+                <li class="mt-1">CSR</li>
+                <li class="mt-1">Quality & EHS</li>
+                <li class="mt-1">Ethical Marketing Policy</li>
+                <li class="mt-1">Human Rights Policy</li>
+            </ul>
+        </div>
+        <div class="part1 ml-18">
+            <p class="text-white text-2xl font-medium tracking-wider max-sm:text-4xl">Customer Care</p>
+            <p class="text-md tracking-wider text-white my-5 max-sm:text-2xl">For any issues related to any products give us a call or connect <br> with us here</p>
+            <div class="flex text-gray-300 text-xl">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M3.833 4h4.49L9.77 7.618l-2.325 1.55A1 1 0 0 0 7 10c.003.094 0 .001 0 .001v.021a2 2 0 0 0 .006.134q.008.124.035.33c.039.27.114.642.26 1.08c.294.88.87 2.019 1.992 3.141s2.261 1.698 3.14 1.992c.439.146.81.22 1.082.26a4 4 0 0 0 .463.04l.013.001h.008s.112-.006.001 0a1 1 0 0 0 .894-.553l.67-1.34l4.436.74v4.32c-2.111.305-7.813.606-12.293-3.874S3.527 6.11 3.833 4m5.24 6.486l1.807-1.204a2 2 0 0 0 .747-2.407L10.18 3.257A2 2 0 0 0 8.323 2H3.781c-.909 0-1.764.631-1.913 1.617c-.34 2.242-.801 8.864 4.425 14.09s11.848 4.764 14.09 4.425c.986-.15 1.617-1.004 1.617-1.913v-4.372a2 2 0 0 0-1.671-1.973l-4.436-.739a2 2 0 0 0-2.118 1.078l-.346.693a5 5 0 0 1-.363-.105c-.62-.206-1.481-.63-2.359-1.508s-1.302-1.739-1.508-2.36a5 5 0 0 1-.125-.447z"/></svg>
+                <p class="ml-2 -mt-1 max-sm:text-2xl">9228880505</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 256 256" class="ml-10"><path fill="#fff" d="m186.68 146.63l-32-16a6 6 0 0 0-6 .38L133 141.46A42.5 42.5 0 0 1 114.54 123L125 107.33a6 6 0 0 0 .38-6l-16-32A6 6 0 0 0 104 66a38 38 0 0 0-38 38a86.1 86.1 0 0 0 86 86a38 38 0 0 0 38-38a6 6 0 0 0-3.32-5.37M152 178a74.09 74.09 0 0 1-74-74a26 26 0 0 1 22.42-25.75l12.66 25.32l-10.39 15.58a6 6 0 0 0-.54 5.63a54.43 54.43 0 0 0 29.07 29.07a6 6 0 0 0 5.63-.54l15.58-10.39l25.32 12.66A26 26 0 0 1 152 178M128 26a102 102 0 0 0-89.65 150.69l-11.62 34.87a14 14 0 0 0 17.71 17.71l34.87-11.62A102 102 0 1 0 128 26m0 192a90 90 0 0 1-45.06-12.08a6.1 6.1 0 0 0-3-.81a6.2 6.2 0 0 0-1.9.31l-37.39 12.46a2 2 0 0 1-2.53-2.53L50.58 178a6 6 0 0 0-.5-4.91A90 90 0 1 1 128 218"/></svg>
+                <p class="ml-2 -mt-1 max-sm:text-2xl">Whatsappp</p>
+
+            </div>
+            <p class="text-white text-2xl font-medium tracking-wider mt-10 max-sm:text-4xl">Address</p>
+            <p class="text-md tracking-wider text-white my-5 max-sm:text-2xl"> Crompton Greaves Consumer Electricals Limited, 05GBD, <br> Godrej Business District, Pirojshanagar, Vikhroli (West), Mumbai, <br> Maharashtra- 400079</p>
+
+            <p class="text-white text-2xl font-medium tracking-wider mt-10 max-sm:text-4xl">Sign up for Crompton updates</p>
+            <p class="text-md tracking-wider text-white my-4 max-sm:text-2xl">Subscribe to our newsletter for latest updates, products and <br> insights</p>
+
+            <div class="flex mt-10">
+                <input type="text" placeholder="Enter your email ID here" class="text-white border-1 py-2 px-3 rounded-full max-sm:py-4 max-sm:px-5 max-sm:text-3xl" style="outline: none;">
+                <button class="bg-white text-bg-[#08558c] font-medium px-5 rounded-full ml-5 cursor-pointer max-sm:px-7 max-sm:text-3xl">Subscribe</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="last w-[100%] h-12 text-center text-[#08558c] mt-5 max-sm:text-center max-sm:w-330 max-sm:text-xl max-2xl:w-355">© 2025 Crompton Greaves Consumer Electricals Limited. All Rights Reserved.</div>
+
+
+     
+
+    
+</body>
+</html>
