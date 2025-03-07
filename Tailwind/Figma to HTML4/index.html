@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MegaMart</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="top flex bg-[#F5F5F5] justify-between text-xs p-1 text-gray-500 max-2xl:w-354 max-sm:w-400">
+        <div class="left ml-30 mt-1">
+            <p>Welcome to worldwide MegaMart!</p>
+        </div>
+        <div class="right flex w-110">
+            <div class="first flex mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="#52b5db" d="M12 3a7 7 0 0 0-7 7c0 2.862 1.782 5.623 3.738 7.762A26 26 0 0 0 12 20.758q.262-.201.615-.49a26 26 0 0 0 2.647-2.504C17.218 15.623 19 12.863 19 10a7 7 0 0 0-7-7m0 20.214l-.567-.39l-.003-.002l-.006-.005l-.02-.014l-.075-.053l-.27-.197a28 28 0 0 1-3.797-3.44C5.218 16.875 3 13.636 3 9.999a9 9 0 0 1 18 0c0 3.637-2.218 6.877-4.262 9.112a28 28 0 0 1-3.796 3.44a17 17 0 0 1-.345.251l-.021.014l-.006.005l-.002.001zM12 8a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-4 2a4 4 0 1 1 8 0a4 4 0 0 1-8 0"/></svg>
+                <p class="ml-1">Deliver to 423651 </p>
+            </div>
+            <div class="line w-0.5 h-3 bg-gray-400 mt-2 ml-4"></div>
+            <div class="second flex mt-1 ml-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><g fill="none" stroke="#52b5db" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" stroke-miterlimit="1.5" d="M8 19a2 2 0 1 0 0-4a2 2 0 0 0 0 4m10 0a2 2 0 1 0 0-4a2 2 0 0 0 0 4"/><path d="M10.05 17H15V6.6a.6.6 0 0 0-.6-.6H1m4.65 11H3.6a.6.6 0 0 1-.6-.6v-4.9"/><path stroke-linejoin="round" d="M2 9h4"/><path d="M15 9h5.61a.6.6 0 0 1 .548.356l1.79 4.028a.6.6 0 0 1 .052.243V16.4a.6.6 0 0 1-.6.6h-1.9M15 17h1"/></g></svg>
+                <p class="ml-1">Track your order</p>
+            </div>
+            <div class="line w-0.5 h-3 bg-gray-400 mt-2 ml-4"></div>
+            <div class="third flex mt-1 ml-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"><path fill="none" stroke="#40a5d0" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7.692 19.616c.59 0 .886 0 1.155.1q.057.021.111.046c.261.12.47.328.888.746c.962.962 1.443 1.443 2.034 1.488q.12.009.24 0c.591-.045 1.072-.526 2.034-1.488c.418-.418.627-.626.888-.746q.054-.025.11-.046c.27-.1.565-.1 1.156-.1h.11c1.507 0 2.261 0 2.73-.468s.468-1.223.468-2.73v-.11c0-.59 0-.886.1-1.155q.021-.057.046-.111c.12-.261.328-.47.746-.888c.962-.962 1.443-1.443 1.488-2.034q.009-.12 0-.24c-.045-.591-.526-1.072-1.488-2.034c-.418-.418-.626-.627-.746-.888l-.046-.11c-.1-.27-.1-.565-.1-1.156v-.11c0-1.507 0-2.261-.468-2.73s-1.223-.468-2.73-.468h-.11c-.59 0-.886 0-1.155-.1l-.111-.046c-.261-.12-.47-.328-.888-.746c-.962-.962-1.443-1.443-2.034-1.488a2 2 0 0 0-.24 0c-.591.045-1.072.526-2.034 1.488c-.418.418-.627.627-.888.746l-.11.046c-.27.1-.565.1-1.156.1h-.11c-1.507 0-2.261 0-2.73.468s-.468 1.223-.468 2.73v.11c0 .59 0 .886-.1 1.155q-.022.057-.046.111c-.12.261-.328.47-.746.888c-.962.962-1.443 1.443-1.488 2.034a2 2 0 0 0 0 .24c.045.591.526 1.072 1.488 2.034c.418.418.627.627.746.888q.025.054.046.11c.1.27.1.565.1 1.156v.11c0 1.507 0 2.261.468 2.73s1.223.468 2.73.468zM15 9l-6 6m6 0h-.01M9.01 9H9" color="#40a5d0"/></svg>
+                <p class="ml-1">All Offers</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="nav1 flex m-3 max-2xl:w-354 max-sm:w-400">
+        <div class="left flex">
+            <div class="lightblue w-10 h-10 rounded-md bg-[#F3F9FB] ml-25 p-2 cursor-pointer flex max-sm:w-20 max-sm:h-20">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="max-sm:w-20  max-sm:h-20"><path fill="none" stroke="#48bbdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h18M3 12h12M3 18h6"/></svg>
+            </div>
+            <h1 class="text-3xl text-[#008ECC] font-semibold ml-3 max-sm:text-6xl max-sm:ml-10">MegaMart</h1>
+        </div>
+        <div class="right ml-50 flex max-sm:ml-100">
+            <div class="search w-150 h-10 bg-[#F3F9FB] flex p-2 rounded-lg max-sm:bg-white max-sm:w-100">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="max-sm:w-18 max-sm:h-18"><path fill="none" stroke="#48bbdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m17 17l4 4M3 11a8 8 0 1 0 16 0a8 8 0 0 0-16 0"/></svg>
+                <input type="text" placeholder="Search essentials, groceries and more..." class="w-80 ml-3 max-sm:hidden" style="outline: none;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24px" height="24px" viewBox="0 0 1024 1024" class="ml-48 max-sm:w-18 max-sm:h-18"><path fill="#19b5e6" d="M912 192H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8m0 284H328c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h584c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8M104 228a56 56 0 1 0 112 0a56 56 0 1 0-112 0m0 284a56 56 0 1 0 112 0a56 56 0 1 0-112 0m0 284a56 56 0 1 0 112 0a56 56 0 1 0-112 0"/></svg>
+            </div>
+            <div class="sign m-2 ml-10 flex text-gray-500 font-medium text-md">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="28px" viewBox="0 0 16 16" class="max-sm:w-20 max-sm:h-20"><path fill="#19b5e6" d="M11.5 8A1.5 1.5 0 0 1 13 9.5v.5c0 1.971-1.86 4-5 4s-5-2.029-5-4v-.5A1.5 1.5 0 0 1 4.5 8zm0 1h-7a.5.5 0 0 0-.5.5v.5c0 1.438 1.432 3 4 3s4-1.562 4-3v-.5a.5.5 0 0 0-.5-.5M8 1.5A2.75 2.75 0 1 1 8 7a2.75 2.75 0 0 1 0-5.5m0 1A1.75 1.75 0 1 0 8 6a1.75 1.75 0 0 0 0-3.5"/></svg>
+                <p class="ml-1 max-sm:hidden">Sign Up/Sign In</p>
+            </div>
+            <div class="line w-0.5 h-5 bg-gray-400 mt-3 ml-4 mr-4 max-sm:h-15"></div>
+
+            <div class="cart flex m-2 flex text-gray-500 font-medium text-lg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="28px" viewBox="0 0 24 24" class="max-sm:w-20 max-sm:h-20"><g fill="none" stroke="#19b5e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><circle cx="9.549" cy="19.049" r="1.701"/><circle cx="16.96" cy="19.049" r="1.701"/><path d="m5.606 5.555l2.01 6.364c.309.978.463 1.467.76 1.829c.26.32.599.567.982.72c.435.173.947.173 1.973.173h3.855c1.026 0 1.538 0 1.972-.173c.384-.153.722-.4.983-.72c.296-.362.45-.851.76-1.829l.409-1.296l.24-.766l.331-1.05a2.5 2.5 0 0 0-2.384-3.252zm0 0l-.011-.037a7 7 0 0 0-.14-.42a2.92 2.92 0 0 0-2.512-1.84C2.84 3.25 2.727 3.25 2.5 3.25"/></g></svg>
+                <p class="ml-1 max-sm:hidden">Cart</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="line w-[100%] h-0.25 bg-gray-300 max-2xl:w-355 max-sm:w-400 max-sm:h-2"></div>
+
+    <div class="nav2  w-100% ml-30 m-4 flex justify-between mr-20 max-2xl:w-320 max-sm:hidden">
+        <div class="button w-33 h-9 rounded-full bg-[#008ECC] text-white p-1 pl-5 flex cursor-pointer">
+            <h4>Groceries</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+        <div class="button w-43 h-10 rounded-full bg-[#F3F9FB] text-black p-1 pl-5 flex cursor-pointer">
+            <h4>Premium Fruits</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="#26d1e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+        <div class="button w-45 h-10 rounded-full bg-[#F3F9FB] text-black p-1 pl-5 flex cursor-pointer">
+            <h4>Home & Kitchen</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="#26d1e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+        <div class="button w-30 h-10 rounded-full bg-[#F3F9FB] text-black p-1 pl-5 flex cursor-pointer">
+            <h4>Fashion</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="#26d1e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+        <div class="button w-35 h-10 rounded-full bg-[#F3F9FB] text-black p-1 pl-5 flex cursor-pointer">
+            <h4>Electronics</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="#26d1e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+        <div class="button w-30 h-10 rounded-full bg-[#F3F9FB] text-black p-1 pl-5 flex cursor-pointer">
+            <h4>Beauty</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="#26d1e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+        <div class="button w-50 h-10 rounded-full bg-[#F3F9FB] text-black p-1 pl-5 flex cursor-pointer">
+            <h4>Home Improvement</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="#26d1e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+        <div class="button w-55 h-10 rounded-full bg-[#F3F9FB] text-black p-1 pl-5 flex cursor-pointer">
+            <h4>Sports, Toys & luggage</h4>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="m-1 mt-0.5"><path fill="none" stroke="#26d1e6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m6 9l6 6l6-6"/></svg>
+        </div>
+    </div>
+
+
+    <div class="line w-[100%] h-0.25 bg-gray-300 max-2xl:w-355"></div>
+
+
+    <div class="slide max-2xl:w-355 max-sm:w-400">
+        <img src="/images/Artboard 1@3x.jpg" alt="" class="max-2xl:w-100%">
+    </div>
+
+    <div class="heading flex justify-between mr-28 text-center max-2xl:w-330 max-sm:w-370">
+        <h4 class="ml-30 text-gray-500 font-semibold text-2xl max-sm:text-4xl">Grab the best deal on <span class="text-[#008ECC]">Smartphones</span></h4>
+        <div class="view flex">
+            <p class="text-gray-500 max-sm:text-2xl">View All</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="max-sm:hidden"><path fill="none" stroke="#2bb6e1" stroke-linecap="round" stroke-linejoin="round" d="m10 17l5-5l-5-5" stroke-width="1"/></svg>
+        </div>
+    </div>
+
+    <div class="line w-327 ml-30 m-5 h-0.25 bg-gray-300 max-2xl:w-300 max-sm:h-1 max-sm:w-350">
+        <div class="over w-98 h-1 bg-[#008ECC] rounded-md"></div>
+    </div>
+
+    <div class="cards flex ml-30 mr-25 justify-between mt-10 justify-between max-2xl:w-320 max-2xl:ml-20 max-sm:w-310 overflow-x-scroll max-sm:ml-40" style="scrollbar-width: none;">
+        <div class="card1 w-60 h-80 bg-white rounded-2xl border-1 border-gray-300 ">
+            <div class="pic w-59.5 h-50 bg-[#F5F5F5] rounded-tl-2xl rounded-tr-2xl">
+                <img src="/images/Rectangle 13.png" alt="" class="ml-47">
+                <div class=" ml-50 -mt-13 ">
+                    <span class="text-white  text-sm font-medium">56%</span>
+                    <span class="text-white text-md font-medium -mt-5">OFF</span>
+                </div>
+                <img src="/images/image 3.png" alt="" class="ml-20 -mt-7">
+            </div>
+            <div class="price">
+                 <h4 class="font-medium m-3 mb-1">Galaxy S22 Ultra</h4>
+                 <div class="rs flex">
+                    <h5 class="font-semibold ml-3 text-gray-600">₹32999</h5>
+                    <s class="font-normal ml-4 text-gray-600">₹74999</s>
+                 </div>
+            </div>
+            <div class="line w-52 h-0.25 m-2 ml-3 bg-gray-300"></div>
+            <h5 class="text-[#249B3E] font-medium ml-4">Save - ₹32999</h5>
+        </div>
+
+
+        <div class="card1 w-60 h-80 bg-white rounded-2xl border-1 border-blue-400 shadow-2xl max-sm:ml-20">
+            <div class="pic w-59.5 h-50 bg-[#F5F5F5] rounded-tl-2xl rounded-tr-2xl">
+                <img src="/images/Rectangle 13.png" alt="" class="ml-47">
+                <div class=" ml-50 -mt-13">
+                    <span class="text-white  text-sm font-medium">56%</span>
+                    <span class="text-white text-md font-medium -mt-5">OFF</span>
+                </div>
+                <img src="/images/image 3 (4).png" alt="" class="ml-15 -mt-8">
+            </div>
+            <div class="price">
+                 <h4 class="font-medium m-3 mb-1">Galaxy M13 (4GB | 64 GB)</h4>
+                 <div class="rs flex">
+                    <h5 class="font-semibold ml-3 text-gray-600">₹10499</h5>
+                    <s class="font-normal ml-4 text-gray-600">₹14999</s>
+                 </div>
+            </div>
+            <div class="line w-52 h-0.25 m-2 ml-3 bg-gray-300"></div>
+            <h5 class="text-[#249B3E] font-medium ml-4">Save - ₹4500</h5>
+        </div>
+
+
+        <div class="card1 w-60 h-80 bg-white rounded-2xl border-1 border-gray-300 max-sm:ml-20">
+            <div class="pic w-59.5 h-50 bg-[#F5F5F5] rounded-tl-2xl rounded-tr-2xl">
+                <img src="/images/Rectangle 13.png" alt="" class="ml-47">
+                <div class=" ml-50 -mt-13">
+                    <span class="text-white  text-sm font-medium">56%</span>
+                    <span class="text-white text-md font-medium -mt-5">OFF</span>
+                </div>
+                <img src="/images/image 3 (3).png" alt="" class="ml-10 -mt-10">
+            </div>
+            <div class="price">
+                 <h4 class="font-medium m-3 mb-1">Galaxy M13 (4GB | 64 GB)</h4>
+                 <div class="rs flex">
+                    <h5 class="font-semibold ml-3 text-gray-600">₹16999</h5>
+                    <s class="font-normal ml-4 text-gray-600">₹24999</s>
+                 </div>
+            </div>
+            <div class="line w-52 h-0.25 m-2 ml-3 bg-gray-300"></div>
+            <h5 class="text-[#249B3E] font-medium ml-4">Save - ₹8000</h5>
+        </div>
+
+
+        <div class="card1 w-60 h-80 bg-white rounded-2xl border-1 border-gray-300 max-sm:ml-20">
+            <div class="pic w-59.5 h-50 bg-[#F5F5F5] rounded-tl-2xl rounded-tr-2xl">
+                <img src="/images/Rectangle 13.png" alt="" class="ml-47">
+                <div class=" ml-50 -mt-13">
+                    <span class="text-white  text-sm font-medium">56%</span>
+                    <span class="text-white text-md font-medium -mt-5">OFF</span>
+                </div>
+                <img src="/images/image 3 (5).png" alt="" class="ml-10 -mt-9">
+            </div>
+            <div class="price">
+                 <h4 class="font-medium m-3 mb-1">Galaxy M53 (4GB | 64 GB)</h4>
+                 <div class="rs flex">
+                    <h5 class="font-semibold ml-3 text-gray-600">₹31999</h5>
+                    <s class="font-normal ml-4 text-gray-600">₹40999</s>
+                 </div>
+            </div>
+            <div class="line w-52 h-0.25 m-2 ml-3 bg-gray-300"></div>
+            <h5 class="text-[#249B3E] font-medium ml-4">Save - ₹9000</h5>
+        </div>
+
+
+        <div class="card1 w-60 h-80 bg-white rounded-2xl border-1 border-gray-300 max-sm:ml-20">
+            <div class="pic w-59.5 h-50 bg-[#F5F5F5] rounded-tl-2xl rounded-tr-2xl">
+                <img src="/images/Rectangle 13.png" alt="" class="ml-47">
+                <div class=" ml-50 -mt-13">
+                    <span class="text-white  text-sm font-medium">56%</span>
+                    <span class="text-white text-md font-medium -mt-5">OFF</span>
+                </div>
+                <img src="/images/image 3 (1).png" alt="" class="ml-12 -mt-12">
+            </div>
+            <div class="price">
+                 <h4 class="font-medium m-3 mb-1">Galaxy S22 Ultra</h4>
+                 <div class="rs flex">
+                    <h5 class="font-semibold ml-3 text-gray-600">₹67999</h5>
+                    <s class="font-normal ml-4 text-gray-600">₹85999</s>
+                 </div>
+            </div>
+            <div class="line w-52 h-0.25 m-2 ml-3 bg-gray-300"></div>
+            <h5 class="text-[#249B3E] font-medium ml-4">Save - ₹18000</h5>
+        </div>
+
+
+    </div>
+
+    <div class="heading flex justify-between mr-28 text-center mt-35 max-2xl:w-320 max-2xl:w-330 max-sm:w-370">
+        <h4 class="ml-30 text-gray-500 font-semibold text-2xl max-sm:text-4xl">Shop From<span class="text-[#008ECC]"> Top Categories</span></h4>
+        <div class="view flex">
+            <p class="text-gray-500 max-sm:text-2xl">View All</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="max-sm:hidden"><path fill="none" stroke="#2bb6e1" stroke-linecap="round" stroke-linejoin="round" d="m10 17l5-5l-5-5" stroke-width="1"/></svg>
+        </div>
+    </div>
+
+    <div class="line w-327 ml-30 m-5 h-0.25 bg-gray-300 max-2xl:w-300 max-2xl:w-300 max-sm:h-1 max-sm:w-350">
+        <div class="over w-73 h-1 bg-[#008ECC] rounded-md"></div>
+    </div>
+
+    <div class="items ml-30 mt-15 flex justify-between mr-25 max-2xl:w-315 max-2xl:ml-20 max-sm:w-310 overflow-x-scroll max-sm:ml-40" style="scrollbar-width: none;">
+        <div class="circle">
+            <div class="one w-35 h-35 bg-[#F5F5F5] rounded-full p-6 pl-11 shadow-2xl border-1 border-blue-400 max-sm:w-50 max-sm:h-50 max-sm:pl-17 max-sm:pt-10 max-sm:mr-20">
+                <img src="/images/image 3 (6).png" alt="">
+            </div>
+            <h4 class="ml-10 mt-2 max-sm:text-4xl">Moblie</h4>
+        </div>
+
+        <div class="circle">
+            <div class="one w-35 h-35 bg-[#F5F5F5] rounded-full p-6 pl-10 max-sm:w-50 max-sm:h-50 max-sm:pl-17 max-sm:pt-10 max-sm:mr-20">
+                <img src="/images/image 3 (7).png" alt="">
+            </div>
+            <h4 class="ml-9 mt-2 max-sm:text-4xl">Cosmetics</h4>
+        </div>
+
+        <div class="circle">
+            <div class="one w-35 h-35 bg-[#F5F5F5] rounded-full pt-5 pl-2 max-sm:w-50 max-sm:h-50 max-sm:pl-12 max-sm:pt-11 max-sm:mr-20">
+                <img src="https://s3-alpha-sig.figma.com/img/1599/c35c/d55360a62dc187c50accc371a02f27a5?Expires=1739750400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=QUFgJeQZU2VTdisR015xUWhHT6Rwl2IuCJptbnZ63GmlAbxwMvFxQsKBYXln~lp-nySq-qC7LGzONqOhN2miLWTXn-CNDvAQ9ILFF82xr0BW7xE50JgXkldqlH6XJq9-E8gEXt88yjcf-jr0VX7gj27z1IuH2QCREfKpHRebeWxVZYJ1kFZ5MXbe0DRFGNfSKqHagfOnK35INJyYV-gvt3-TSL20pIMBvkx-wvARq7dtbQQUr4A7IQkPsT8n6HecwNV-aKe5yyYE5XB2N3BtbqrTo87fNPiVqP1NRMsPZGkEkCN5M4BfNgko-~EMF3opNUg2jTe3oemEkulDoVCVjA__" alt="" class="w-30">
+            </div>
+            <h4 class="ml-9 mt-2 max-sm:text-4xl">Electronics</h4>
+        </div>
+
+        <div class="circle">
+            <div class="one w-35 h-35 bg-[#F5F5F5] rounded-full pl-2  max-sm:w-50 max-sm:h-50 max-sm:pl-12 max-sm:pt-11 max-sm:mr-20">
+                <img src="/images/image 4.png" alt="">
+            </div>
+            <h4 class="ml-10 mt-2 max-sm:text-4xl">Furniture</h4>
+        </div>
+
+        <div class="circle">
+            <div class="one w-35 h-35 bg-[#F5F5F5] rounded-full pt-6 pl-5  max-sm:w-50 max-sm:h-50 max-sm:pl-12 max-sm:pt-11 max-sm:mr-20">
+                <img src="/images/image 5.png" alt="">
+            </div>
+            <h4 class="ml-10 mt-2 max-sm:text-4xl">Watches</h4>
+        </div>
+
+        <div class="circle">
+            <div class="one w-35 h-35 bg-[#F5F5F5] rounded-full pt-3 pl-2  max-sm:w-50 max-sm:h-50 max-sm:pl-12 max-sm:pt-11 max-sm:mr-20">
+                <img src="/images/image 6.png" alt="">
+            </div>
+            <h4 class="ml-10 mt-2 max-sm:text-4xl">Decor</h4>
+        </div>
+
+        <div class="circle">
+            <div class="one w-35 h-35 bg-[#F5F5F5] rounded-full pl-2 pt-2  max-sm:w-50 max-sm:h-50 max-sm:pl-12 max-sm:pt-11 max-sm:mr-20">
+                <img src="/images/image 7.png" alt="">
+            </div>
+            <h4 class="ml-10 mt-2 max-sm:text-4xl">Accessories</h4>
+        </div>
+
+
+    </div>
+
+    <div class="heading flex justify-between mr-28 text-center mt-35 max-2xl:w-315 max-2xl:w-320 max-2xl:w-330 max-sm:w-370">
+        <h4 class="ml-30 text-gray-500 font-semibold text-2xl max-sm:text-4xl">Top<span class="text-[#008ECC]"> Electronics Brands</span></h4>
+        <div class="view flex">
+            <p class="text-gray-500 max-sm:text-2xl">View All</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="max-sm:hidden"><path fill="none" stroke="#2bb6e1" stroke-linecap="round" stroke-linejoin="round" d="m10 17l5-5l-5-5" stroke-width="1"/></svg>
+        </div>
+    </div>
+
+    <div class="line w-327 ml-30 m-5 h-0.25 bg-gray-300 mb-10 max-2xl:w-290 max-2xl:w-300 max-sm:h-1 max-sm:w-350">
+        <div class="over w-62 h-1 bg-[#008ECC] rounded-md"></div>
+    </div>
+
+    <div class="three flex justify-between mr-35 max-2xl:w-330 max-sm:w-310 overflow-x-scroll max-sm:ml-30" style="scrollbar-width: none;">
+        <img src="/images/Group 50.png" alt="" class="ml-35 max-2xl:ml-20 max-sm:ml-10">
+        <img src="/images/Group 51.png" alt="" class="max-sm:ml-20">
+        <img src="/images/Group 52.png" alt="" class="ml-0 max-sm:ml-20">
+    </div>
+
+    <img src="/images/Group 53.png" alt="" class="mt-10 ml-177 max-2xl:ml-160">
+
+    <div class="heading flex justify-between mr-28 text-center mt-35 max-2xl:w-330 max-sm:w-370">
+        <h4 class="ml-30 text-gray-500 font-semibold text-2xl  max-sm:text-4xl">Daily<span class="text-[#008ECC]"> Essentials</span></h4>
+        <div class="view flex">
+            <p class="text-gray-500 max-sm:text-2xl">View All</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="max-sm:hidden"><path fill="none" stroke="#2bb6e1" stroke-linecap="round" stroke-linejoin="round" d="m10 17l5-5l-5-5" stroke-width="1"/></svg>
+        </div>
+    </div>
+
+    <div class="line w-327 ml-30 m-5 h-0.25 bg-gray-300 mb-10 max-2xl:w-310 max-sm:h-1 max-sm:w-350">
+        <div class="over w-42 h-1 bg-[#008ECC] rounded-md"></div>
+    </div>
+
+    <div class="boxes ml-30 flex mr-25 justify-between max-2xl:w-320 max-2xl:ml-20 max-sm:w-320 overflow-x-scroll max-sm:ml-30" style="scrollbar-width: none;">
+        <div class="box1 max-sm:mr-20">
+            <div class="pic w-50 h-50 rounded-xl border-1 border-blue-400 shadow-2xl bg-[#F5F5F5] pt-8 pl-3">
+                <img src="/images/41624-7-groceries-hd-download-hd-png 1.png" alt="">
+            </div>
+            <p class="mt-6 ml-9 text-gray-600 font-medium">Daily Essentials</p>
+            <h3 class="text-xl font-medium ml-5">UP to 50% OFF</h3>
+        </div>
+
+
+        <div class="box1  max-sm:mr-20">
+            <div class="pic w-50 h-50 rounded-xl bg-[#F5F5F5] pt-4 pl-5">
+                <img src="/images/54018-9-grocery-free-hq-image 2.png" alt="">
+            </div>
+            <p class="mt-6 ml-16 text-gray-600 font-medium">Vegitables</p>
+            <h3 class="text-xl font-medium ml-8">UP to 50% OFF</h3>
+        </div>
+
+
+        <div class="box1 max-sm:mr-20">
+            <div class="pic w-50 h-50 rounded-xl bg-[#F5F5F5] pt-4 pl-5">
+                <img src="/images/pngegg 1.png" alt="">
+            </div>
+            <p class="mt-6 ml-18 text-gray-600 font-medium">Fruits</p>
+            <h3 class="text-xl font-medium ml-8">UP to 50% OFF</h3>
+        </div>
+
+
+        <div class="box1 max-sm:mr-20">
+            <div class="pic w-50 h-50 rounded-xl bg-[#F5F5F5] pt-13 pl-5">
+                <img src="/images/23410-4-strawberry-photo 1.png" alt="">
+            </div>
+            <p class="mt-6 ml-13 text-gray-600 font-medium">Strowberry</p>
+            <h3 class="text-xl font-medium ml-8">UP to 50% OFF</h3>
+        </div>
+
+
+        <div class="box1 max-sm:mr-20">
+            <div class="pic w-50 h-50 rounded-xl bg-[#F5F5F5] pt-8 pl-5">
+                <img src="/images/22136-3-mango-fruit 1.png" alt="">
+            </div>
+            <p class="mt-6 ml-18 text-gray-600 font-medium">Mango</p>
+            <h3 class="text-xl font-medium ml-8">UP to 50% OFF</h3>
+        </div>
+
+
+        <div class="box1 max-sm:mr-20">
+            <div class="pic w-50 h-50 rounded-xl bg-[#F5F5F5] pt-4 pl-7">
+                <img src="/images/35763-7-cherry-fruit-file 1.png" alt="">
+            </div>
+            <p class="mt-6 ml-18 text-gray-600 font-medium">Cherry</p>
+            <h3 class="text-xl font-medium ml-8">UP to 50% OFF</h3>
+        </div>
+
+
+
+    </div>
+
+
+     <div class="footer bg-[#008ECC] w-[100%] h-130 mt-50 flex max-2xl:w-357 max-sm:w-400 max-sm:h-160">
+        <div class="part1 ml-25 pt-20 max-sm:ml-40">
+            <h1 class="text-4xl font-semibold text-white">MegaMart</h1>
+            <p class="text-white font-medium text-xl mt-10 max-sm:text-3xl">Contact Us</p>
+            <div class="app flex mt-5">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
+                <p class="text-white  text-md font-normal pl-2 max-sm:text-2xl">Whats App</p>
+            </div>
+            <p class="font-normal text-md text-white ml-6 max-sm:text-2xl">+1 202-918-2132</p>
+
+            <div class="app flex mt-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="m16.052 1.787l.966.261a7 7 0 0 1 4.93 4.934l.26.965l-1.93.521l-.261-.965a5 5 0 0 0-3.522-3.524l-.965-.262zM1 2h8.58l1.487 6.69l-1.86 1.86a14.1 14.1 0 0 0 4.243 4.242l1.86-1.859L22 14.42V23h-1a19.9 19.9 0 0 1-10.85-3.196a20.1 20.1 0 0 1-5.954-5.954A19.9 19.9 0 0 1 1 3zm2.027 2a17.9 17.9 0 0 0 2.849 8.764a18.1 18.1 0 0 0 5.36 5.36A17.9 17.9 0 0 0 20 20.973v-4.949l-4.053-.9l-2.174 2.175l-.663-.377a16.07 16.07 0 0 1-6.032-6.032l-.377-.663l2.175-2.174L7.976 4zm12.111 1.165l.966.261a3.5 3.5 0 0 1 2.465 2.467l.26.965l-1.93.521l-.261-.965a1.5 1.5 0 0 0-1.057-1.057l-.965-.261z"/></svg>
+                <p  class="text-white  text-md font-normal pl-2 max-sm:text-2xl">Call Us</p>
+            </div>
+            <p class="font-normal text-md text-white ml-6 max-sm:text-2xl">+1 202-918-2132</p>
+
+            <p class="text-white font-medium text-lg mt-10 max-sm:text-3xl">Download App</p>
+
+            <div class="appstore flex">
+                <img src="/images/image 11.png" alt="" class="p-2">
+                <img src="/images/image 10.png" alt="" class="p-2">
+            </div>
+
+
+        </div>
+
+        <div class="part2 pt-21 ml-10 max-sm:ml-20">
+            <h1 class="text-white font-medium text-xl max-sm:text-3xl">Most Popular Categories</h1>
+            <div class="line w-56 h-0.5 bg-white mt-2"></div>
+            <ul class="text-white m-3">
+                <li class="m-0 mb-3 mt-8 max-sm:text-2xl">Staples</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Beverages</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Personal Care</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Home Care</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Baby Care</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Vegitables & Fruits</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Snacks & Foods</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Dairy & Bakery</li>
+                
+            </ul>
+        </div>
+
+        <div class="part2 pt-21 ml-20 max-sm:ml-50">
+            <h1 class="text-white font-medium text-xl max-sm:text-3xl">Customer Services</h1>
+            <div class="line w-43 h-0.5 bg-white mt-2"></div>
+            <ul class="text-white m-3">
+                <li class="m-0 mb-3 mt-8 max-sm:text-2xl">About Us</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Terms & Conditions</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Personal Care</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">FAQ</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Privacy Policy</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">E-waste Policy</li>
+                <li class="m-0 mb-3 max-sm:text-2xl">Cancellation & Return Policy</li>
+                
+            </ul>
+        </div>
+
+        <img src="/images/Mask group (1).png" alt="" class="w-90 h-120 ml-25 max-sm:hidden">
+
+
+     </div>    
+
+     <div class="copy bg-[#008ECC] w-[100%] h-15 max-2xl:w-357 max-sm:w-400">
+        <div class="line w-[90%] h-0.25 bg-white ml-20"></div>
+        <p class="text-center text-white mt-5 text-lg font-light max-sm:text-2xl">© 2022 All rights reserved. Reliance Retail Ltd.</p>
+     </div> 
+
+</body>
+</html>
