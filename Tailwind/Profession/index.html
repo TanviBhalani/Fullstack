@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architects | Terra Firma Architects</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="icon" href="/Images/images.png">
+</head>
+<body> 
+    <style>
+        .container {
+            position: relative;
+        }
+
+        .image {
+            width: 300px;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 78%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            color: white;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth fade-in effect */
+        }
+
+        .container:hover .text {
+            opacity: 1; /* Visible on hover */
+        }
+        .righttexts{
+           animation: righttexts 1.7s ease-in-out forwards;
+        }
+        .onlytexts{
+           animation: onlytexts 1.7s ease-in-out forwards;
+        }
+        .mixtexts{
+           animation: mixtexts 1.7s ease-in-out forwards;
+        }
+        @keyframes righttexts{
+        0%{
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+        }
+        @keyframes onlytexts{
+        0%{
+            transform: translateX(200px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+        }
+        @keyframes mixtexts{
+        0%{
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }
+        }
+    </style> 
+  
+    <div class="blank w-[100%] h-2 bg-white "></div>
+    <div class="nav flex w-[100%] h-17 fixed bg-white z-999 max-sm:w-400">
+        <img src="/Images/logo_edited.png" alt="" class="w-55 h-14 m-2">
+        <ul class="flex justify-between w-150 mt-5 ml-50">
+            <li><a href="" class="text-sm text-[#910030] font-medium max-sm:text-lg">HOME</a></li>
+            <li><a href="" class="text-sm text-gray-500 font-medium max-sm:text-lg">WORKS</a></li>
+            <li><a href="" class="text-sm text-gray-500 font-medium max-sm:text-lg">RECOGNITION</a></li>
+            <li><a href="" class="text-sm text-gray-500 font-medium max-sm:text-lg">STUDIO</a></li>
+            <li><a href="" class="text-sm text-gray-500 font-medium max-sm:text-lg">REACH OUT</a></li>
+        </ul>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 20 20" class="ml-70 mt-4"><path fill="#910030" d="M15.5 4A2.5 2.5 0 0 1 18 6.5v8a2.5 2.5 0 0 1-2.5 2.5h-11A2.5 2.5 0 0 1 2 14.5v-8A2.5 2.5 0 0 1 4.5 4zM17 7.961l-6.746 3.97a.5.5 0 0 1-.426.038l-.082-.038L3 7.963V14.5A1.5 1.5 0 0 0 4.5 16h11a1.5 1.5 0 0 0 1.5-1.5zM15.5 5h-11A1.5 1.5 0 0 0 3 6.5v.302l7 4.118l7-4.12v-.3A1.5 1.5 0 0 0 15.5 5"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="mt-4 ml-3"><g fill="none" stroke="#910030" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6zm14-2.9h.5"/><path d="M15.462 11.487a3.5 3.5 0 1 1-6.925 1.026a3.5 3.5 0 0 1 6.925-1.026"/></g></svg>
+    </div>
+
+    <div class="slider w-[100%] overflow-x-scroll flex pt-20 max-2xl:w-300" style="scrollbar-width: none;">
+        <img src="/Images/220022_01fd1d95dee54cc385693019b1744790~mv2.jpg" alt="" class="w-100 h-170 hover:brightness-50 cursor-pointer max-sm:w-180">
+        <img src="/Images/220022_1216a102dacf49e29211c2c308711d04~mv2.jpg" alt="" class="w-100 h-170 ml-5 hover:brightness-50 cursor-pointer max-sm:w-180">
+        <img src="/Images/220022_15db3d56748a40ac8994014feed845a8~mv2.jpg" alt="" class="w-100 h-170 ml-5 hover:brightness-50 cursor-pointer max-sm:w-180">
+        <img src="/Images/220022_5dabee2ece2841a7ae6fdf9acecbcd39~mv2.jpg 5x" alt="" class="w-100 h-170 ml-5 hover:brightness-50 cursor-pointer max-sm:w-180">
+        <img src="/Images/220022_53c734812c034d1da69613eeccbfc925~mv2.jpg" alt="" class="w-100 h-170 ml-5 hover:brightness-50 cursor-pointer max-sm:w-180">
+        <img src="/Images/220022_a9197b7b09fa477db63efc6ce78499b8~mv2.jpg" alt="" class="w-100 h-170 ml-5 hover:brightness-50 cursor-pointer max-sm:w-180">
+        <img src="/Images/220022_b258f529409f43228e7444d32f9213ad~mv2.jpg" alt="" class="w-100 h-170 ml-5 hover:brightness-50 cursor-pointer max-sm:w-180">
+    </div>
+
+    <div class="page1 flex justify-self-center mt-30 max-2xl:w-210 max-2xl:ml-115 max-sm:flex-col max-sm:w-210 max-sm:ml-205">
+        <img src="/Images/Screenshot 2025-03-06 231656.png" alt="" class="w-110 h-110 max-sm:w-200 max-sm:h-180">
+        <div class="righttexts ml-5">
+            <h3 class="font_3 wixui-rich-text__text mb-48 max-2xl:mb-40 max-sm:text-9xl max-sm:mb-10" style="font-size:100px; line-height:1em;"><span style="letter-spacing:0.0015;" class="wixui-rich-text__text tracking-tighter"><span style="font-size:100px;" class="wixui-rich-text__text"><span style="font-family:wfont_308c86_ab2217414609485a9521235d44cd4db9,wf_ab2217414609485a9521235d4,orig_alternategotno_1_d;" class="wixui-rich-text__text"><span style="color:#c2c2c2; font-family: sans-serif;" class="wixui-rich-text__text">hello,</span></span></span></span></h3>    
+            <span class="text-[#910030] max-sm:text-3xl">terra.firma <span class="text-sm text-gray-500 max-sm:text-3xl"> is a design consultancy based in <br>Ahmedabad, founded by two young architects. <br>Our intentions and interests lie in creating <br>meaningful spatial experiences keeping in mind <br>contextual appropriateness while abiding by the <br>needs of the client.</span></span>
+        </div>
+    </div>
+
+    <div class="onlytexts">
+        <h3 class="font_3 wixui-rich-text__text tracking-wide mt-20 ml-40" style="font-size:110px; line-height:1em;"><span style="letter-spacing:0.002;" class="wixui-rich-text__text"><span style="font-size:110px; font-weight: 700;" class="wixui-rich-text__text"><span style="font-family:wfont_308c86_ab2217414609485a9521235d44cd4db9,wf_ab2217414609485a9521235d4,orig_alternategotno_1_d;" class="wixui-rich-text__text"><span style="color:#c2c2c2; font-family: sans-serif;" class="wixui-rich-text__text">feature</span></span></span></span></h3>
+    </div>    
+    <div class="projects flex ml-40 mt-2 justify-between max-2xl:w-280 max-2xl:ml-15">
+       <div class="left">
+        <div class="one">
+            <img src="/Images/E_MKGs_HR-15-min.jpg" alt="" class="w-190 max-2xl:w-150">
+            <p class="text-white font-bold absolute text-9xl -mt-29 ml-5">1</p>
+        </div>
+        <p class="w-107 -mt-12 ml-60 h-8 text-center text-gray-400 font-medium tracking-wider text-xl hover:bg-[#910030] max-2xl:ml-33" style="  transform: rotate(90deg);transform-origin: right bottom;">ARCHED OFFICE</p>
+       </div>
+        <div class="container ml-35">
+            <img src="/Images/NAVRTANA _ISO.jpg" alt="Sample Image" class="w-110 max-2xl:w-90 max-2xl:mt-10">
+            <div class="text pl-5">
+                <p class="ml-2 mt-25 text-lg">Interior Design Project</p>
+                <p class="ml-2 text-md text-gray-300">CA OFFICE</p>
+                <span class="text-md ml-2 text-gray-300">Area : <span class=" text-white">400 sq m</span></span>
+                <p class="ml-2 text-sm mt-10 mr-2">An Interior Design project based on an indutrial theme in a commercial building in Ahmedabad. The highlight of the project is the use of materials and techniques to achieve a one of a kind design language completely in line with the client requirements. </p>
+            </div>
+        </div>  
+    </div>
+
+    <div class="projects flex ml-40 mt-2 justify-between mt-40 max-2xl:w-280 max-2xl:ml-15">
+       <div class="left">
+        <div class="one">
+            <img src="/Images/E_MKGs_HR-28.jpg" alt="" class="w-190 max-2xl:w-150">
+            <p class="text-white font-bold absolute text-9xl -mt-124 ml-145 mr-5">2</p>
+        </div>
+        <p class="w-107 -mt-12 ml-60 h-8 text-center text-gray-400 font-medium tracking-wider text-xl hover:bg-[#910030] max-2xl:ml-33" style="  transform: rotate(90deg);transform-origin: right bottom;">TERRA-KOTA</p>
+       </div>
+        <div class="container ml-35">
+            <img src="/Images/Insta-Post_Artboard-10.png" alt="Sample Image" class="w-110 max-2xl:w-90 max-2xl:mt-10">
+            <div class="text pl-5">
+                <p class="ml-2 mt-25 text-lg">Residential Design Project and  Studio</p>
+                <p class="ml-2 text-md text-gray-300">STUDIO</p>
+                <span class="text-md ml-2 text-gray-300">Area : <span class=" text-white">340 sq m</span></span>
+                <p class="ml-2 text-sm mt-10 mr-2">Designed for a family of four where the parents would spend their retired life while the children would be engrossed in developing their careers. Fundamentally, it had to respond to the needs of two generations where one can come together to enjoy each other’s company but also respect their time alone. Keeping in mind such a brief the architecture responds to a variety of scales of spaces where one can unwind.</p>
+            </div>
+        </div>  
+    </div>
+
+
+    <div class="projects flex ml-40 mt-2 justify-between mt-40 max-2xl:w-280 max-2xl:ml-15">
+       <div class="left">
+        <div class="one">
+            <img src="/Images/E_MKGs_LR-16_dip-L.jpg" alt="" class="w-190 max-2xl:w-150">
+            <p class="text-white font-bold absolute text-9xl -mt-29 ml-5">3</p>
+        </div>
+        <p class="w-107 -mt-12 ml-60 h-8 text-center text-gray-400 font-medium tracking-wider text-xl hover:bg-[#910030] max-2xl:ml-33" style="  transform: rotate(90deg);transform-origin: right bottom;">HOUSE OF CURVES</p>
+       </div>
+        <div class="container ml-35">
+            <img src="/Images/ground-floor.jpg" alt="Sample Image" class="w-110 max-2xl:w-90 max-2xl:mt-10">
+            <div class="text pl-5">
+                <p class="ml-2 mt-25 text-lg">Interior Design Project</p>
+                <p class="ml-2 text-md text-gray-300">HOUSE OF CURVES</p>
+                <span class="text-md ml-2 text-gray-300">Area : <span class=" text-white">4500 sq m</span></span>
+                <p class="ml-2 text-sm mt-10 mr-2">The design mandate was clear: employ a palette of neutral colours, opt for high-quality, natural materials, and create an ambiance that exuded timelessness. Some elements of the existing space were to be retained and thoughtfully integrated, while others were introduced and merged seamlessly to breathe new life into the interiors.</p>
+            </div>
+        </div>  
+    </div>
+
+
+    <div class="projects flex ml-40 mt-2 justify-between mt-40 max-2xl:w-280 max-2xl:ml-15">
+       <div class="left">
+        <div class="one">
+            <img src="/Images/E_MKGs_LR-13.jpg" alt="" class="w-190 max-2xl:w-150">
+            <p class="text-white font-bold absolute text-9xl -mt-29 ml-145">4</p>
+        </div>
+        <p class="w-107 -mt-12 ml-60 h-8 text-center text-gray-400 font-medium tracking-wider text-xl hover:bg-[#910030] max-2xl:ml-33" style="  transform: rotate(90deg);transform-origin: right bottom;">OAK HOUSE</p>
+       </div>
+        <div class="container ml-35">
+            <img src="/Images/20240321_Furniture layout render PSD_501.jpg" alt="Sample Image" class="w-92 max-2xl:w-80 max-2xl:mt-5 ">
+            <div class="text pl-5">
+                <p class="ml-2 mt-25 text-lg">Interior Design Project</p>
+                <p class="ml-2 text-md text-gray-300">Residential interiors</p>
+                <span class="text-md ml-2 text-gray-300">Area : <span class=" text-white">1200 sq m</span></span>
+                <p class="ml-2 text-sm mt-10 mr-2">Oak House is designed for a family of five—a couple, their daughter, and the parents. The brief was clear: minimalistic and timeless interiors that prioritize functionality. The home features earthy tones, oak wood accents, beige hues, and marble flooring in the living and bedroom areas, creating a harmonious and inviting atmosphere.</p>
+            </div>
+        </div>  
+    </div>
+
+
+    <div class="mix flex mt-40 max-2xl:w-270">
+        <div class="mixtexts w-150 mr-30 max-2xl:mr-15">
+            <p class="text-[#910030] text-xl font-medium justify-self-end">Terra-Kota house featured in Ahmedabad</p>
+            <p class="text-[#910030] text-xl font-medium justify-self-end">collective 2023.</p>
+            <p class="text-gray-500 text-md justify-self-end mt-2">Held in 2023 at Cept University  featuring 30 upcoming</p>
+            <p class="text-gray-500 text-md justify-self-end">practices iof Ahmedabad.</p>
+            <p class="text-[#910030] text-xl font-medium justify-self-end mt-25">Arched office feature</p>
+            <p class="text-gray-500 text-md justify-self-end">Coming soon</p>
+            <p class="text-[#910030] text-xl font-medium justify-self-end mt-25"> People's choice award for Grafted Skin at The</p>
+            <p class="text-[#910030] text-xl font-medium justify-self-end">Geevees 2024</p>
+            <p class="text-gray-500 text-md justify-self-end mt-2">Terra Firma won the People's choice award at a ceremony</p>
+            <p class="text-gray-500 text-md justify-self-end">held at Goa for the GEEVEES 2024. </p>
+
+        </div>
+        <div class="right flex">
+            <h2 class="text-9xl mt-40 mb-45 -ml-75" style="  transform: rotate(90deg);transform-origin: right bottom;color:#c2c2c2; font-family: sans-serif;">news</h2>
+            <img src="/Images/Screenshot 2023-03-01 145657_edited.jpg" alt="" class="w-140 h-120 ml-35">
+        </div>
+    </div>
+
+
+    <div class="footer w-[100%] h-67 bg-gray-100 mt-30 flex pt-15 pl-20 max-2xl:w-300">
+        <div class="part1 mt-15">
+            <img src="/Images/logo_edited.png" alt="" class="w-50">
+            <p class="text-sm font-medium text-gray-400 ml-8">architecture . interior</p>
+        </div>
+        <div class="part2 ml-35">
+            <p class="text-[#910030] font-semibold text-lg">get . in . touch</p>
+            <p class="text-gray-500 text-md mt-8">Studio Terra.Firma,</p>
+            <p class="text-gray-500 text-md">Ahmedabad , Gujarat, India</p>
+            <p class="font-medium text-sm">mail : terrafirma.ahm@gmail.com</p>
+        </div>
+        <div class="part2 ml-27">
+            <p class="text-[#910030] font-semibold text-lg">work . with . us</p>
+            <p class="text-gray-500 text-md mt-8">For jobs and internships,</p>
+            <p class="text-gray-500 text-md">please email us at</p>
+            <p class="font-medium text-sm">career.terrafirma@gmail.com</p>
+        </div>
+        <div class="part3 ml-27">
+            <p class="text-3xl">Connect . with . us</p>
+            <div class="flex mt-3">
+                <input type="text" placeholder="First Name" class="text-gray border-1 p-1 border-gray-400 w-30 h-7" style="outline: none;">
+                <input type="text" placeholder="Last Name" class="text-gray border-1 p-1 border-gray-400 w-30 h-7 ml-3" style="outline: none;">
+            </div>
+            <input type="text" placeholder="Email" class="text-gray border-1 p-1 border-gray-400 w-63 h-8 mt-2" style="outline: none;">
+            <input type="text" placeholder="Message" class="text-gray border-1 p-1 border-gray-400 w-63 h-8 mt-2" style="outline: none;">
+            <p class="w-30 -mt-5 ml-34 cursor-pointer h-6 text-center text-white text-sm bg-[#910030]" style="  transform: rotate(90deg);transform-origin: right bottom;">SUBMIT</p>
+
+
+        </div>
+
+    </div>
+    <div class="last w-[100%] h-15 bg-gray-100 max-2xl:w-300">
+        <div class="line h-0.25 w-[100%] bg-[#910030]"></div>
+        <p class="text-center text-xs mt-5 font-medium">© 2020 by Terra Firma Architects. </p>
+    </div>
+    
+
+
+
+      
+    
+
+
+</body>
+</html>
