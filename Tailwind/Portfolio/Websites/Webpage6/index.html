@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megakit-Multipurpose</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+  <style>
+    .navbar ul li a{
+      color: white;
+    }
+    .navbar a:hover{
+      color: gray;
+    }
+    .dropdown-item {
+      padding: .8rem 1.5rem .55rem;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .btn-main{
+      background: #f75757;
+      color: #fff;
+      transition: all 0.2s ease;
+    }
+    .slider{
+      height: 550px;
+      background-image: url(https://www.isixsigma.com/wp-content/uploads/2018/11/shutterstock_1687550977-scaled.jpg);
+      background-size: cover;
+      background-repeat: repeat;
+    }
+    .bg-about {
+      position: absolute;
+      content: "";
+      left: 0px;
+      top: 0px;
+      width: 45%;
+      min-height: 650px;
+     background: url(https://demo.themefisher.com/megakit-bootstrap/images/about/home-8.jpg) no-repeat;
+      background-size: cover;
+    }
+    .cta {
+      background: url(https://demo.themefisher.com/megakit-bootstrap/images/bg/home-3.jpg) fixed 50% 50%;
+      background-size: cover;
+      padding: 120px 0px;
+    }
+    a{
+      text-decoration: none;
+    }
+    .footer li a{
+      color: gray;
+    }
+
+  </style>
+    <header class="navigation">
+        <div class="header-top" style="background-color: rgb(28, 28, 28); padding: 0px; border: 1px solid rgb(82, 82, 82);">
+          <div class="container">
+            <div class="row justify-content-between align-items-center">
+              <div class="col-lg-2 col-md-4">
+                <div class="header-top-socials text-center text-lg-left text-md-left">
+                  <a href="https://www.facebook.com/themefisher" aria-label="facebook"><i class="fab fa-facebook-f" style="color: gray; padding: 10px;"></i></a>
+                  <a href="https://twitter.com/themefisher" aria-label="twitter"><i class="fab fa-twitter" style="color: gray; padding: 10px;"></i></a>
+                  <a href="https://github.com/themefisher/" aria-label="github"><i class="fab fa-github" style="color: gray; padding: 10px;"></i></a>
+                </div>
+              </div>
+              <div class="col-lg-10 col-md-8 text-center text-lg-right text-md-right">
+                <div class="header-top-info mb-2 mb-md-0  d-flex justify-content-end">
+                  <a href="tel:+23-345-67890" style="color: gray; padding: 10px; text-decoration: none;">Call Us : <span style="color: white; ">+23-345-67890</span></a>
+                  <a href="mailto:support@gmail.com" style="color: gray; padding: 10px; text-decoration: none;"><i class="fas fa-envelope mr-2"></i><span  style="color: white; margin: 5px;">support@gmail.com</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div id="navbar" style="background-color: rgb(28, 28, 28);">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+                <nav class="navbar navbar-expand-lg px-0 py-4">
+                  <a class="navbar-brand" href="index.html" style="color: white; font-weight: 600; font-size: 25px;">
+                    Mega<span style="color:  #f75757;">kit.</span>
+                  </a>
+            
+                  <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation" fdprocessedid="vpudln">
+                    <span class="fa fa-bars"></span>
+                  </button>
+            
+                  <div class="collapse navbar-collapse text-center justify-content-end" id="navbarsExample09">
+                    <ul class="navbar-nav ml-auto">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="index.html" style="color:  #f75757;">Home</a>
+                      </li>
+                      <li class="nav-item dropdown @@about">
+                        <a class="nav-link" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >About </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown03" >
+                          
+                          
+                          <li class="dropdown dropdown-submenu dropright">
+                            <a class="dropdown-item dropdown-toggle" href="#!" id="dropdown0301" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+                  
+                            <ul class="dropdown-menu" aria-labelledby="dropdown0301">
+                              
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item @@service"><a class="nav-link" href="service.html">Services</a></li>
+                      <li class="nav-item @@project"><a class="nav-link" href="project.html">Portfolio</a></li>
+                      <li class="nav-item dropdown @@blog">
+                        <a class="nav-link " href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                         
+            
+                          <li class="dropdown dropdown-submenu dropleft">
+                            <a class="dropdown-item " href="#!" id="dropdown0501" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sub Menu</a>
+                  
+                            <ul class="dropdown-menu" aria-labelledby="dropdown0501">
+                              
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="nav-item @@contact"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+            
+                    <div class="my-2 my-md-0 ml-lg-4 text-center">
+                      <a href="" class="btn btn-solid-border btn-round-full"  style="padding: 7px 10px; border: 2px solid #f75757; border-radius: 20px; color: white; margin-left: 20px;">Get a Quote</a>
+                    </div>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="slider">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-9 col-md-10">
+              <div class="block">
+                <span class="d-block mb-3 text-white text-capitalize m-5">Prepare for new future</span>
+                <h1 class="animated fadeInUp mb-5" style="font-size: 70px; color: white;">Our work is <br>presentation of our <br>capabilities.</h1>
+                <a href="#" class="btn btn-main animated fadeInUp btn-round-full" aria-label="Get started">Get started<i class="btn-icon fa fa-angle-right ml-2"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section intro" style="padding: 100px;">
+        <div class="container">
+          <div class="row ">
+            <div class="col-lg-8">
+              <div class="section-title">
+                <span class="h5 text-color " style="color: #f75757;">We are creative &amp; expert people</span>
+                <h2 class="mt-3 content-title" style="font-size: 50px; line-height: 70px; font-weight: 700;">We work with business &amp; provide solution to client with their business problem
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center" style="margin-top: 50px;">
+            <div class="col-lg-4 col-md-6 col-12">
+              <div class="intro-item mb-5 mb-lg-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="#f75757" d="M11 19v-2H4.616q-.691 0-1.153-.462T3 15.385v-9.77q0-.69.463-1.152T4.615 4h14.77q.69 0 1.152.463T21 5.616v9.769q0 .69-.463 1.153T19.385 17H13v2h1.5q.214 0 .357.143T15 19.5t-.143.357T14.5 20h-5q-.213 0-.357-.143T9 19.5t.143-.357T9.5 19zm-6.384-3h14.769q.23 0 .423-.192t.192-.423v-9.77q0-.23-.192-.423T19.385 5H4.615q-.23 0-.423.192T4 5.616v9.769q0 .23.192.423t.423.192M4 16V5z"/></svg>
+                <h4 class="mt-4 mb-3">Modern &amp; Responsive design</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+              <div class="intro-item mb-5 mb-lg-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="#f75757" d="M9.517 15.558L12 14.052l2.483 1.506l-.66-2.825l2.196-1.885l-2.886-.256L12 7.942l-1.133 2.65l-2.886.256l2.196 1.885zM12 21.916L9.073 19H5v-4.073L2.085 12L5 9.073V5h4.073L12 2.085L14.927 5H19v4.073L21.916 12L19 14.927V19h-4.073zm0-1.416l2.5-2.5H18v-3.5l2.5-2.5L18 9.5V6h-3.5L12 3.5L9.5 6H6v3.5L3.5 12L6 14.5V18h3.5zm0-8.5"/></svg>
+                <h4 class="mt-4 mb-3">Awarded licensed company</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+              <div class="intro-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24"><path fill="#f75757" d="M21.5 2h-13a.5.5 0 0 0-.5.5V7H5.5a.5.5 0 0 0-.5.5V12H2.5a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V19h4.5a.5.5 0 0 0 .5-.5V16h4.5a.5.5 0 0 0 .5-.5v-13a.5.5 0 0 0-.5-.5M11 18.5V21H3v-8h8zm5-3V18h-4v-5.5a.5.5 0 0 0-.5-.5H6V8h10zm5-.5h-4V7.5a.5.5 0 0 0-.5-.5H9V3h12z"/></svg>
+                <h4 class="mt-4 mb-3">Build your website Professionally</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, ducimus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section about position-relative">
+        <div class="bg-about"></div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 offset-lg-6 offset-md-0">
+              <div class="about-item" style="margin-top: 160px;">
+                <span class="h4 text-color" style="color: #f75757;">What we are</span>
+                <h2 class="mt-3 mb-4 position-relative content-title" style="font-size: 50px; font-weight: 700;">We are dynamic team of creative people</h2>
+                <div class="about-content">
+                  <h4 class="mb-3 position-relative" style="font-weight: 600;">We are Perfect Solution</h4>
+                  <p class="mb-5 m-3">We provide consulting services in the area of IFRS and management reporting, helping
+                    companies to reach their highest level. We optimize business processes, making them easier.</p>
+      
+                  <a href="#" class="btn btn-main btn-round-full" style="padding:  10px 20px; border-radius: 30px;">Get started</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <br>
+      <br>
+      <section class="section counter" style="margin-top: 160px;">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-item text-center mb-5 mb-lg-0">
+                <h3 class="mb-0"  style="font-weight: 900; font-size: 50px;"><span class="counter-stat font-weight-bold">1730</span> +</h3>
+                <p class="text-muted m-2"  style="color: gray; font-size: 18px; font-weight: 500;">Project Done</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-item text-center mb-5 mb-lg-0">
+                <h3 class="mb-0" style="font-weight: 900; font-size: 50px;"><span class="counter-stat font-weight-bold">125</span>M </h3>
+                <p class="text-muted m-2" style="color: gray; font-size: 18px; font-weight: 500;">User Worldwide</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-item text-center mb-5 mb-lg-0">
+                <h3 class="mb-0" style="font-weight: 900; font-size: 50px;"><span class="counter-stat font-weight-bold">39</span></h3>
+                <p class="text-muted m-2"  style="color: gray; font-size: 18px; font-weight: 500;">Availble Country</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="counter-item text-center">
+                <h3 class="mb-0" style="font-weight: 900; font-size: 50px;"><span class="counter-stat font-weight-bold">14</span></h3>
+                <p class="text-muted m-2"  style="color: gray; font-size: 18px; font-weight: 500;">Award Winner </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <br>
+      <br>
+
+
+      <hr>
+
+      <br>
+      <br>
+      <section class="section cta">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-5 col-lg-6">
+              <div class="cta-item  bg-white p-5 rounded">
+                <span class="h5 text-color" style="color: #f75757; font-weight: 600;">We create for you</span>
+                <h2 class="mt-2 mb-4" style="font-size: 42px; font-weight: 700;">Entrust Your Project to Our Best Team of Professionals</h2>
+                <p class="lead mb-4" style="font-weight: 400; font-size: 22px; color: rgb(89, 88, 88);">Have any project on mind? For immidiate support :</p>
+                <h3> <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 48 48"><g fill="none" stroke="#f75757" stroke-width="4"><path stroke-linejoin="round" d="M8 30h32v12a2 2 0 0 1-2 2H10a2 2 0 0 1-2-2zm32 0V6a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v24"/><path stroke-linecap="round" d="M22 37h4"/></g></svg><i class="ti-mobile mr-3 text-color m-2" style="font-weight: 600;"></i>+23 876 65 455</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="section latest-blog bg-2">
+        <div class="container" style="margin-top: 60px;">
+          <div class="row justify-content-center">
+            <div class="col-lg-7 text-center">
+              <div class="section-title">
+                <span class="h4 text-color" style="color: #f75757;">Latest News</span>
+                <h2 class="mt-3 content-title text-black " style="font-size: 40px; line-height: 50px; margin: 50px;">Latest articles to enrich knowledge</h2>
+              </div>
+            </div>
+          </div>
+      
+          <div class="row justify-content-centre ">
+            <div class="col-lg-4 col-md-6 mb-5" style=" border-radius: 30px; padding: 20px; background-color: rgb(240, 237, 233); margin-right: 50px; width: 400px;">
+              <div class="card bg-transparent border-0">
+                <img loading="lazy" src="https://demo.themefisher.com/megakit-bootstrap/images/blog/1.jpg" alt="blog" class="img-fluid rounded">
+      
+                <div class="card-body mt-2">
+                  <div class="blog-item-meta">
+                    <a href="#" class="text-black-50 m-2"  >Design<span class="ml-2 mr-2"> /</span></a>
+                    <a href="#" class="text-black-50 m-2">Ui/Ux<span class="ml-2"> /</span></a>
+                    <a href="#" class="text-black-50 ml-2 m-2"><i class="fa fa-user mr-2"></i>admin</a>
+                  </div>
+      
+                  <h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-black ">How to improve design with typography?</a></h3>
+      
+                  <a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-black " style="background-color: #f2aeae; border-radius: 30px; padding:  10px 30px;">Learn More</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-5" style=" border-radius: 30px; padding: 20px; background-color: rgb(240, 237, 233); margin-right: 50px; width: 400px;">
+              <div class="card border-0 bg-transparent">
+                <img loading="lazy" src="https://demo.themefisher.com/megakit-bootstrap/images/blog/2.jpg" alt="blog" class="img-fluid rounded">
+      
+                <div class="card-body mt-2">
+                  <div class="blog-item-meta">
+                    <a href="#" class="text-black-50 m-2">Design<span class="ml-2 mr-2"> /</span></a>
+                    <a href="#" class="text-black-50 m-2">Ui/Ux<span class="ml-2"> / </span></a>
+                    <a href="#" class="text-black-50 ml-2 m-2"><i class="fa fa-user mr-2"></i>admin</a>
+                  </div>
+      
+                  <h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-black">Interactivity design may connect consumer</a>
+                  </h3>
+      
+                  <a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-black" style="background-color: #f2aeae; border-radius: 30px; padding:  10px 30px;">Learn More</a>
+                </div>
+              </div>
+            </div>
+      
+            <div class="col-lg-4 col-md-6 mb-5"  style=" border-radius: 30px; padding: 20px; background-color: rgb(240, 237, 233);  width: 400px;">
+              <div class="card border-0 bg-transparent">
+                <img loading="lazy" src="https://demo.themefisher.com/megakit-bootstrap/images/blog/3.jpg" alt="blog" class="img-fluid rounded">
+      
+                <div class="card-body mt-2">
+                  <div class="blog-item-meta">
+                    <a href="#" class="text-black-50 m-2" >Design<span class="ml-2 mr-2"> / </span></a>
+                    <a href="#" class="text-black-50 m-2">Ui/Ux<span class="ml-2"> / </span></a>
+                    <a href="#" class="text-black-50 ml-2 m-2"><i class="fa fa-user mr-2"></i>admin</a>
+                  </div>
+      
+                  <h3 class="mt-3 mb-5 lh-36"><a href="#" class="text-black">Marketing Strategy to bring more affect</a></h3>
+      
+                  <a href="blog-single.html" class="btn btn-small btn-solid-border btn-round-full text-black" style="background-color: #f2aeae; border-radius: 30px; padding:  10px 30px;">Learn More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <footer class="footer section" style="background-color: rgb(12, 12, 12); margin-top: 50px; padding: 70px;">
+        <div class="container">
+          <div class="row" style="color: white;">
+            <div class="col-lg-3 col-md-6 col-sm-6">
+              <div class="widget">
+                <h4 class="text-capitalize mb-4">Company</h4>
+      
+                <ul class="list-unstyled footer-menu lh-35">
+                  <li><a href="about.html">Terms &amp; Conditions</a></li>
+                  <li><a href="about.html">Privacy Policy</a></li>
+                  <li><a href="cobtact.html">Support</a></li>
+                  <li><a href="cobtact.html">FAQ</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-2 col-md-6 col-sm-6">
+              <div class="widget">
+                <h4 class="text-capitalize mb-4">Quick Links</h4>
+      
+                <ul class="list-unstyled footer-menu lh-35">
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="service.html">Services</a></li>
+                  <li><a href="blog-grid.html">Blogs</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-6 mx-auto">
+              <div class="widget">
+                <h4 class="text-capitalize mb-4">Subscribe Us</h4>
+                <p>Subscribe to get latest news article and resources </p>
+      
+                <form action="#" class="sub-form">
+                  <input type="text" class="form-control mb-3" placeholder="Subscribe Now " fdprocessedid="rccltl">
+                  <a href="#" class="btn btn-main btn-small">subscribe</a>
+                </form>
+              </div>
+            </div>
+      
+            <div class="col-lg-3 col-sm-6">
+              <div class="widget">
+                <div class="logo mb-4">
+                  <h3>Mega<span>kit.</span></h3>
+                </div>
+                <h6 ><a href="mailto:support@gmail.com" style="color: white;">Support@megakit.com</a></h6>
+                <a href="tel:+23-345-67890"><span class="text-color h4" style="color: white;">+23-456-6588</span></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <hr style="color: rgb(172, 169, 169);">
+      
+          <div class="footer-btm pt-4">
+            <div class="row" style="color: white;">
+              <div class="col-lg-6">
+                <div class="copyright">
+                  Copyright © 2020, Designed &amp; Developed by <a href="https://themefisher.com/">Megakit</a>
+                </div>
+              </div>
+              <div class="col-lg-6 text-left text-lg-right">
+                <ul class="list-inline footer-socials" style="margin-left: 150px;">
+                  <li class="list-inline-item"><a href="https://www.facebook.com/themefisher"><i class="fab fa-facebook-f mr-2"></i> Facebook</a></li>
+                  <li class="list-inline-item"><a href="https://twitter.com/themefisher"><i class="fab fa-twitter mr-2"></i> Twitter</a></li>
+                  <li class="list-inline-item"><a href="https://www.pinterest.com/themefisher/"><i class="fab fa-pinterest-p mr-2 "></i> Pinterest</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+</body>
+</html>

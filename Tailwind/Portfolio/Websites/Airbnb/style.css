@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.top{
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+.nav{
+    width: 90%;
+    display: flex;
+    margin: 0px 70px;
+    justify-content: space-between;
+    padding: 15px;
+}
+.logo{
+    width: 140px;
+}
+.logo img{
+    width: 100%;
+}
+ul{
+    display: flex;
+    margin-left: 190px;
+    width: 360px;
+    border-radius: 50px;
+    font-size: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+li{
+    list-style: none;
+    margin: 0 auto;
+    padding: 15px 0px;
+    color: rgb(122, 121, 121);
+    cursor: pointer;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+span{
+    width: 1px;
+    margin: 15px 0px;
+    border: 1px solid rgb(190, 187, 187);
+}
+.but{
+    width: 35px;
+    height: 35px;
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 5px;
+    margin: 8px;
+    background-color: rgb(255,91,96);
+}
+.profile{
+    display: flex;
+}
+.home{
+    width: 160px;
+    padding: 15px;
+}
+.home a{
+    text-decoration: none;
+    color: black;
+}
+.home:hover{
+    background-color: rgb(234, 231, 231);
+    border-radius: 50px;
+}
+.profile svg{
+    width: 50px;
+    height: 30px;
+    margin: 0 auto;
+    cursor: pointer;
+    padding: 2px;
+    margin-top: 10px;
+}
+.globe:hover{
+    background-color: rgb(234, 231, 231);
+    border-radius: 50px;
+}
+.icon{
+    width: 110px;
+    border: 1px solid rgb(206, 205, 205);
+    border-radius: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.icon:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.navbar{
+    display: flex;
+    padding: 0px 70px;
+    position: fixed;
+    border: 1px solid lightgray;
+    background-color: white;
+}
+.nav2{
+    width: 1024px;
+    height: 80px;
+}
+.imgs{
+    width: 100%;
+    height: 50px;
+    padding: 20px ;
+}
+.imgs img{
+    width: 25px;
+    height: 25px;
+    margin: 0px 40px;
+    cursor: pointer;
+}
+.name{
+    display: flex;
+    font-size: small;
+    cursor: pointer;
+}
+.name .p1{
+    width: 105px;
+    margin-left: 30px;
+    text-decoration: 2px underline black;
+}
+.name .p2{
+    width: 90px;
+    margin-left: 40px;
+}
+.p2:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.name .p3{
+    width: 140px;
+}
+.p3:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.name .p4{
+    width: 110px;
+}
+.p4:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.name .p5{
+    width: 120px;
+}
+.p5:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.name .p6{
+    width: 125px;
+}
+.p6:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.name .p7{
+    width: 100px;
+}
+.p7:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.name .p8{
+    width: 130px;
+}
+.p8:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.name .p9{
+    width: 100px;
+}
+.p9:hover{
+    color: gray;
+    text-decoration: 2px underline gray;
+}
+.navicon{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    padding: 14px 5px 14px 0px;
+}
+.arrow{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 50px;
+    padding: 3px;
+    cursor: pointer;
+    border: 1px solid lightgray;
+}
+.arrow:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.filters{
+    width: 100px;
+    height: 45px;
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.filters svg{
+    margin: 9px;
+}
+.filters p{
+    margin: 11px 5px;
+    font-size: 15px;
+}
+.filters:hover{
+    border: 1px solid black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.display{
+    width: 200px;
+    height: 45px;
+    display: flex;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.display svg{
+    margin: 5px;
+    cursor: pointer;
+}
+.display p{
+    margin: 14px 5px;
+    font-size: 13px;
+}
+.display:hover{
+    border: 1px solid black;
+    background-color: whitesmoke;
+    cursor: pointer;
+}
+.section{
+    width: 100%;
+    padding: 80px 80px 60px 80px;
+    display: flex;
+    padding-top: 190px;
+    justify-content: space-between;
+}
+.card{
+    width: 24%;
+    height: 410px;
+    cursor: pointer;
+}
+.pic{
+    width: 100%;
+    height: 300px;
+}
+.pic img{
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+}
+.lines{
+    display: flex;
+}
+.text{
+    width: 80%;
+}
+.text h3{
+    margin-top: 10px;
+    font-weight: 600;
+}
+.text h4{
+    margin-top: 10px;
+    font-weight: 400;
+}
+.text p{
+    margin-top: 5px;
+    color: rgb(126, 124, 124);
+}
+.star{
+   margin-top: 8px;
+}
+.section2{
+    width: 100%;
+    padding: 0px 80px 50px ;
+    display: flex;
+    justify-content: space-between;
+}
+.last{
+    width: 100%;
+    background-color: rgb(247,247,247);
+
+}
+.last h2{
+    padding: 50px 0px 30px 80px;
+}
+.oneline{
+    display: flex;
+    padding: 0px 0px 10px 80px;
+}
+.oneline p{
+    margin-right: 20px;
+}
+.parts{
+    display: flex;
+    margin: 0px 0px 40px 80px;
+}
+.part1{
+    width: 16%;
+    cursor: pointer;
+}
+.part1 h3{
+    font-weight: 100;
+    margin-top: 40px;
+}
+.part1 p{
+    color: rgb(95, 95, 95);
+}
+.partss{
+    display: flex;
+    margin: 0px 0px 0px 80px;
+}
+.part2{
+    width: 33%;
+    padding-bottom: 40px;
+    cursor: pointer;
+}
+.part2 h3{
+    font-weight: 100;
+    margin: 40px 0px 20px 0px;
+}
+.part2 p{
+    color: rgb(95, 95, 95);
+    margin-bottom: 5px;
+}
+.footer{
+    display: flex;
+    padding: 20px 80px;
+    justify-content: space-between;
+}
+.right{
+    display: flex;
+}
+.right p{
+    padding: 5px 20px;
+}
+.right svg{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}

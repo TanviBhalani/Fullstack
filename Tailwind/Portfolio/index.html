@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<style>
+    body{
+        width: 100%;
+        background: rgb(38,36,36);
+        background: linear-gradient(180deg, rgba(38,36,36,1) 18%, rgba(48,43,48,1) 41%);
+        scroll-behavior: smooth;
+    }
+    .slideright{
+        animation: slideright 1.5s ease-in-out forwards;
+    }
+    .heroleft h4{
+        animation: slidebottom 1.5s ease forwards;
+        animation-delay: .7s;
+    }
+    .curved-text {
+      width: 200px;
+      height: 200px;
+      font-size: 30px;
+      animation: rotate 5s linear infinite;
+    }
+    .round{
+        color: white;
+    }
+    .one{
+        box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    }
+    .box{
+        background: rgb(51,50,50);
+        background: linear-gradient(180deg, rgba(51,50,50,0.6027661064425771) 0%, rgba(81,80,81,0.44030112044817926) 0%);
+    }
+
+    @keyframes slideright{
+        0%{
+            transform: translateX(-200px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateX(0px);
+            opacity: 1;
+        }   
+    }
+    @keyframes slidebottom{
+        0%{
+            transform: translateY(-100px);
+            opacity: 0;
+        }
+        100%{
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+    @keyframes rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    
+</style>
+<body>
+         
+    <nav class="w-100% h-20 flex justify-between max-2xl:w-[100%]">
+        <div class="slideright flex">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 36 36" class="m-4 ml-10 mr-2 max-2xl:w-10 max-2xl:h-10"><path fill="#9266cc" d="M35 36v-7c0-3.315-3.685-5.5-7-5.5H16c-3.313 0-7 2.185-7 5.5v7z"/><path fill="#ffac33" d="M21.944 1.569c4.106 0 10.948 2.053 10.948 10.948s0 10.948-2.053 10.948s-4.79-2.053-8.896-2.053c-4.105 0-6.784 2.053-8.895 2.053c-2.287 0-2.053-8.211-2.053-10.948c.002-8.895 6.844-10.948 10.949-10.948"/><path fill="#ffdc5d" d="M18.328 23.52C18.328 25 20.5 25.5 22 25.5s3.66-.5 3.66-1.98v-3.205h-7.332z"/><path fill="#f9ca55" d="M18.321 21.679c1.023 1.155 2.291 1.468 3.669 1.468s2.647-.312 3.67-1.468v-2.936h-7.339z"/><path fill="#ffdc5d" d="M13.734 12.217c0-5.834 3.676-10.563 8.21-10.563s8.211 4.729 8.211 10.563c0 5.833-3.677 10.286-8.211 10.286s-8.21-4.452-8.21-10.286"/><path fill="#df1f32" d="M21.944 20.043c-1.605 0-2.446-.794-2.536-.885a.684.684 0 0 1 .96-.974c.035.032.553.491 1.576.491c1.039 0 1.557-.473 1.577-.492a.69.69 0 0 1 .963.02c.26.269.26.691-.004.955c-.089.091-.929.885-2.536.885"/><path fill="#ffac33" d="M11.725 15.5c-.021-1-.044-.224-.044-.465c0-3.422 2.053.494 2.053-1.943c0-2.439 1.368-2.683 2.736-4.051c.685-.685 2.053-2.026 2.053-2.026s3.421 2.067 6.158 2.067c2.736 0 5.474 1.375 5.474 4.112s2.053-1.584 2.053 1.837c0 .244-.022-.531-.04.469h.718c.007-2 .007-1.924.007-3.202C32.893 3.403 26.05.091 21.945.091S10.998 3.348 10.998 12.243c0 .793-.02 1.257.008 3.257z"/><path fill="#662113" d="M18.608 14.386a.85.85 0 0 1-.846-.846v-.845c0-.465.381-.846.846-.846s.847.381.847.846v.845a.85.85 0 0 1-.847.846m6.765 0a.85.85 0 0 1-.846-.846v-.845c0-.465.381-.846.846-.846s.846.381.846.846v.845a.85.85 0 0 1-.846.846"/><path fill="#c1694f" d="M22.837 17h-1.691a.424.424 0 0 1-.423-.423v-.153c0-.233.189-.424.423-.424h1.691c.232 0 .423.19.423.424v.153a.424.424 0 0 1-.423.423"/><path fill="#ffdc5d" d="M15.444 13.436c0 1.448-.734 2.622-1.639 2.622s-1.639-1.174-1.639-2.622s.734-2.623 1.639-2.623c.905-.001 1.639 1.174 1.639 2.623m16.389 0c0 1.448-.733 2.622-1.639 2.622c-.905 0-1.639-1.174-1.639-2.622s.733-2.623 1.639-2.623c.906-.001 1.639 1.174 1.639 2.623"/><path fill="#e1e8ed" d="M33 35a1 1 0 0 1-1 1H22a1 1 0 1 1 0-2h10a1 1 0 0 1 1 1"/><path fill="#e1e8ed" d="M20.24 22H3.759c-1.524 0-3.478.771-2.478 3.531l3.072 8.475C4.354 34.006 4.75 36 7 36h20l-4-11.24c-.438-1.322-1.235-2.76-2.76-2.76"/><path fill="#99aab5" d="M19.24 22H2.759c-1.524 0-3.478.771-2.478 3.531l3.072 8.475C3.354 34.006 3.75 36 6 36h20l-4-11.24c-.438-1.322-1.235-2.76-2.76-2.76"/><path fill="#e1e8ed" d="M14.019 29.283c.524 1.572.1 3.13-.949 3.479c-1.047.35-2.322-.641-2.846-2.213s-.099-3.13.949-3.479s2.323.641 2.846 2.213M19 24.75H3a.75.75 0 0 1 0-1.5h16a.75.75 0 0 1 0 1.5"/></svg>
+            <h1 class="text-white text-5xl text-bold p-5 font-serif max-2xl:text-3xl">Portfolio</h1>
+        </div>
+        <ul class="flex text-white w-160 justify-between p-5 text-2xl pt-8 mr-8 max-2xl:text-xl">
+            <li><a href="#home" class="hover:text-yellow-500">Home</a></li>
+            <li><a href="#about" class="hover:text-yellow-500">About</a></li>
+            <li><a href="#skills" class="hover:text-yellow-500">Skills</a></li>
+            <li><a href="#work" class="hover:text-yellow-500">Work</a></li>
+            <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="hero flex max-2xl:w-[100%]" id="home">
+        <div class="heroleft m-25 mt-40 max-2xl:m-20 max-2xl:mt-40">
+            <h4 class="text-white text-3xl text-bold max-2xl:text-2xl">Hello, It's Me</h4>
+            <h1 class="text-white text-5xl text-bold leading-relaxed max-2xl:text-3xl">Tanvi Bhalani</h1>
+            <h4 class="text-white text-3xl text-bold max-2xl:text-2xl">And I'm a <span class="text-yellow-500">Web Developer</span></h4>
+            <p class="text-white text-lg w-200 mt-10 max-2xl:text-base">
+                Hi there! I'm Tanvi, a passionate web developer with a keen eye for design and a knack for solving complex problems. With a strong foundation in HTML, CSS, Bootstrap, C-language and Tailwind, I've built dynamic, user-friendly websites that deliver exceptional user experiences. I'm dedicated to continuous learning and staying updated with the latest industry trends. Let's bring your ideas to life with clean, efficient code and innovative solutions!
+            </p>
+        </div>
+        <div class="heroright">
+            <img src="https://static.vecteezy.com/system/resources/previews/042/165/684/non_2x/a-woman-in-a-business-suit-holding-a-laptop-free-png.png" alt="" class="max-2xl:w-190 max-2xl:h-90 max-2xl:mt-30 max-2xl:-ml-10">
+        </div>
+    </div>
+
+
+    <div class="education mt-30" id="about">
+        <h4 class="text-white text-2xl text-center text-yellow-500 max-2xl:text-xl">My Journey</h4>
+        <h2 class="text-white text-5xl text-center max-2xl:text-4xl">Qualifications</h2>
+        <div class="edu flex ml-50 mt-30 max-2xl:ml-20">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="40" viewBox="0 0 512 512"><path fill="#fff" d="m368 350.643l-112 63l-112-63v-66.562l-32-17.778v103.054l144 81l144-81V266.303l-32 17.778z"/><path fill="#fff" d="M256 45.977L32 162.125v27.734L256 314.3l192-106.663V296h32V162.125Zm160 142.831l-32 17.777L256 277.7l-128-71.115l-32-17.777l-22.179-12.322L256 82.023l182.179 94.463Z"/></svg>
+            <p class="text-2xl text-white m-1 ml-3 text-normal">Education</p>
+        </div>
+        <div class="field flex">
+            <div class="point flex  m-10">
+                <div class="left ml-42 max-2xl:ml-10">
+                    <div class="dot w-4 h-4 bg-red-400 rounded-full"></div>
+                    <div class="line w-0.5 h-15 bg-red-400 ml-1.5"></div>
+                </div>
+                <div class="right">
+                    <h2 class="text-2xl text-white m-2 w-60">Fullstack Development</h2>
+                    <h2 class="text-xl text-white m-2">(Red and White Institute)</h2>
+                    <div class="date flex mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#cfd8dc" d="M5 38V14h38v24c0 2.2-1.8 4-4 4H9c-2.2 0-4-1.8-4-4"/><path fill="#f44336" d="M43 10v6H5v-6c0-2.2 1.8-4 4-4h30c2.2 0 4 1.8 4 4"/><g fill="#b71c1c"><circle cx="33" cy="10" r="3"/><circle cx="15" cy="10" r="3"/></g><path fill="#b0bec5" d="M33 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2M15 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2"/><path fill="#90a4ae" d="M13 20h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>
+                        <h3 class="text-white ml-2">2025 - Present</h3>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="point flex ml-40 m-10 max-2xl:ml-30">
+                <div class="left ml-42 ">
+                    <div class="dot w-4 h-4 bg-red-400 rounded-full"></div>
+                    <div class="line w-0.5 h-15 bg-red-400 ml-1.5"></div>
+                </div>
+                <div class="right">
+                    <h2 class="text-2xl text-white m-2 w-120"> Bachelor of Computer Applications (BCA) </h2>
+                    <h2 class="text-xl text-white m-2">(Saurashtra University)</h2>
+                    <div class="date flex mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#cfd8dc" d="M5 38V14h38v24c0 2.2-1.8 4-4 4H9c-2.2 0-4-1.8-4-4"/><path fill="#f44336" d="M43 10v6H5v-6c0-2.2 1.8-4 4-4h30c2.2 0 4 1.8 4 4"/><g fill="#b71c1c"><circle cx="33" cy="10" r="3"/><circle cx="15" cy="10" r="3"/></g><path fill="#b0bec5" d="M33 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2M15 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2"/><path fill="#90a4ae" d="M13 20h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>
+                        <h3 class="text-white ml-2">2024 - 2027</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="field flex">
+            <div class="point flex  m-10">
+                <div class="left ml-42 max-2xl:ml-10">
+                    <div class="dot w-4 h-4 bg-red-400 rounded-full"></div>
+                    <div class="line w-0.5 h-15 bg-red-400 ml-1.5"></div>
+                </div>
+                <div class="right">
+                    <h2 class="text-2xl text-white m-2 w-120">Higher Secondary School Certificate (HSC)</h2>
+                    <h2 class="text-xl text-white m-2">(K.G. Dholakiya School)</h2>
+                    <div class="date flex mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#cfd8dc" d="M5 38V14h38v24c0 2.2-1.8 4-4 4H9c-2.2 0-4-1.8-4-4"/><path fill="#f44336" d="M43 10v6H5v-6c0-2.2 1.8-4 4-4h30c2.2 0 4 1.8 4 4"/><g fill="#b71c1c"><circle cx="33" cy="10" r="3"/><circle cx="15" cy="10" r="3"/></g><path fill="#b0bec5" d="M33 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2M15 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2"/><path fill="#90a4ae" d="M13 20h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>
+                        <h3 class="text-white ml-2">2022 - 2024</h3>
+                    </div>
+                </div>
+    
+            </div>
+            <div class="point flex -ml-10 m-10">
+                <div class="left ml-42 max-2xl:ml-25">
+                    <div class="dot w-4 h-4 bg-red-400 rounded-full"></div>
+                    <div class="line w-0.5 h-15 bg-red-400 ml-1.5"></div>
+                </div>
+                <div class="right">
+                    <h2 class="text-2xl text-white m-2">Secondary School Certificate (SSC)</h2>
+                    <h2 class="text-xl text-white m-2">(Pathak School)</h2>
+                    <div class="date flex mt-5">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><path fill="#cfd8dc" d="M5 38V14h38v24c0 2.2-1.8 4-4 4H9c-2.2 0-4-1.8-4-4"/><path fill="#f44336" d="M43 10v6H5v-6c0-2.2 1.8-4 4-4h30c2.2 0 4 1.8 4 4"/><g fill="#b71c1c"><circle cx="33" cy="10" r="3"/><circle cx="15" cy="10" r="3"/></g><path fill="#b0bec5" d="M33 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2M15 3c-1.1 0-2 .9-2 2v5c0 1.1.9 2 2 2s2-.9 2-2V5c0-1.1-.9-2-2-2"/><path fill="#90a4ae" d="M13 20h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm-18 6h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4zm6 0h4v4h-4z"/></svg>
+                        <h3 class="text-white ml-2">2020 - 2022</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="skills" id="skills">
+        <h4 class="text-yellow-500 text-3xl text-center mt-50 max-2xl:text-xl">Skills</h4>
+        <h1 class="text-white text-5xl text-center max-2xl:text-4xl">My Abilities</h1>
+        <div class="boxes m-30 flex justify-between ml-50 mr-50 max-2xl:ml-40 max-2xl:mr-30">
+            <div class="one w-50 h-50 shadow-2xl rounded-3xl hover:animate-bounce">
+                <img src="/HTML5_logo_and_wordmark.svg.png" alt="" class="p-10">
+                <h1 class="text-white text-4xl ml-12 mt-3 max-2xl:text-3xl">HTML</h1>
+            </div>
+            <div class="one w-50 h-50 shadow-2xl rounded-3xl hover:animate-bounce">
+                <img src="/png-clipart-cascading-style-sheets-css3-javascript-logo-world-wide-web-blue-angle-thumbnail-removebg-preview.png" alt="" class="p-10">
+                <h1 class="text-white text-4xl ml-16 mt-3 max-2xl:text-3xl max-2xl:mt-6">CSS</h1>
+            </div>
+            <div class="one w-50 h-50 shadow-2xl rounded-3xl hover:animate-bounce">
+                <img src="/Bootstrap_logo.svg-removebg-preview.png" alt="" class="p-9 pt-10">
+                <h1 class="text-white text-4xl ml-7 mt-9 max-2xl:text-3xl">Bootstrap</h1>
+            </div>
+            <div class="one w-50 h-50 shadow-2xl rounded-3xl hover:animate-bounce">
+                <img src="/tailwindcss-icon-icon-lg.png" alt="" class="p-8 pt-13">
+                <h1 class="text-white text-4xl ml-8 mt-11 max-2xl:text-3xl max-2xl:mt-13">Tailwind</h1>
+            </div>
+        </div>
+
+        <h4 class="text-yellow-500 text-3xl text-center mt-50 max-2xl:text-2xl">Others</h4>
+        <div class="boxes m-30 mt-20 flex justify-between ml-120 mr-120 max-2xl:ml-90 max-2xl:mr-90">
+            <div class="one w-50 h-50 shadow-2xl rounded-3xl hover:animate-bounce">
+                <img src="/Adobe-Photoshop-Logo-2015-2019.png" alt="" class="pt-10">
+                <h1 class="text-white text-4xl ml-4 mt-16 max-2xl:text-3xl">Photoshop</h1>
+            </div>
+            <div class="one w-50 h-50 shadow-2xl rounded-3xl hover:animate-bounce">
+                <img src="/Adobe_Illustrator-Logo.wine.png" alt="" class="pt-7">
+                <h1 class="text-white text-4xl ml-7 mt-14 max-2xl:text-3xl">Illustrator</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="works" id="work">
+        <h4 class="text-yellow-500 text-3xl text-center mt-60 max-2xl:text-2xl">Projects</h4>
+        <h1 class="text-white text-5xl text-center max-2xl:text-4xl">Recent Works</h1>
+    </div>
+
+    <div class="projects flex justify-between m-20 max-2xl:ml-5 max-2xl:mr-0">
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Spotify.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Spotify Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Spotify/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Spotify/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Airbnb.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Airbnb Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Airbnb/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Airbnb/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Hotstar.png" alt="" class=" w-95 mt-2 max-2xl:w-85 cursor-pointer"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Hotstar Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Hotstar/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Hotstar/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+    </div>
+
+    <div class="projects flex justify-between m-20 max-2xl:ml-5 max-2xl:mr-0">
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Jiomart.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Jio Mart Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/JioMart/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/JioMart/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/DC.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">DC Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/PROJECT3 (DC)/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/PROJECT3 (DC)/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Starbucks.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Starbucks Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/STARBUCKS/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/STARBUCKS/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+    </div>
+
+    <div class="projects flex justify-between m-20 max-2xl:ml-5 max-2xl:mr-0">
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Pluralsight.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Pluralsight Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Pluralsight/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Pluralsight/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Swiggy.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Swiggy Instamart Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Swiggy Instamart/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Swiggy Instamart/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Noise.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Noise Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/NOISE/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/NOISE/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+    </div>
+
+    <div class="projects flex justify-between m-20 max-2xl:ml-5 max-2xl:mr-0">
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Apple.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Apple Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Apple/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Apple/index..html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Deli Break.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Deli Break Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Deli Break/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Deli Break/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Megakit.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Megakit Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Figma to HTML4/">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Figma to HTML4/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+    </div>
+
+    <div class="projects flex justify-between m-20 max-2xl:ml-5 max-2xl:mr-0">
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Ardian.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Ardian Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Webpage5/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Webpage5/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Browseinfo.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Browseinfo Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Webpage7/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Webpage7/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+        <div class="work hover: translate-y-[18px] bg-[#808080] w-100 rounded-2xl flex flex-col items-center justify-start max-2xl:w-90"> 
+            <img src="/images/Beyoung.png" alt="" class=" w-95 mt-2 cursor-pointer max-2xl:w-85"> 
+            <h2 class="pt-3 text-2xl font-semibold text-white">Beyoung Clones</h2> 
+            <div class="flex gap-5 text-ig text-[#FSCC4D] py-5"> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Project 1/style.css">Get Coder</a></button> 
+                <button class="flex items-center gap-3 py-1 px-2 border-2 hover:text-black text-white"><a target="blank" href="./Websites/Project 1/index.html">Live Demo </a></button>
+            </div> 
+        </div> 
+    </div>
+
+
+    <div class="works" id="contact">
+        <h4 class="text-yellow-500 text-3xl text-center mt-60 max-2xl:text-xl">Get in touch</h4>
+        <h1 class="text-white text-5xl text-center max-2xl:text-4xl">Contact Me</h1>
+    </div>
+
+
+   <div class="last flex">
+      <div class="left mt-20 ml-90 max-2xl:ml-50">
+        <div class="box w-80 h-50 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 24 24" class="ml-35 m-5 pt-3"><path fill="#fff" d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2zm-2 0l-8 5l-8-5zm0 12H4V8l8 5l8-5z"/></svg>
+            <p class="text-white text-2xl text-center">Email :</p>
+            <p class="cursor-pointer text-white text-xl text-center">tanvibhalani@gmail.com</p>
+            <div class="line flex content-center justify-center mt-4 cursor-pointer">
+                <span class="text-yellow-500">Write me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 15 15"><path fill="#b18e10" d="m8.146 9.146l-.353.354l.707.707l.354-.353zM10.5 7.5l.354.354l.353-.354l-.353-.354zM8.854 5.146L8.5 4.793l-.707.707l.353.354zm0 4.708l2-2l-.708-.708l-2 2zm2-2.708l-2-2l-.708.708l2 2zM10.5 7H4v1h6.5z"/></svg>
+            </div>
+        </div>
+        <div class="box w-80 h-50 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="ml-35 m-5 pt-3"><path fill="#fff" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
+            <p class="text-white text-xl text-center">Whatsapp :</p>
+            <p class="cursor-pointer text-white text-2xl text-center">81414 52353</p>
+            <div class="line flex content-center justify-center mt-4 cursor-pointer">
+                <span class="text-yellow-500">Write me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 15 15"><path fill="#b18e10" d="m8.146 9.146l-.353.354l.707.707l.354-.353zM10.5 7.5l.354.354l.353-.354l-.353-.354zM8.854 5.146L8.5 4.793l-.707.707l.353.354zm0 4.708l2-2l-.708-.708l-2 2zm2-2.708l-2-2l-.708.708l2 2zM10.5 7H4v1h6.5z"/></svg>
+            </div>
+        </div>
+        <div class="box w-80 h-50 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="ml-35 m-5 pt-3"><path fill="#fff" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
+            <p class="text-white text-xl text-center">Linkedin :</p>
+            <p class="cursor-pointer text-white text-2xl text-center">Tanvi Bhalani</p>
+            <div class="line flex content-center justify-center mt-4 cursor-pointer">
+                <span class="text-yellow-500">Write me</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26px" height="26px" viewBox="0 0 15 15"><path fill="#b18e10" d="m8.146 9.146l-.353.354l.707.707l.354-.353zM10.5 7.5l.354.354l.353-.354l-.353-.354zM8.854 5.146L8.5 4.793l-.707.707l.353.354zm0 4.708l2-2l-.708-.708l-2 2zm2-2.708l-2-2l-.708.708l2 2zM10.5 7H4v1h6.5z"/></svg>
+            </div>
+        </div>
+    
+      </div>
+
+      <div class="right mt-30 ml-20">
+          <div class="contact">
+            <input type="text" class="input w-100 text-white text-xl p-3 border-1 rounded-lg" placeholder="Username">
+          </div>
+          <div class="contact mt-8">
+            <input type="email" class="input w-100 text-white text-xl p-3 border-1 rounded-lg" placeholder="Email">
+          </div>
+          <div class="contact mt-8">
+            <input type="number" class="input w-100 text-white text-xl p-3 border-1 rounded-lg" placeholder="Phone">
+          </div>
+          <div class="contact mt-8">
+            <input type="text" class="input w-100  h-40 text-white text-xl pb-19 pl-3 border-1 rounded-lg" placeholder="Message">
+          </div>
+          <div class="button w-50  p-3 h-14 pl-4 flex bg-red-500 rounded-lg mt-20 cursor-pointer hover:bg-gray-500">
+             <svg xmlns="http://www.w3.org/2000/svg" width="30px" height="30px" viewBox="0 0 26 26"><path fill="#fff" d="M0 2v8.5L15 13L0 15.5V24l26-11z"/></svg>
+             <p class="text-xl text-white ml-2">Send Message</p>
+          </div>
+      </div>
+
+
+
+
+   </div>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+
+
+   <div class="footer w-[100%] h-50 bg-[#3F3B3F] flex max-2xl:w-298">
+       <div class="left ml-25 pt-10">
+           <h1 class="text-3xl text-white max-2xl:text-2xl max-2xl:w-70">Tanvi Bhalani</h1>
+           <p class="text-white text-lg mt-2">Fullstack Developer</p>
+       </div>
+       <div class="center text-white text-2xl w-90 flex justify-between ml-70 mt-15 max-2xl:ml-10">
+           <a href="#skills">Services</a>
+           <a href="#work">Work</a>
+           <a href="#contact">Contact</a>
+       </div>
+       <div class="right flex ml-75 w-40 cursor-pointer mt-15 justify-between">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="#fff" d="M19.05 4.91A9.82 9.82 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01m-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.26 8.26 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23m4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07s.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="#fff" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24"><path fill="#fff" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"/></svg>
+       </div>
+   </div>
+
+
+
+
+
+
+    
+</body>
+</html>

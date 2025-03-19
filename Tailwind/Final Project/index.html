@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Tea Bloom's</title>
+    <link rel="icon" href="/images/Little-IT-House-Favicon.png">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <style>
+        .hero{
+            background-image: url(/images/home.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        .nav1{
+            background-color: rgba(0,0,0,0.5);
+        }
+        .nav2{
+            background-color: rgba(0,0,0,0.5);
+        }
+        .boxes .box1{
+            background-image: url(/images/1.jpg);
+            background-size: contain;
+        }
+        .boxes .box1:hover{
+            background-image: url(/images/\(1\ \).jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box2{
+            background-image: url(/images/2.jpg);
+            background-size: contain;
+        }
+        .boxes .box2:hover{
+            background-image: url(/images/\(2\).jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box3{
+            background-image: url(/images/3.jpg);
+            background-size: contain;
+        }
+        .boxes .box3:hover{
+            background-image: url(/images/\(3\).jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box4{
+            background-image: url(/images/4.jpg);
+            background-size: contain;
+        }
+        .boxes .box4:hover{
+            background-image: url(/images/\(4\).jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box5{
+            background-image: url(/images/DarjeelingOolongTeamainImageSAN.png);
+            background-size: contain;
+        }
+        .boxes .box5:hover{
+            background-image: url(/images/SilverNeedle_300x.jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box6{
+            background-image: url(/images/PineappleOolongTeaMainImageSan.png);
+            background-size: contain;
+        }
+        .boxes .box6:hover{
+            background-image: url(/images/SkinGlow_400x400.jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box7{
+            background-image: url(/images/SpearmintTea01.jpg);
+            background-size: contain;
+        }
+        .boxes .box7:hover{
+            background-image: url(/images/MoroccanMint_400x400.jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box8{
+            background-image: url(/images/LycheeTeaMainImageSAN.png);
+            background-size: contain;
+        }
+        .boxes .box8:hover{
+            background-image: url(/images/SilverNeedle_400x400.jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box9{
+            background-image: url(/images/ChristmasCake02-min.jpg);
+            background-size: contain;
+        }
+        .boxes .box9:hover{
+            background-image: url(/images/MoroccanMint_400x400.jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box10{
+            background-image: url(/images/CinnamonandCloveMainImageSAN-min.jpg);
+            background-size: contain;
+        }
+        .boxes .box10:hover{
+            background-image: url(/images/SilverNeedle_400x400.jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box11{
+            background-image: url(/images/lavender-black-teas.jpg);
+            background-size: contain;
+        }
+        .boxes .box11:hover{
+            background-image: url(/images/SkinGlow_400x400.jpg);
+            transition: 0.7 all;
+        }
+        .boxes .box12{
+            background-image: url(/images/MoringaTulsiTea.jpg);
+            background-size: contain;
+        }
+        .boxes .box12:hover{
+            background-image: url(/images/SilverNeedle_400x400.jpg);
+            transition: 0.7 all;
+        }
+        .page4{
+            background-image: url(/images/f61af8_f7d4d444a52e4609a8bfe80e964456b2~mv2_d_4528_2214_s_2.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+ 
+
+    </style>
+    <div class="hero w-[100%] h-180 max-2xl:w-[134%] max-sm:w-[324%] max-sm:h-300 max-xl:w-[208%]" style="background-image: url(/images/home.jpg);">
+        <div class="navbar">
+            <div class="nav1 w-[100%] h-15 flex p-4 justify-between fixed p-4 max-sm:h-19">
+                <div class="navleft">
+                    <div class="search flex pl-8">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="mr-2"><path fill="#939393" d="M15.096 5.904a6.5 6.5 0 1 0-9.192 9.192a6.5 6.5 0 0 0 9.192-9.192M4.49 4.49a8.5 8.5 0 0 1 12.686 11.272l5.345 5.345l-1.414 1.414l-5.345-5.345A8.501 8.501 0 0 1 4.49 4.49"/></svg>
+                        <input type="text" placeholder="Search..." class="text-white w-50 text-lg max-sm:text-2xl" style="outline: none;">
+                    </div>
+                </div>
+                <div class="navright flex justify-between w-50 mr-10 cursor-pointer">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 512 512"><path fill="#fff" fill-rule="evenodd" d="M256 42.667A213.333 213.333 0 0 1 469.334 256c0 117.821-95.513 213.334-213.334 213.334c-117.82 0-213.333-95.513-213.333-213.334C42.667 138.18 138.18 42.667 256 42.667m21.334 234.667h-42.667c-52.815 0-98.158 31.987-117.715 77.648c30.944 43.391 81.692 71.685 139.048 71.685s108.104-28.294 139.049-71.688c-19.557-45.658-64.9-77.645-117.715-77.645M256 106.667c-35.346 0-64 28.654-64 64s28.654 64 64 64s64-28.654 64-64s-28.653-64-64-64"/></svg>
+                    <p class="text-white text-lg -ml-15 max-sm:text-2xl">Log In</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 512 512"><path fill="#fff" d="M256 23c-35 0-62 17.92-79.3 41.71c-11.9 16.38-19.6 35.49-23.2 54.29H172c3.4-15.2 9.9-30.77 19.3-43.71C206 55.08 227 41 256 41s50 14.08 64.7 34.29c9.4 12.94 15.9 28.51 19.3 43.71h18.5c-3.6-18.8-11.3-37.91-23.2-54.29C318 40.92 291 23 256 23M88.25 137L57.81 487H454.2l-30.4-350zM160 160a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16m192 0a16 16 0 0 1 16 16a16 16 0 0 1-16 16a16 16 0 0 1-16-16a16 16 0 0 1 16-16"/></svg>
+    
+                </div>
+    
+            </div>
+            <div class="line w-[100%] h-0.25 -mt-5 bg-white fixed mt-14 max-sm:mt-17"></div>
+        </div>
+
+        <div class="nav2 w-[100%] h-17 mt-15 fixed flex max-sm:mt-18 max-sm:h-20">
+            <div class="left text-white flex">
+                <ul class="flex p-4 text-lg w-100 justify-between ml-18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="sm:hidden"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                    <li><a href="" class="hover:text-yellow-400 max-sm:hidden">Teas</a></li>
+                    <li><a href="" class="hover:text-yellow-400 max-sm:hidden">Extras</a></li>
+                    <li><a href="" class="hover:text-yellow-400 max-sm:hidden">About</a></li>
+                    <li><a href="" class="hover:text-yellow-400 max-sm:hidden">Blog</a></li>
+                    <li><a href="" class="hover:text-yellow-400 max-sm:hidden">Contact</a></li>
+                </ul>
+                <div class="straight w-0.25 h-15 bg-white ml-50 max-sm:-ml-10"></div>
+                <p class="text-2xl p-3 pl-10 cursor-pointer max-2xl:w-50 max-sm:text-4xl max-sm:w-90 max-sm:ml-10">BLOOM'S TEA</p>
+                <div class="straight w-0.25 h-15 bg-white ml-10"></div>
+
+            </div>
+            <div class="right flex w-40 justify-between m-4 ml-100 max-2xl:ml-50">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="cursor-poniter"><path fill="#fff" d="m12 5.69l5 4.5V18h-2v-6H9v6H7v-7.81zM12 3L2 12h3v8h6v-6h2v6h6v-8h3"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 16 16" class="cursor-poniter"><path fill="#fff" d="M8 2.002a1.998 1.998 0 1 0 0 3.996a1.998 1.998 0 0 0 0-3.996M12.5 3a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3m-9 0a1.5 1.5 0 1 0 0 3a1.5 1.5 0 0 0 0-3M5 7.993A1 1 0 0 1 6 7h4a1 1 0 0 1 1 1v3a3 3 0 0 1-.146.927A3.001 3.001 0 0 1 5 11zM4 8c0-.365.097-.706.268-1H2a1 1 0 0 0-1 1v2.5a2.5 2.5 0 0 0 3.436 2.319A4 4 0 0 1 4 10.999zm8 0v3c0 .655-.157 1.273-.436 1.819A2.5 2.5 0 0 0 15 10.5V8a1 1 0 0 0-1-1h-2.268c.17.294.268.635.268 1"/></svg> 
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" class="cursor-poniter"><path fill="#fff" d="M4 20q-.825 0-1.412-.587T2 18V6q0-.825.588-1.412T4 4h16q.825 0 1.413.588T22 6v12q0 .825-.587 1.413T20 20zm8-7L4 8v10h16V8zm0-2l8-5H4zM4 8V6v12z"/></svg>               
+            </div>
+        </div>
+        <div class="line w-[100%] h-0.25 -mt-5 bg-white fixed mt-30 mt-1 max-sm:mt-34"></div>
+        <div class="line w-[100%] h-0.25 -mt-5 bg-white fixed mt-32 mt-1 max-sm:mt-36"></div>
+
+
+
+        <h1 class="text-white text-5xl break-normal text-center pt-75 font-light max-sm:text-8xl max-sm:pt-85">It's Always Tea Time</h1>
+        <h1 class="text-white text-6xl mt-5 font-serif text-center italic max-sm:text-9xl max-sm:mt-10">With Bloom's Herbal Tea</h1>
+        <button class="text-white px-8 py-2 border-1 hover:bg-gray-300 hover:text-black ml-165 mt-8 max-sm:text-3xl max-sm:ml-150 max-sm:mt-15 max-lg:ml-150">SHOP NOW</button>
+
+
+    </div>
+     
+    <div class="name m-20 flex justify-center content-center max-2xl:w-[115%] max-sm:w-[290%] max-xl:w-[200%]">
+        <div class="long w-70 h-0.5 bg-black mt-5 ml-5 mr-5"></div>
+        <h1 class="italic text-5xl font-serif max-sm:text-6xl">New Arrivals</h1>
+        <div class="long w-70 h-0.5 bg-black mt-5 ml-5 mr-5"></div>
+    </div>
+
+    <div class="para max-2xl:ml-90">
+        <p class="text-center max-2xl:w-190 max-sm:w-190 max-sm:text-2xl max-sm:-ml-20 max-xl:text-2xl max-xl:ml-30 max-xl:w-290">We started the journey in 2010 and today Tea Culture Of The World delights tea connoisseurs across India.</p>
+        <p class="text-center mt-1 max-sm:w-150 max-sm:text-2xl max-sm:ml-1 max-xl:text-2xl max-xl:w-250 max-xl:ml-45">The world with its signature blends of over 80 exquisite herbal and flavoured teas.</p>
+        <p class="text-center mt-1 max-sm:w-100 max-sm:text-2xl max-sm:ml-15 max-sm:mb-20 max-xl:text-2xl max-xl:w-100 max-xl:mb-30 max-xl:ml-130">Each, an experience unto itself.</p>
+    </div>
+
+    <div class="boxes m-10 flex justify-between max-2xl:ml-3 max-2xl:justify-between max-2xl:w-[117%] max-2xl:mb-90 max-sm:w-[270%] max-sm:flex-col max-sm:h-1200 max-xl:w-[180%] max-xl:mb-80 max-xl:m-20">
+        <div class="product max-2xl:w-50 max-2xl:h-70 max-lg:ml-10 ">
+            <div class="box1 w-85 h-90 max-sm:w-230 max-sm:h-230 max-sm:m-15 max-sm:ml-2 " style="background-image: url(/images/1.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+              <h1 class="text-center m-6 text-2xl mb-1 max-2xl:w-50 max-2xl:ml-20 max-sm:text-6xl max-sm:w-150 max-sm:ml-50">Hibiscus Flower</h1>
+              <p class="text-center font-medium text-2xl max-2xl:ml-30 max-sm:text-5xl max-sm:ml-100 max-sm:mt-5">$15.00</p>
+        </div>
+        <div class="product max-2xl:w-50 max-2xl:h-70 max-sm:justify-center max-sm:content-center">
+            <div class="box2 w-85 h-90 max-sm:w-230 max-sm:h-230 max-sm:m-15 max-sm:justify-center max-sm:content-center max-sm:-mt-55 " style="background-image: url(/images/2.jpg);background-repeat: no-repeat; background-size: cover;"></div>
+            <h1 class="text-center m-6 text-2xl mb-1 max-2xl:w-50 max-2xl:ml-20 max-2xl:w-50 max-2xl:ml-20 max-sm:text-6xl max-sm:w-150 max-sm:ml-50">Chamomile Tea</h1>
+            <p class="text-center font-medium text-2xl max-2xl:ml-30 max-sm:text-5xl max-sm:ml-100 max-sm:mt-5">$18.00</p>
+        </div>
+        <div class="product max-2xl:w-50 max-2xl:h-70">
+            <div class="box3 w-85 h-90 max-sm:w-230 max-sm:h-230 max-sm:m-15 max-sm:ml-10 max-sm:-mt-120  max-lg:w-77" style="background-image: url(/images/3.jpg);background-repeat: no-repeat; background-size: cover;"></div>
+            <h1 class="text-center m-6 text-2xl mb-1 max-2xl:w-50 max-2xl:ml-20 max-sm:text-6xl max-sm:w-150 max-sm:ml-50">Raspberry Leaves</h1>
+            <p class="text-center font-medium text-2xl max-2xl:ml-30 max-sm:text-5xl max-sm:ml-100 max-sm:mt-5">$18.00</p>
+        </div>
+        <div class="products max-2xl:w-50 max-2xl:h-70">
+            <div class="box4 w-85 h-90 max-sm:w-230 max-sm:h-230 max-sm:m-15 max-sm:ml-10 max-sm:-mt-185  max-lg:w-77" style="background-image: url(/images/4.jpg);background-repeat: no-repeat; background-size: cover;"></div>
+            <h1 class="text-center m-6 text-2xl mb-1 max-2xl:w-50 max-2xl:ml-20 max-sm:text-6xl max-sm:w-150 max-sm:ml-50">Rosemary Specials</h1>
+            <p class="text-center font-medium text-2xl max-2xl:ml-30 max-sm:text-5xl max-sm:ml-100 max-sm:mt-5">$20.00</p>
+        </div>
+
+    </div>
+
+    <div class="page2 bg-[#F5FBE9] h-150 w-[100%] mt-30 mb-30 max-2xl:w-[134%] max-sm:w-[320%] max-sm:h-900 max-lg:w-[207%] max-xl:w-[208%]">
+        <h1 class="text-center text-green-800 text-4xl italic font-serif p-15 max-sm:text-6xl">Shop by Category</h1>
+        <div class="circles flex max-sm:flex-col max-xl:ml-70">
+            <div class="ml-30 max-2xl:ml-20">
+                <div class="circle1 w-70 h-70 max-sm:w-150 max-sm:ml-0 max-sm:h-150" style="background-image: url(/images/gift-boxes.png); background-size: cover; background-repeat: no-repeat;"></div>
+                <h1 class="text-xl font-medium ml-25 mt-5 max-sm:text-5xl max-sm:ml-55">Gift Boxes</h1>
+                <p class="ml-27 text-sm max-sm:text-3xl max-sm:ml-65 max-sm:mt-3">61 Products</p>
+            </div>
+            <div class="ml-10">
+                <div class="circle1 w-70 h-70 max-sm:w-150 max-sm:h-150 max-sm:ml-17 max-sm:mt-30" style="background-image: url(/images/green-tea.png); background-size: cover;background-repeat: no-repeat;"></div>
+                <h1 class="text-xl font-medium ml-25 mt-5 max-sm:text-5xl max-sm:ml-70 max-sm:mt-10">Green Teas</h1>
+                <p class="ml-27 text-sm max-sm:text-3xl max-sm:ml-80 max-sm:mt-3">32 Products</p>
+            </div>
+            <div class="ml-10">
+                <div class="circle1 w-70 h-70 max-sm:w-150 max-sm:h-150 max-sm:ml-15 max-sm:mt-30" style="background-image: url(/images/herbal-tea.png); background-size: cover;background-repeat: no-repeat;"></div>
+                <h1 class="text-xl font-medium ml-25 mt-5 max-sm:text-5xl max-sm:ml-70 max-sm:mt-10">Herbal Tea</h1>
+                <p class="ml-27 text-sm max-sm:text-3xl max-sm:ml-80 max-sm:mt-3">31 Products</p>
+            </div>
+            <div class="ml-10">
+                <div class="circle1 w-70 h-70 max-sm:w-150 max-sm:h-150 max-sm:ml-20 max-sm:mt-30" style="background-image: url(/images/Cardamom_Masala_Chai_Masala_Spiced_chai-min.png); background-size: cover;background-repeat: no-repeat;"></div>
+                <h1 class="text-xl font-medium ml-25 mt-5 max-sm:text-5xl max-sm:ml-70 max-sm:mt-10">Masala Chai</h1>
+                <p class="ml-27 text-sm max-sm:text-3xl max-sm:ml-80 max-sm:mt-3">12 Products</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="page3 flex max-2xl:w-[130%] max-sm:w-[300%] max-sm:flex-col max-sm:h-300 max-xl:w-[200%] max-xl:h-180">
+        <div class="left w-200 h-80 m-10 mt-0 max-sm:w-295 max-xl:w-[80%] ">
+            <img src="/images/Tea.jpg" alt="">
+        </div>
+        <div class="right w-148 h-83 bg-[#F0F0F0] max-sm:mt-60 max-sm:w-290 max-sm:ml-14 max-sm:h-140 max-xl:h-[90%] max-xl:w-[50%]">
+            <p class="text-2xl font-medium text-center pt-12 max-sm:text-5xl max-xl:text-5xl">Tea Finder Quiz</p>
+            <div class="under w-15 h-1 bg-[#C7A457] ml-65 m-5 max-sm:w-40 max-sm:ml-115 max-xl:w-55 max-xl:mb-30"></div>
+            <p class="text-center max-sm:text-3xl max-sm:mt-10 max-xl:text-3xl">Unsure about which tea to get?</p>
+            <p class="text-center m-2 max-sm:text-3xl  max-xl:text-3xl">Take Tea Finder Quiz and find out which of our 80+</p>
+            <p class="text-center max-sm:text-3xl max-sm:mb-20  max-xl:text-3xl">blends suit you best!</p>
+            <div class="button w-38 text-white px-4 py-2 bg-[#C7A457] ml-55 m-5 max-sm:text-2xl max-sm:w-56 max-sm:ml-125 max-sm:p-5 max-xl:p-5 max-xl:text-2xl max-xl:w-55 max-xl:mt-20 max-xl:ml-65">FIND YOUR TEA</div>
+        </div>
+    </div>
+
+    <div class="page4 w-[100%] h-150 max-2xl:w-[134%] max-sm:w-[324%] max-sm:h-230 max-xl:w-[208%]">
+        <h2 class="italic font-serif text-5xl text-white text-center cursor-pointer pt-70 max-sm:pt-100 max-sm:text-8xl">Read Our Blog</h2>
+    </div>
+
+
+    <div class="name m-20 flex justify-center content-center max-2xl:w-[120%] max-sm:w-[290%] max-xl:w-[180%]">
+        <div class="long w-70 h-0.5 bg-black mt-5 ml-5 mr-5"></div>
+        <h1 class="italic text-5xl font-serif">Best Sellers</h1>
+        <div class="long w-70 h-0.5 bg-black mt-5 ml-5 mr-5"></div>
+    </div>
+
+    <div class="boxes px-20 py-10 flex justify-between bg-gray-200 max-2xl:w-[134%] max-sm:w-[324%] max-sm:h-440 max-sm:flex-wrap max-sm:pt-25 max-xl:w-[208%]">
+        <div class="product">
+            <div class="box5 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+              <h1 class="text-center m-6 text-xl mb-1 max-sm:text-4xl">Darjeeling Oolong Tea</h1>
+              <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$25.00</p>
+        </div>
+        <div class="product">
+            <div class="box6 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+            <h1 class="text-center m-6 text-xl mb-1 max-sm:text-4xl">Pineapple Oolong Tea</h1>
+            <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$32.00</p>
+        </div>
+        <div class="product max-sm:mt-20">
+            <div class="box7 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+            <h1 class="text-center m-6 text-xl mb-1 max-sm:text-4xl">Spearmint Tea</h1>
+            <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$30.00</p>
+        </div>
+        <div class="products max-sm:mt-20">
+            <div class="box8 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+            <h1 class="text-center m-6 text-xl mb-1  max-sm:text-4xl">Lychee Tea</h1>
+            <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$25.00</p>
+        </div>
+
+    </div>
+
+    <div class="boxes px-20 py-10 flex justify-between bg-gray-200 max-2xl:w-[134%] max-sm:w-[324%] max-sm:h-440 max-sm:flex-wrap max-sm:pt-0 max-xl:w-[208%]">
+        <div class="product">
+            <div class="box9 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+              <h1 class="text-center m-6 text-xl mb-1 max-sm:text-4xl">Christmas Cake Chai</h1>
+              <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$28.00</p>
+        </div>
+        <div class="product">
+            <div class="box10 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+            <h1 class="text-center m-6 text-xl mb-1 max-sm:text-4xl">Pineapple Oolong Tea</h1>
+            <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$32.00</p>
+        </div>
+        <div class="product">
+            <div class="box11 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+            <h1 class="text-center m-6 text-xl mb-1 max-sm:text-4xl">Spearmint Tea</h1>
+            <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$30.00</p>
+        </div>
+        <div class="products">
+            <div class="box12 w-75 h-80 max-sm:w-130 max-sm:h-140 max-lg:mr-3" ></div>
+            <h1 class="text-center m-6 text-xl mb-1 max-sm:text-4xl">Lychee Tea</h1>
+            <p class="text-center font-medium text-xl max-sm:text-3xl max-sm:mt-5">$25.00</p>
+        </div>
+
+    </div>
+    <br><br><br><br><br><br>
+
+    <div class="footer w-[100%] py-30 px-60 flex bg-black text-white max-2xl:w-[134%] max-2xl:px-20 max-sm:w-[324%] max-sm:flex-col max-xl:w-[208%]">
+        <div class="part1 max-sm:ml-10">
+            <h1 class="italic font-serif text-4xl max-sm:text-6xl">Get to Know <br>Bloom's Tea Better</h1>
+            <ul class="m-10 text-xl max-sm:text-5xl max-sm:m-20">
+                <li class="mb-2  max-sm:mb-8"><a href="">Shop</a></li>
+                <li class="mb-2  max-sm:mb-8"><a href="">Extras</a></li>
+                <li class="mb-2  max-sm:mb-8"><a href="">About</a></li>
+                <li class="mb-2  max-sm:mb-8"><a href="">Blog</a></li>
+                <li class="mb-2  max-sm:mb-8"><a href="">Contact</a></li>
+            </ul>
+            <br>
+            <p class="underline cursor-pointer ml-10 text-xl mb-2 max-sm:text-4xl">Visit Our Stores</p>
+            <p class="ml-10 text-xl max-2xl:w-100 max-sm:text-4xl max-sm:w-150">Customer services: 123-456-7890</p>
+        </div>
+
+        <div class="part1 ml-25 mt-12 max-sm:ml-10">
+            <p class="text-3xl ml-10 max-sm:mt-30 max-sm:ml-10 max-sm:text-6xl">Help</p>
+            <div class="straight w-40 mt-5 h-0.5 bg-white ml-10 max-sm:ml-10 max-sm:w-150 max-sm:mt-10"></div>
+            <ul class="m-10 text-xl mt-8 max-sm:text-5xl max-sm:mt-20">
+                <li class="mb-2 max-sm:mb-8"><a href="">FAQ</a></li>
+                <li class="mb-2 max-sm:mb-8"><a href="">Shipping & Returns</a></li>
+                <li class="mb-2 max-sm:mb-8"><a href="">Store Policy</a></li>
+                <li class="mb-2"><a href="">Payment Methods</a></li>
+            </ul>
+            <p class="text-gray-400 text-base ml-10 max-sm:text-3xl max-sm:mt-20">Enter your email here *</p>
+            <input type="text" class="w-70 mt-2 p-4 h-10 bg-white border-1 ml-10 text-black max-sm:w-170 max-sm:h-20 max-sm:mt-10 max-sm:text-3xl">
+        </div>
+
+        <div class="part1 ml-20 mt-12 max-sm:mt-25">
+            <p class="text-3xl ml-10 max-sm:text-6xl">Follow Us</p>
+            <div class="straight w-40 mt-5 h-0.5 bg-white ml-10 max-sm:ml-10 max-sm:w-150 max-sm:mt-10"></div>
+            <ul class="m-10 text-xl mt-8 max-sm:text-5xl max-sm:mt-20">
+                <li class="mb-2  max-sm:mb-8"><a href="">Facebook</a></li>
+                <li class="mb-2  max-sm:mb-8"><a href="">Instagram</a></li>
+                <li class="mb-2  max-sm:mb-8"><a href="">Pinterest</a></li>
+            </ul>
+
+            <button class="py-2 w-40 bg-gray-300 font-medium text-black hover:bg-gray-500 cursor-pointer mt-16 max-sm:w-170 max-sm:h-20 max-sm:text-3xl">Subscribe Now</button>
+        </div>
+
+
+    </div>
+    <div class="last bg-black w-[100%] h-15 max-2xl:w-[134%] max-sm:w-[324%] max-xl:w-[208%]">
+        <div class="line  w-[100%] h-0.25 bg-white">
+            <p class="text-center text-white pt-4 max-sm:text-2xl">© Copyright 2025. Powered and secured by <span class="underline">Bloom's Tea</span>.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    
+
+
+</body>
+</html>

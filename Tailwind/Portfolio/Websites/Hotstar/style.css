@@ -1,0 +1,417 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+.nav{
+    width: 6%;
+    height: 730px;
+    position: fixed;
+    z-index: 999px;
+}
+.nav img{
+    margin: 30px 10px 0px 15px;
+}
+.but{
+    height: 22px;
+    display: flex;
+    margin: 10px 5px 5px 5px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+    background-color: rgb(42,38,31);
+}
+.but button{
+    margin: 2px 5px ;
+    padding: 2px 7px 4px 5px;
+    color: rgb(233, 179, 80);
+    border: none;
+    background-color: rgb(42,38,31);
+    cursor: pointer;
+}
+.icons img{
+    width: 25px;
+    height: 25px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+.hero1{
+    width: 100%;
+    height: 730px;
+    background-image: url(1654784-i-0566985bb40b.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.hero1 img{
+    padding: 150px 0px 0px 110px;
+    width: 30%;
+}
+.year{
+    display: flex;
+    margin: 30px 10px 20px 110px;
+}
+.year h3{
+    color: rgb(159, 159, 159);
+}
+.year p{
+    color: rgb(198, 197, 197);
+    font-size: large;
+    font-weight: 500;
+    margin: 0px 2px 0px 10px;
+    padding: 4px 8px 3px 8px;
+    border-radius: 5px ;
+    background-color: rgb(27, 27, 27);
+}
+.para{
+    color: rgb(159, 159, 159);
+    margin: 30px 0px 0px 110px;
+    line-height: 25px;
+}
+.sub{
+    display: flex;
+    margin: 50px 0px 0px 110px;
+}
+.sub button{
+    padding: 15px 70px 15px 70px;
+}
+.sub button:hover{
+    background-color: gray;
+    padding: 17px 72px 17px 72px;
+}
+.sub button{
+    padding: 15px 25px 15px 25px;
+    margin: 2px 10px 30px 0px;
+    font-size: larger ;
+    font-weight:700 ;
+    color: white;
+    background-color: rgb(108, 101, 101);
+    border-radius: 5px;
+    border: none;
+    word-spacing: 3px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transform: 1s;
+}
+.latest{
+    width: 100%;
+    color: white;
+    padding: 20px 110px 0px 120px;
+    background-color: rgb(15,16,20);
+}
+.main{
+    width: 100%;
+    display: flex;
+    padding-left: 110px;
+    padding-bottom: 30px;
+    background-color: rgb(15,16,20);
+}
+.card{
+    width: 200px;
+    height: 330px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 999;
+}
+.card :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.pic img{
+    width: 100%;
+    height: 330px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.dets{
+    width: 160%;
+    height: 320px;
+    background: linear-gradient(to bottom,#993b1e00, #1d0904 75%);
+    color: white;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.dets h4{
+    padding: 12px 0px;
+
+}
+.dets p{
+    font-size: small;
+    font-weight: 400px;
+    margin-bottom: 2px;
+    opacity: 0.8;
+}
+.dets .click{
+    display: flex;
+}
+.dets .click .play{
+    padding: 7px 0px;
+    margin-right: 5px;
+    text-align: center;
+}
+.dets .click .plus{
+    width: 100px;
+    text-align: center;
+}
+.dets button{
+    width: 100%;
+    margin-top: 5px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    background-color: gray;
+    border: none;
+    text-align: left;
+    border-radius: 5px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.dets button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.dets button:hover{
+    background-color: rgb(255, 255, 255, 0.1);
+}
+.card2{
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 60;
+}
+.card2 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.card3{
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 50;
+}
+.card3 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.card4{
+    width: 200px;
+    height: 350px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 40;
+}
+.card4 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.card5{
+    width: 200px;
+    height: 340px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 30;
+}
+.card5 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.card6{
+    width: 200px;
+    height: 340px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 10;
+}
+.card6 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.card7{
+    width: 200px;
+    height: 340px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+}
+.sport{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 999;
+}
+.sport :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.pics img{
+    width: 100%;
+    height: 180px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+.sport2{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 60;
+}
+.sport2 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.sport3{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 50;
+}
+.sport3 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.sport4{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 40;
+}
+.sport4 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.sport5{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 30;
+}
+.sport5 :hover{
+    transform: scale(1);
+    z-index: 99;
+    opacity: 1;
+    cursor: pointer;
+}
+.sport6{
+    width: 250px;
+    height: 180px;
+    border-radius: 5px;
+    position: relative;
+    transform: scale(0.9);
+    transition: 0.3s;
+    z-index: 20;
+}
+.lang{
+    display: flex;
+    overflow: hidden;
+    height: 190px;
+}
+.lang img{
+    width: 250px;
+    height: 150px;
+    border-radius: 5px;
+    margin: 28px 5px;
+}
+.lang img:hover{
+    transform: scale(1.1);
+    z-index: 1;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(15,16,20);
+    color: white;
+    padding: 50px 115px 30px 115px;
+    display: flex;
+}
+.part1{
+    width: 25%;
+}
+.part1 h4{
+    margin-bottom: 20px;
+}
+.ptag{
+    margin-bottom: 10px;
+    color: gray;
+    font-weight: 400;
+}
+.restrict {
+    color: gray;
+    margin-top: 30px;
+}
+.app{
+    display: flex;
+}
+.app img{
+    width: 30px;
+    height: 30px;
+    margin: 20px ;
+}
+.store{
+    display: flex;
+}
+.store img{
+    width: 130px;
+    height: 40px;
+    margin: 20px ;
+}

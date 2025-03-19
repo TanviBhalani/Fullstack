@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.top{
+    position: fixed;
+    width: 100%;
+}
+.navbar{
+    width: 100%;
+    background-color: rgb(0,120,173);
+    padding: 20px 0px 20px 170px;
+    display: flex;
+    position: fixed;
+}
+.deliver{
+    width: 270px;
+    display: flex;
+    padding: 0px 20px;
+    margin: 0px 15px;
+}
+.deliver img{
+    width: 20px;
+}
+.deliver p{
+    padding: 15px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+.deliver:hover{
+    background-color: rgb(12,82,115);
+    border-radius: 50px;
+}
+.search{
+    width: 550px;
+    border-radius: 50px;
+    display: flex;
+    padding: 9px 15px;
+    background-color: rgb(12,82,115);
+}
+.search input{
+    width: 450px;
+    background-color: rgb(12,82,115);
+    border: none;
+    outline: none; 
+    margin: 5px;
+    color: white;
+    font-size: medium;
+}
+.menu{
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+}
+.cart{
+    width: 50px;
+    margin: 0px 5px 0px 35px;
+    padding: 10px;
+    cursor: pointer;
+}
+.cart:hover{
+    background-color:  rgb(12,82,115);
+    border-radius: 30px;
+}
+.profile{
+    width: 110px;
+    display: flex;
+    color: white;
+    padding: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.profile h4{
+    padding: 2px;
+}
+.profile:hover{
+    background-color:  rgb(12,82,115);
+    border-radius: 50px;
+}
+ul{
+    background-color: rgb(12,82,115);
+    list-style: none;
+    color: white;
+    padding-left: 170px;
+    padding-top: 100px;
+}
+ul li{
+    display: inline-block;
+    padding: 15px ;    
+}
+ul li:hover{
+    cursor: pointer;
+}    
+.dropdown{
+    display: none;
+}
+ul li:hover .dropdown{
+    display: block;
+    width: 250px;
+    height: 400px;
+    position: absolute;
+    margin-left: -0.4cm;
+    margin-top: 0.4cm;
+    overflow: visible;
+}
+.dropdown ul{
+    margin: 0;
+    padding: 0;
+    height: 400px;
+    font-weight: 600;
+    font-size: 15px;
+    color: rgb(100, 100, 100);
+    background-color: #f5f5f5;
+    overflow-y: scroll;
+    
+}
+.dropdown ul li{
+    display: block;
+}
+.dropdown ul li:hover{
+    background-color: rgb(203, 202, 202);
+}
+.dropdown2{
+    display: none;
+}
+.dropdown2 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown2{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -1.3cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown3{
+    display: none;
+}
+.dropdown3 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown3{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -2.6cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown4{
+    display: none;
+}
+.dropdown4 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown4{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -3.9cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown5{
+    display: none;
+}
+.dropdown5 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown5{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -5.0cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown6{
+    display: none;
+}
+.dropdown6 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown6{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -6.32cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown7{
+    display: none;
+}
+.dropdown7 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown7{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -7.6cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown8{
+    display: none;
+}
+.dropdown8 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown8{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -8.8cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown9{
+    display: none;
+}
+.dropdown9 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown9{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -10.15cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown10{
+    display: none;
+}
+.dropdown10 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown10{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -11.35cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown12{
+    display: none;
+}
+.dropdown12 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown12{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -0.9cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown13{
+    display: none;
+}
+.dropdown13 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown13{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -2cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown14{
+    display: none;
+}
+.dropdown14 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown14{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -3.4cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown15{
+    display: none;
+}
+.dropdown15 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown15{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -4.6cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown16{
+    display: none;
+}
+.dropdown16 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown16{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -5.85cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown17{
+    display: none;
+}
+.dropdown17 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown17{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -7.6cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown18{
+    display: none;
+}
+.dropdown18 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown18{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -8.9cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown19{
+    display: none;
+}
+.dropdown19 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown19{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -9.70cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown25{
+    display: none;
+}
+.dropdown25 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown25{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -5.6cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown26{
+    display: none;
+}
+.dropdown26 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown26{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -6.8cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown27{
+    display: none;
+}
+.dropdown27 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown27{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -7.1cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.dropdown28{
+    display: none;
+}
+.dropdown28 ul li:hover{
+    color: rgb(0,120,173);
+}
+.dropdown ul li:hover .dropdown28{
+   display: block;
+   width: 250px;
+   position: absolute;
+   margin-left: 5.7cm;
+   margin-top: -8.4cm;
+   z-index: 999;
+   background-color: #f5f5f5;
+}
+.hero1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 170px;
+    padding-top: 190px;
+}
+.hero1 img{
+    width: 32.5%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.deals{
+    padding: 0px 170px;
+    font-weight: 900;
+    font-size: 25px;
+}
+.five{
+    display: flex;
+    margin: 10px 0px 50px;
+}
+.five img{
+    width: 200px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.items{
+    width: 100%;    
+    background-color: rgb(200,239,255);
+    padding: 20px 160px;
+    margin-bottom: 50px;
+}
+.line{
+    display: flex;
+    justify-content: space-between;
+}
+.items h2{
+    color: rgb(170,5,5);
+    font-weight: 900;
+}
+.items h4{
+    color: rgb(12,82,115);
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.card{
+    width: 189px;
+    height: 360px;
+    margin-top: 20px;
+    border-radius: 20px;
+    background-color: white;
+    cursor: pointer;
+}
+.pic{
+    width: 100%;
+    height: 53%;
+    display: flex;
+}
+.veg{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 10px 0px 10px 10px;
+}
+.veg img{
+    width: 15px;
+    height: 15px;
+}
+.mainphoto{
+    width: 120px;
+    height: 180px;
+}
+.mainphoto img{
+    width: auto;
+    height: 170px;
+    margin: 11px;
+}
+.heart{
+    margin: 5px;
+}
+.name{
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+}
+.name h5{
+    font-size: 15px;
+}
+.price{
+    padding: 0px 17px;
+}
+.price h5{
+    font-size: medium;
+    padding-bottom: 5px;
+}
+.price s{
+    font-weight: 500;
+    color: gray;
+}
+.price span{
+    padding: 5px;
+    background-color: rgb(229,247,238);
+    color: green;
+    font-size: 12px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+.add{
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    text-align: center;
+}
+.season{
+    padding: 20px 170px;
+}
+.season h2{
+    font-weight: 900;
+}
+.offercard{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.offercard img{
+    width: 185px;
+    height: 290px;
+    border-radius: 30px;
+}
+.hero2{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 170px 50px;
+}
+.hero2 img{
+    width: 32.5%;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.one{
+    margin: 0px 170px;
+}
+.one img{
+    width: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+.footer{
+    width: 100%;
+    background-color: rgb(245,245,245);
+    padding: 35px 170px;
+    display: flex;
+} 
+.part1{
+    width: 220px;
+    margin-left: 20px;
+}
+.part1 p{
+    font-weight: 900;
+}
+.all{
+    color: rgb(103, 103, 103);
+    font-weight: 500;
+    padding: 20px 0px ;
+}
+.all p{
+    padding: 8px 0px;
+    font-weight: 600;
+}
+.all p:hover{
+    background-color: gainsboro;
+}
+.part2{
+    width: 280px;
+    margin-left: 20px;
+}
+.part2 p{
+    font-weight: 900;
+    font-size: larger;
+}
+.part2 .all p{
+    padding: 2px 0px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.part2 .all p:hover{
+    background-color: gainsboro;
+}
+.app{
+    width: 100%;
+    display: flex;
+}
+.app img{
+    width: 120px;
+    margin: 8px 5px 0px 0px;
+}
+.last{
+    padding: 10px 0px 10px 170px;
+    display: flex;
+}
+.last p{
+    font-size: small;
+    color: rgb(48, 47, 47);
+    padding: 8px;
+}
+.space{
+    width: 300px;
+}
+@media (min-width:576px) and (max-width:768px){  
+    .navbar{
+        padding: 20px;
+    }
+    ul{
+       padding-left: 20px;
+    }
+    .hero1{
+        padding: 10px;
+        padding-top: 150px;
+    }
+    .hero1 img{
+        padding: 8px;
+        width: 420px;
+    }
+    .items{
+        padding-left: 30px;
+        width: 245%;
+    }
+    .card{
+        margin: 10px;
+    }
+    .season{
+        padding: 30px;
+    }
+    .offercard img{
+        margin: 25px;
+    }
+    .one{
+        margin: 20px;
+        display: flex;
+    }
+    .one img{
+        width: 400px;
+        height: 70px;
+        margin: 10px;
+    }
+    .footer{
+        width: 245%;
+    }
+    hr{
+        width: 245%;
+    }
+    .last{
+        padding: 30px;
+        width: 220%;
+    }
+    .space{
+        width: 600px;
+
+    }
+}
