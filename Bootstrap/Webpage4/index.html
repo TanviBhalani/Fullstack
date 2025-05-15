@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+  <style>
+    .accordion button{
+       background-color: rgb(127, 128, 128) ;
+       font-weight: 600;
+    }
+    .navbar{
+      transform: translateX(250px);
+      width: 83.7%;
+      position: fixed;
+      z-index: 999;
+    }
+    .left{
+      display: flex;
+      width: 400px;
+    }
+    .hero{
+      width: 83.7%;
+      padding-top: 60px;
+      margin-left: 250px;
+      background-color: rgb(215, 215, 213);
+      display: flex;
+    }
+    .card{
+       margin: 30px 20px 30px 30px;
+    }
+    .hero1{
+      width: 100%;
+      padding-left: 270px;
+      background-color:  rgb(215, 215, 213);
+    }
+    .hero1 h5{
+      padding-left: 40px;
+    }
+    .hero3{
+      margin-left: 250px;
+
+    }
+
+  </style>
+
+  <div class="accordion accordion-flush " id="accordionFlushExample" style="width: 250px; background-color: rgb(178, 180, 179); font-size: 22px; font-weight: 600; position: fixed;" >
+     <div class="box p-1">
+      <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="#2f969b" d="M2 21v-2h20v2zm1-3v-7h3v7zm5 0V6h3v12zm5 0V9h3v9zm5 0V3h3v15z"/></svg>
+      Sleek Dashboard
+     </div>
+
+    <div class="accordion-item ">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" >
+          <svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px;" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff"  d="M19 5v2h-4V5zM9 5v6H5V5zm10 8v6h-4v-6zM9 17v2H5v-2zM21 3h-8v6h8zM11 3H3v10h8zm10 8h-8v10h8zm-10 4H3v6h8z" /></svg>  DASHBOARD
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionFlushExample" style="background-color: rgb(127, 128, 128); font-size: large; padding: 10px 40px; font-weight: 400;">
+        Ecommerce
+        <br>
+        Analytics
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px;" width="24" height="24" viewBox="0 0 32 32"><path fill="#fff" d="M24 20a4 4 0 1 1 0-8a4 4 0 0 1 0 8m0-6a2 2 0 1 0 0 4a2 2 0 0 0 0-4m-8.2-5.62A4 4 0 1 1 18 1.06a4 4 0 0 1-2.2 7.32m0-6a2 2 0 1 0 .01 0zm.01 29.24a4 4 0 1 1-.083-8a4 4 0 0 1 .083 8m0-6a2 2 0 1 0 .39 0a2 2 0 0 0-.4 0z" class="ouiIcon__fillSecondary"/><path fill="#fff" d="M18 17v-2h-6.14a4 4 0 0 0-.86-1.64l2.31-3.44l-1.68-1.12l-2.31 3.44A4 4 0 0 0 8 12a4 4 0 1 0 0 8a4 4 0 0 0 1.32-.24l2.31 3.44l1.66-1.12L11 18.64a4 4 0 0 0 .86-1.64zM6 16a2 2 0 1 1 4 0a2 2 0 0 1-4 0"/></svg>
+          APPS
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="background-color: rgb(127, 128, 128); font-size: large; padding: 10px 40px; font-weight: 400;">
+        Chat
+        <br>
+        Contact
+        <br>
+        Team
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          <svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px;" width="24" height="24" viewBox="0 0 2048 2048"><path fill="#fff" d="M1024 1024h768v896H128V256h896zM256 384v640h640V384zm640 1408v-640H256v640zm768 0v-640h-640v640zM1280 0h768v768h-768zm640 640V128h-512v512z"/></svg>
+          COMPONENTS
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample" style="background-color: rgb(127, 128, 128); font-size: large; padding: 10px 40px; font-weight: 400;">
+        Alert
+        <br>
+        Badge
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <svg xmlns="http://www.w3.org/2000/svg"  style="margin: 5px;" width="24" height="24" viewBox="0 0 48 48"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="M10.636 5h26.728L45 18.3L24 43L3 18.3z" clip-rule="evenodd"/><path d="M10.636 5L24 43L37.364 5M3 18.3h42"/><path d="M15.41 18.3L24 5l8.591 13.3"/></g></svg>
+          ICONS
+        </button>
+      </h2>
+      <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"  style="background-color: rgb(127, 128, 128); font-size: large; padding: 10px 40px; font-weight: 400;">
+        Flag icon
+        <br>
+        Matrial icon
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+          <svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px;" width="24" height="24" viewBox="0 0 48 48"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><rect width="32" height="40" x="8" y="4" rx="2"/><path d="M14 16h20m-20 8h20m-20 8h20M18 12v24"/></g></svg>
+          FORMS
+        </button>
+      </h2>
+      <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"  style="background-color: rgb(127, 128, 128); font-size: large; padding: 10px 40px; font-weight: 400;">
+        Table 
+        <br>
+        Input
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseTwo" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48"><defs><mask id="ipTTableLamp0"><g fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"><path d="m31 44l11-16l-20-16"/><path fill="#555555" d="m6 12l10 10l8-14l-4-4z"/><path d="M38 44H12m5 0v-4"/></g></mask></defs><path fill="#fff" d="M0 0h48v48H0z" mask="url(#ipTTableLamp0)"/></svg>
+          HELP
+        </button>
+      </h2>
+      <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"  style="background-color: rgb(127, 128, 128); font-size: large; padding: 10px 40px; font-weight: 400;">
+        Flag icon
+        <br>
+        Matrial icon
+      </div>
+      
+    </div>
+
+   
+    <div class="name m-4">
+      CPU use
+    </div>
+      <div class="progress m-3 " role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+        <div class="progress-bar " style="width: 25%">25%</div>
+      </div>
+
+      <div class="name m-4">
+        Memory use
+      </div>
+        <div class="progress m-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+          <div class="progress-bar bg-warning  text-dark" style="width: 55%">55%</div>
+        </div>
+
+        <div class="name m-3">
+        Ratings
+        </div>
+          <div class="progress m-3" role="progressbar" aria-label="Example with label" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-success" style="width: 80%">80%</div>
+          </div>
+
+    
+
+
+  </div>
+
+  <nav class="navbar bg-dark">
+    <div class="container">
+     <div class="left">
+      <svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px;"  width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 20 20"><path fill="#8c8c8c" fill-rule="evenodd" d="M10 .5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 1 0V1a.5.5 0 0 0-.5-.5" clip-rule="evenodd"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px;" width="34" height="34" viewBox="0 0 24 24"><path fill="#fff" d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989t-1.96.35q-2.402 0-4.066-1.663T3.808 9.503T5.47 5.436t4.064-1.667t4.068 1.664T15.268 9.5q0 1.042-.369 2.017t-.97 1.668l6.262 6.261zM9.539 14.23q1.99 0 3.36-1.37t1.37-3.361t-1.37-3.36t-3.36-1.37t-3.361 1.37t-1.37 3.36t1.37 3.36t3.36 1.37"/></svg>
+      <input class="form-control me-2 bg-dark"  type="search" placeholder="Search " aria-label="Search" style=" border: none; color: white;">
+
+     </div>
+
+
+      <div class="right">
+        <svg xmlns="http://www.w3.org/2000/svg" style="margin: 5px;" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M10 21h4c0 1.1-.9 2-2 2s-2-.9-2-2m11-2v1H3v-1l2-2v-6c0-3.1 2-5.8 5-6.7V4c0-1.1.9-2 2-2s2 .9 2 2v.3c3 .9 5 3.6 5 6.7v6zm-4-8c0-2.8-2.2-5-5-5s-5 2.2-5 5v7h10z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg"  style="margin:5px;" width="24" height="24" viewBox="0 0 24 24"><path fill="#fff" d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg>
+      </div>
+
+      </div>
+    </div>
+  </nav>
+
+       <div class="hero">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h4 class="card-title">71,503</h4>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Online Signups</h6>
+            <img src="https://community.fabric.microsoft.com/t5/image/serverpage/image-id/64815iA6FC98B22B66B671/image-size/large?v=v2&px=999" style="width: 100%;" alt="">
+
+            
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">9,503</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">New Visitors Today</h6>
+           <img src="https://cdn.document360.io/62f8f41e-e041-42c4-b9bc-8ae1eb45d064/Images/Documentation/image-1621489737117.png" width="100%" alt="">
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">71,503</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Monthly Total Order</h6>
+            <img src="https://vizzlo.com/_astro/stacked-time-series-graph.BdxMIdxV.png" width="100%" alt="">
+          </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">9,500</h5>
+            <h6 class="card-subtitle mb-2 text-body-secondary">Total Revenue This Year</h6>
+            <img src="https://preply.com/wp-content/uploads/2018/08/line-graph-explained.png" width="100%" alt="">
+          </div>
+        </div>
+
+        
+
+       </div>
+      
+       <div class="hero1">
+          <h5>Sale of the year</h5>
+          <div class="cards">
+            <img src="./download.png" alt="" style="background-color: white; width: 90%; padding: 40px; margin:  0px 40px;">
+
+          </div>
+       </div>
+
+      <div  class= " hero2 p-5 d-flex" style="background-color: rgb(215, 215, 213); height: 700px;">
+        <table class="table" style="margin-left: 280px; width: 500px;">
+          <thead>
+            <tr>
+              <th scope="col"  >Sold by Units</th>
+              <th scope="col"></th>
+              
+              <th scope="col"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="#595959" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 3.723A9.003 9.003 0 0 0 2.124 14M9 3.723L6 2.5m3 1.223L8 6.5m11.064 10a8.96 8.96 0 0 0 .936-4c0-4.46-3.243-8.161-7.5-8.876M19.064 16.5l2.936-2m-2.936 2l-1.564-3m-13.984 4a8.99 8.99 0 0 0 7.484 4a8.97 8.97 0 0 0 6-2.292M3.516 17.5H7m-3.484 0V21" color="#595959"/></svg> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"><g fill="none" stroke="#595959" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><circle cx="8" cy="2.5" r=".75"/><circle cx="8" cy="8" r=".75"/><circle cx="8" cy="13.5" r=".75"/></g></svg></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" >Backpack</th>
+              <td>9</td>
+              <td>33% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="m64 22.95l31.13 42.47H75.71v39.63H52.48V65.42H32.86z"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row"  >T-Shirt</th>
+              <td>6</td>
+              <td>15% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="m64 22.95l31.13 42.47H75.71v39.63H52.48V65.42H32.86z"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row">Coat</th>
+              <td>3</td>
+              <td>50% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="m64 22.95l31.13 42.47H75.71v39.63H52.48V65.42H32.86z"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row">Necklace</th>
+              <td>7</td>
+              <td>30% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="m64 22.95l31.13 42.47H75.71v39.63H52.48V65.42H32.86z"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row">Jeans Pant</th>
+              <td>10</td>
+              <td>-10% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="M64 105.05L32.86 62.58h19.42V22.95h23.23v39.63h19.62z"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row">Shoes</th>
+              <td>5</td>
+              <td>25% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="m64 22.95l31.13 42.47H75.71v39.63H52.48V65.42H32.86z"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row">Formal Pant</th>
+              <td>10</td>
+              <td>-35% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="M64 105.05L32.86 62.58h19.42V22.95h23.23v39.63h19.62z"/></svg></td>
+            </tr>
+            <tr>
+              <th scope="row">Sweater</th>
+              <td>10</td>
+              <td>-10% <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 128 128"><path fill="#40c0e7" d="M64 105.05L32.86 62.58h19.42V22.95h23.23v39.63h19.62z"/></svg></td>
+            </tr>
+  
+          </tbody>
+        </table>
+
+        <div class="card" style="width: 35%; height: 520px; border-radius: 0px;">
+          <div class="card-body">
+            <h4 class="card-title" style="text-align: center;">Sales Overview</h4>
+            <br>
+            <button type="button" class="btn btn-lg" style="background-color: rgb(180, 179, 179); margin-left: 90px;">Large button</button>
+            <button type="button" class="btn btn-secondary btn-lg">Large button</button>
+            <br>
+            <img src="https://www.amcharts.com/wp-content/uploads/2013/11/demo_129_none-1.png" class="card-img-top p-5" alt="..." >
+            
+
+        </div>
+      </div>
+
+      </div>
+
+      <div class="hero3 " style="background-color: rgb(215, 215, 213); padding: 40px;">
+       
+        <div data-bs-spy="scroll" style="overflow: scroll; height: 300px; overflow-x: hidden; " data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
+          <h4 id="scrollspyHeading1">First heading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, adipisci animi? Nostrum, accusantium officiis debitis ea accusamus non impedit voluptatem odit fugit exercitationem perferendis magnam autem facere itaque doloremque. Dolore.</p>
+          <h4 id="scrollspyHeading2">Second heading</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure tempore sed id fuga! Nam error nemo consequatur recusandae nihil, in dolorum architecto veritatis temporibus exercitationem impedit ex magnam, vitae dolore.</p>
+          <h4 id="scrollspyHeading3">Third heading</h4>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto id harum sunt eos a illum tempore animi architecto? Facere aut quidem inventore mollitia, architecto itaque voluptas quod earum labore! Porro.</p>
+          <h4 id="scrollspyHeading4">Fourth heading</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus provident, laborum dolorem eaque quos aspernatur similique illo nemo repudiandae officia impedit maiores officiis aperiam quis eos consequatur esse dignissimos reprehenderit?</p>
+          <h4 id="scrollspyHeading5">Fifth heading</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quaerat at blanditiis eos atque ea? Nam odit sunt perferendis fuga voluptatibus quae voluptas nostrum possimus! Optio ullam itaque iure in?</p>
+
+          <table class="table card-table table-responsive table-responsive-large" style="width:100%">
+            <thead>
+              <tr>
+                <th>Order ID</th>
+                <th>Product Name</th>
+                <th class="d-none d-lg-table-cell">Units</th>
+                <th class="d-none d-lg-table-cell">Order Date</th>
+                <th class="d-none d-lg-table-cell">Order Cost</th>
+                <th>Status</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>24541</td>
+                <td>
+                  <p class="text-dark" href=""> Coach Swagger</p>
+                </td>
+                <td class="d-none d-lg-table-cell">1 Unit</td>
+                <td class="d-none d-lg-table-cell">Oct 20, 2018</td>
+                <td class="d-none d-lg-table-cell">$230</td>
+                <td>
+                  <span class="badge badge-success" style="background-color: rgb(65, 156, 65);">Completed</span>
+                </td>
+                <td class="text-right">
+                  <div class="dropdown show d-inline-block widget-dropdown">
+                    <a class="dropdown-toggle icon-burger-mini" href="" role="button" id="dropdown-recent-order1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order1">
+                      <li class="dropdown-item">
+                        <a href="#">View</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>24542</td>
+                <td>
+                  <p class="text-dark" href=""> Toddler Shoes, Gucci Watch</p>
+                </td>
+                <td class="d-none d-lg-table-cell">2 Units</td>
+                <td class="d-none d-lg-table-cell">Nov 15, 2018</td>
+                <td class="d-none d-lg-table-cell">$550</td>
+                <td>
+                  <span class="badge badge-warning" style="background-color: rgb(239, 177, 22);">Delayed</span>
+                </td>
+                <td class="text-right">
+                  <div class="dropdown show d-inline-block widget-dropdown">
+                    <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order2">
+                      <li class="dropdown-item">
+                        <a href="#">View</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>24543</td>
+                <td>
+                  <p class="text-dark" href=""> Hat Black Suits</p>
+                </td>
+                <td class="d-none d-lg-table-cell">1 Unit</td>
+                <td class="d-none d-lg-table-cell">Nov 18, 2018</td>
+                <td class="d-none d-lg-table-cell">$325</td>
+                <td>
+                  <span class="badge badge-warning" style="background-color: rgb(239, 177, 22);">On Hold</span>
+                </td>
+                <td class="text-right">
+                  <div class="dropdown show d-inline-block widget-dropdown">
+                    <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order3">
+                      <li class="dropdown-item">
+                        <a href="#">View</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>24544</td>
+                <td>
+                  <p class="text-dark" href=""> Backpack Gents, Swimming Cap Slin</p>
+                </td>
+                <td class="d-none d-lg-table-cell">5 Units</td>
+                <td class="d-none d-lg-table-cell">Dec 13, 2018</td>
+                <td class="d-none d-lg-table-cell">$200</td>
+                <td>
+                  <span class="badge badge-success" style="background-color: rgb(65, 156, 65);">Completed</span>
+                </td>
+                <td class="text-right">
+                  <div class="dropdown show d-inline-block widget-dropdown">
+                    <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order4">
+                      <li class="dropdown-item">
+                        <a href="#">View</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>24545</td>
+                <td>
+                  <p class="text-dark" href=""> Speed 500 Ignite</p>
+                </td>
+                <td class="d-none d-lg-table-cell">1 Unit</td>
+                <td class="d-none d-lg-table-cell">Dec 23, 2018</td>
+                <td class="d-none d-lg-table-cell">$150</td>
+                <td>
+                  <span class="badge badge-danger" style="background-color: rgb(235, 71, 71);">Cancelled</span>
+
+                </td>
+                <td class="text-right">
+                  <div class="dropdown show d-inline-block widget-dropdown">
+                    <a class="dropdown-toggle icon-burger-mini" href="#" role="button" id="dropdown-recent-order5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-display="static"></a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown-recent-order5">
+                      <li class="dropdown-item">
+                        <a href="#">View</a>
+                      </li>
+                      <li class="dropdown-item">
+                        <a href="#">Remove</a>
+                      </li>
+                    </ul>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+  
+
+        
+  
+      </div>
+
+
+
+        <!-- Copyright -->
+        <div class="text-center p-3 " style="background-color: rgb(139, 139, 139); " >
+          © 2020 Copyright:
+          <a class="text-body"  href="https://mdbootstrap.com/">SleekDashboard.com</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+
+
+
+      
+
+
+
+
+      
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

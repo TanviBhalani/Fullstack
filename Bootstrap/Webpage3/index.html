@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <div class="navbar" style="height: 60px; width: 100%; background-color: rgb(248,243,239); display: flex; justify-content: space-between; border: 1px solid rgb(174, 173, 173);">
+        <div class="logo" style="display: flex; justify-content: space-around; width: 100px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#242424" d="M14 13.5h2.5l1-4H14v-2c0-1.03 0-2 2-2h1.5V2.14c-.326-.043-1.557-.14-2.857-.14C11.928 2 10 3.657 10 6.7v2.8H7v4h3V22h4z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#242424" d="M17.34 5.46a1.2 1.2 0 1 0 1.2 1.2a1.2 1.2 0 0 0-1.2-1.2m4.6 2.42a7.6 7.6 0 0 0-.46-2.43a4.9 4.9 0 0 0-1.16-1.77a4.7 4.7 0 0 0-1.77-1.15a7.3 7.3 0 0 0-2.43-.47C15.06 2 14.72 2 12 2s-3.06 0-4.12.06a7.3 7.3 0 0 0-2.43.47a4.8 4.8 0 0 0-1.77 1.15a4.7 4.7 0 0 0-1.15 1.77a7.3 7.3 0 0 0-.47 2.43C2 8.94 2 9.28 2 12s0 3.06.06 4.12a7.3 7.3 0 0 0 .47 2.43a4.7 4.7 0 0 0 1.15 1.77a4.8 4.8 0 0 0 1.77 1.15a7.3 7.3 0 0 0 2.43.47C8.94 22 9.28 22 12 22s3.06 0 4.12-.06a7.3 7.3 0 0 0 2.43-.47a4.7 4.7 0 0 0 1.77-1.15a4.85 4.85 0 0 0 1.16-1.77a7.6 7.6 0 0 0 .46-2.43c0-1.06.06-1.4.06-4.12s0-3.06-.06-4.12M20.14 16a5.6 5.6 0 0 1-.34 1.86a3.06 3.06 0 0 1-.75 1.15a3.2 3.2 0 0 1-1.15.75a5.6 5.6 0 0 1-1.86.34c-1 .05-1.37.06-4 .06s-3 0-4-.06a5.7 5.7 0 0 1-1.94-.3a3.3 3.3 0 0 1-1.1-.75a3 3 0 0 1-.74-1.15a5.5 5.5 0 0 1-.4-1.9c0-1-.06-1.37-.06-4s0-3 .06-4a5.5 5.5 0 0 1 .35-1.9A3 3 0 0 1 5 5a3.1 3.1 0 0 1 1.1-.8A5.7 5.7 0 0 1 8 3.86c1 0 1.37-.06 4-.06s3 0 4 .06a5.6 5.6 0 0 1 1.86.34a3.06 3.06 0 0 1 1.19.8a3.1 3.1 0 0 1 .75 1.1a5.6 5.6 0 0 1 .34 1.9c.05 1 .06 1.37.06 4s-.01 3-.06 4M12 6.87A5.13 5.13 0 1 0 17.14 12A5.12 5.12 0 0 0 12 6.87m0 8.46A3.33 3.33 0 1 1 15.33 12A3.33 3.33 0 0 1 12 15.33"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><path fill="#242424" d="M9.04 21.54c.96.29 1.93.46 2.96.46a10 10 0 0 0 10-10A10 10 0 0 0 12 2A10 10 0 0 0 2 12c0 4.25 2.67 7.9 6.44 9.34c-.09-.78-.18-2.07 0-2.96l1.15-4.94s-.29-.58-.29-1.5c0-1.38.86-2.41 1.84-2.41c.86 0 1.26.63 1.26 1.44c0 .86-.57 2.09-.86 3.27c-.17.98.52 1.84 1.52 1.84c1.78 0 3.16-1.9 3.16-4.58c0-2.4-1.72-4.04-4.19-4.04c-2.82 0-4.48 2.1-4.48 4.31c0 .86.28 1.73.74 2.3c.09.06.09.14.06.29l-.29 1.09c0 .17-.11.23-.28.11c-1.28-.56-2.02-2.38-2.02-3.85c0-3.16 2.24-6.03 6.56-6.03c3.44 0 6.12 2.47 6.12 5.75c0 3.44-2.13 6.2-5.18 6.2c-.97 0-1.92-.52-2.26-1.13l-.67 2.37c-.23.86-.86 2.01-1.29 2.7z"/></svg>
+        </div>
+        <h2>OCTAVE Exceed</h2>
+        <div class="logo" style="display: flex; justify-content: space-around; width: 150px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#242424" d="m19.485 20.154l-6.262-6.262q-.75.639-1.725.989t-1.96.35q-2.402 0-4.066-1.663T3.808 9.503T5.47 5.436t4.064-1.667t4.068 1.664T15.268 9.5q0 1.042-.369 2.017t-.97 1.668l6.262 6.261zM9.539 14.23q1.99 0 3.36-1.37t1.37-3.361t-1.37-3.36t-3.36-1.37t-3.361 1.37t-1.37 3.36t1.37 3.36t3.36 1.37"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 32 32"><path fill="#242424" d="M16 2a7 7 0 1 0 0 14a7 7 0 0 0 0-14m-6 7a6 6 0 1 1 12 0a6 6 0 0 1-12 0m-2.5 9A3.5 3.5 0 0 0 4 21.5v.667C4 24.317 6.766 30 16 30s12-5.684 12-7.833V21.5a3.5 3.5 0 0 0-3.5-3.5zM5 21.5A2.5 2.5 0 0 1 7.5 19h17a2.5 2.5 0 0 1 2.5 2.5v.667C27 23.684 24.765 29 16 29S5 23.684 5 22.167z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#242424" d="M7.308 21.116q-.633 0-1.067-.434t-.433-1.066t.433-1.067q.434-.433 1.067-.433t1.066.433t.434 1.067t-.434 1.066t-1.066.434m9.384 0q-.632 0-1.066-.434t-.434-1.066t.434-1.067q.434-.433 1.066-.433t1.067.433q.433.434.433 1.067q0 .632-.433 1.066q-.434.434-1.067.434M5.881 5.5l2.669 5.616h6.635q.173 0 .307-.087q.135-.087.231-.24l2.616-4.75q.115-.212.019-.375q-.097-.164-.327-.164zm-.489-1h13.02q.651 0 .98.532q.33.531.035 1.095l-2.858 5.208q-.217.365-.564.573t-.763.208H8.1l-1.215 2.23q-.154.231-.01.5t.433.27h10.384q.214 0 .357.143t.143.357t-.143.356t-.357.144H7.308q-.875 0-1.306-.738t-.021-1.482l1.504-2.68L3.808 3.5H2.5q-.213 0-.357-.143T2 3t.143-.357T2.5 2.5h1.433q.236 0 .429.121q.192.121.298.338zm3.158 6.616h7z"/></svg>
+        </div>
+     </div>
+
+     <div class="navbar1" style="height: 60px; width: 100%; background-color: rgb(248,243,239); display: flex; padding: 12px 70px; justify-content: space-evenly;">
+        <a href="" style="color: black; text-decoration: none;">NEW ARRIVALS </a>
+        <a href="" style="color: black; text-decoration: none;">MEN</a>
+        <a href="" style="color: black; text-decoration: none;">WOMEN</a>
+        <a href="" style="color: black; text-decoration: none;">ACCESSORIES</a>
+        <a href="" style="color: black; text-decoration: none;">STORE LOCATOR</a>
+        <a href="" style="color: black; text-decoration: none;">CONTACT US</a>
+        
+
+     </div>
+
+     <div id="carouselExampleIndicators" class="carousel slide">
+        
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.octaveclothing.com/cdn/shop/files/AW_Women_27sep-opt.jpg?v=1727448378&width=2000" class="d-block w-100" alt="...">
+          </div>
+         
+    </div>
+
+    <div class="header">
+        <h1 style="font-weight: 700; text-align: center; margin: 50px;"><span style="color: rgb(105, 104, 104);">NEW</span> ARRIVALS</h1>
+    </div>
+
+    <div class="cards" style="display: flex; justify-content: space-around;">
+        <div class="card" style="width: 18rem; margin: 0px 50px;">
+            <img src="https://www.octaveclothing.com/cdn/shop/files/0C8A4257.jpg?v=1727956118&width=600" class="card-img-top" alt="...">
+            <div class="card-body">
+    
+              <h5 class="card-text">Sweater</h5>
+              <p>4 COLORS SWEAT SUITS</p>
+              <div class="price" style="display: flex; gap: 10px;">
+                
+              <s style="color: gray;">₹599</s> 
+              <h5>₹399</h5>
+              </div>
+
+            </div>
+    
+        </div>
+
+        <div class="card" style="width: 18rem; margin: 0px 50px;">
+            <img src="https://www.octaveclothing.com/cdn/shop/files/0C8A8656_4fbe769c-ae1e-4e15-a920-d2d994a3da37.jpg?v=1726941914&width=600" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text"> Women's Sweater</h5>
+              <p>2 COLORS ZIG ZAG DESIGN</p>
+              <div class="price" style="display: flex; gap: 10px;">
+                
+              <s style="color: gray;">₹799</s> 
+              <h5>₹599</h5>
+              </div>
+    
+            </div>
+    
+        </div>
+        <div class="card" style="width: 18rem; margin: 0px 50px;">
+            <img src="https://www.octaveclothing.com/cdn/shop/files/0C8A8683_e561b057-5482-445a-9ca3-41716a528730.jpg?v=1726941926&width=600" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-text"> Women's Sweat Suit</h5>
+              <p>STRIP KNIT FULL SLEEVE SUIT</p>
+              <div class="price" style="display: flex; gap: 10px;">
+                
+              <s style="color: gray;">₹599</s> 
+              <h5>₹499</h5>
+              </div>
+    
+            </div>
+    
+        </div>
+        <div class="card" style="width: 18rem; margin: 0px 50px;">
+            <img src="https://www.octaveclothing.com/cdn/shop/files/0C8A6157_f89610e0-5fd1-434f-8228-94fe8323e6df.jpg?v=1727972839&width=900" class="card-img-top" alt="...">
+            <div class="card-body">
+
+              <h5 class="card-text"> Women's Jacket</h5>
+              <p>GLOSSY QUILTED ZIPPER JACKET</p>
+              <div class="price" style="display: flex; gap: 10px;">
+                
+              <s style="color: gray;">₹799</s> 
+              <h5>₹599</h5>
+              </div>
+    
+            </div>
+    
+        </div>
+
+        
+    </div>
+
+    <div class="card" style="width: 450; margin: 90px; border: none; display: flex; flex-direction: row;">
+      <div class="card-body">
+        <h1 class="card-title" style="color: gray; font-weight: 700;">SUMMER </h1>
+        <h1 class="card-subtitle mb-2 text-body-secondary" style="font-weight: 700;"><span style="color: gray; font-weight: 700;">BREEZE 2025: </span>WHERE</h1>
+        <h1 style="font-weight: 700;">STYLE MEETS SUNSHINE</h1>
+        <h5 class="card-text" style="line-height: 30px; padding: 40px 0px;">Dive into the heart of summer with our "Summer Breeze 2024" collection, a refreshing take on seasonal fashion. This line is a tribute to the vibrant energy of the sunniest days, featuring an array of chic, comfortable pieces that speak to the soul of summer.</h5>
+        <a href="#" class="card-link" style=" background-color: rgb(43, 43, 43); padding: 20px 30px; color: goldenrod;">Explore Collection</a>
+      </div>
+      <div class="pic">
+        <img src="https://www.octaveclothing.com/cdn/shop/files/11B.jpg?v=1724328546&width=700" alt="">
+      </div>
+    </div>
+
+    <div class="cards" style="display: flex; justify-content: space-around;">
+      <div class="card" style="width: 40rem; margin: 0px 50px; border: none;">
+          <img src="https://www.octaveclothing.com/cdn/shop/files/OCTAVE_4_Mar_20247588A.png?v=1724330732&width=800" class="card-img-top" alt="...">
+          <div class="card-body">
+  
+            <h2 class="card-text" style="font-weight: 700; text-align: center;"><span style="color: gray;">WOMEN'S </span>COLLECTION</h2>
+            <h5 style="text-align: center;">Explore collection</h5>
+
+          </div>
+  
+      </div>
+
+      <div class="card" style="width: 40rem; margin: 0px 50px; border: none;">
+        <img src="https://www.octaveclothing.com/cdn/shop/files/OCTAVE_4_Mar_20241564.png?v=1724330731&width=800" class="card-img-top" alt="...">
+        <div class="card-body">
+
+          <h2 class="card-text" style="font-weight: 700; text-align: center;"><span style="color: gray;">MEN'S </span>COLLECTION</h2>
+            <h5 style="text-align: center;">Explore collection</h5>
+
+        </div>
+
+    </div>
+
+    </div>  
+
+
+    <div class="cards" style="display: flex; justify-content: space-around;">
+      <div class="card" style="width: 30rem; margin: 0px 50px; border: none; margin: 50px;">
+          <img src="https://cdn.shopify.com/s/files/1/0825/5533/9035/files/DELIVERY.svg?v=1714802624" class="card-img-top" alt="..." style="width: 150px; margin: 0 auto;">
+          <div class="card-body">
+  
+            <h5 class="card-text" style="font-weight: 700; text-align: center; margin: 20px 0px;">PAYMENT & DELIVERY</h5>
+            <h5 style="text-align: center;">Free shipping for orders over Rs -1000</h5>
+
+          </div>
+  
+      </div>
+
+      <div class="card" style="width: 30rem; margin: 0px 50px; border: none; margin: 50px;">
+        <img src="https://cdn.shopify.com/s/files/1/0825/5533/9035/files/REFUND.svg?v=17148026244" class="card-img-top" alt="..." style="width: 150px; height: 100px; margin: 0 auto;">
+        <div class="card-body">
+
+          <h5 class="card-text" style="font-weight: 700; text-align: center; margin: 20px 0px;">RETURN & REFUND</h5>
+          <h5 style="text-align: center;">100% money refund within 6 days</h5>
+
+        </div>
+
+    </div>
+
+    <div class="card" style="width: 30rem; margin: 0px 50px; border: none; margin: 50px;">
+      <img src="https://cdn.shopify.com/s/files/1/0825/5533/9035/files/support.svg?v=1714802624" class="card-img-top" alt="..." style="width: 150px; height: 100px; margin: 0 auto;">
+      <div class="card-body">
+
+        <h5 class="card-text" style="font-weight: 700; text-align: center; margin: 20px 0px;">QUALITY SUPPORT</h5>
+        <h5 style="text-align: center;">Always online feedback 24/7</h5>
+
+      </div>
+
+  </div>
+
+      
+
+    </div>
+
+    </div>
+    
+    
+
+    
+      
+
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color: black;">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+      
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+</body>
+</html>
