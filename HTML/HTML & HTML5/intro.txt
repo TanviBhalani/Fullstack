@@ -1,0 +1,55 @@
+Basic Information about HTML:
+
+HTML stands for Hyper Text Markup Language. 
+It is used to design web pages using a markup language. 
+HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages. 
+A markup language is used to define the text document within the tag which defines the structure of web pages. 
+This language is used to annotate (at the note for the computer) text so that a machine can understand it and manipulate text accordingly.
+
+
+Features of HTML:
+
+It allows the creation of hyperlinks with the <a> tag, connecting different web pages.
+Uses tags to mark elements and content, such as headings (<h1> to <h6>).
+It supports embedding images (<img>), videos (<video>), and audio (<audio>) for multimedia content.
+It provides form elements like <form>, <input>, and <button> for user input and data submission.
+Semantic tags like <article>, <section>, and <nav> for better document structure and accessibility.
+
+
+Features of HTML5:
+
+Introduced new semantic elements like <header>, <footer>, <section>, and <article> for improved structure.
+Enhances multimedia capabilities with native support for audio and video elements.
+Provides the localStorage API, allowing web applications to store data locally on the user’s device.
+Enables websites to access a user’s geographical location.
+Uses SQL database to store data offline.
+
+What are HTML5 semantic elements?
+HTML5 semantic elements clearly describe their meaning in a web page’s structure, like <header>, <footer>, <article>, and <section>, improving readability and accessibility.
+
+
+HTML5 Semantics:
+
+HTML5 Semantics refers to the use of specific tags like <header>, <footer>, <nav>, <article>, <section>, etc..., 
+to provide clearer structure and meaning to web content. 
+This improves accessibility, and SEO, and facilitates better understanding by both humans and machines.
+
+Using semantic HTML tags enhances website accessibility, improves search engine optimization (SEO), 
+and provides clearer structure and meaning to content. 
+This fosters better understanding by both users and machines, leading to improved usability and user experience.
+
+Semantic Elements:
+Semantic elements have meaningful names that tell about the type of content. For example header, footer, table, … etc. 
+HTML5 introduces many semantic elements as mentioned below which make the code easier to write and understand for the developer as well as instruct the browser on how to treat them. 
+
+<article>
+<aside>
+<details>
+<figcaption>
+<figure>
+<footer>
+<header>
+<main>
+<mark>
+<nav>
+<section>
