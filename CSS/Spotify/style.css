@@ -1,0 +1,751 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.nav{
+    width: 100%;
+    display: flex;
+    background-color: black;
+    position: fixed;
+}
+.logo{
+    width: 35%;
+    cursor: pointer;
+}
+.logo img{
+    width: 33px;
+    height: 33px;
+    margin: 10px 30px;
+}
+.home{
+    width: 45px;
+    height: 45px;
+    background-color: rgb(48, 48, 48);
+    border-radius: 30px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+.search{
+    width: 30%;
+    background-color: rgb(48, 48, 48);
+    margin: 7px;
+    border-radius: 30px;
+    padding: 6px;
+    display: flex;
+    color: white;
+    cursor: pointer;
+}
+.search input{
+    font-size: 17px;
+    background-color: rgb(48, 48, 48);
+    border: none;
+    outline: none;
+    color: white;
+    padding: 0px 120px 0px 5px;
+}
+.signup{
+    width: 23%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    cursor: pointer;
+}
+.signup p{
+    color: rgb(146, 145, 145);
+    font-weight: 600;
+}
+.signup p:hover{
+    color: white;
+}
+.login{
+    width: 110px;
+    background-color: white;
+    color: black;
+    border-radius: 30px;
+    margin: 6px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+.login:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
+    background-color: whitesmoke;
+}
+.hero{
+    background-color: black;
+    padding: 5px;
+    display: flex;
+    margin-top: 60px;
+    position: fixed;
+}
+.side{
+    width: 28%;
+    height: 600px;
+    background-color: rgb(18,18,18);
+    border-radius: 10px;
+    position: fixed;
+}
+.plus{
+    display: flex;
+    color: gray;
+    align-items: center;
+    padding: 20px 20px 22px ;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.plus h3{
+    width: 84%;
+    padding-left: 10px;
+}
+.plus h3:hover{
+    color: white;
+}
+.side svg:hover{
+    background-color: rgb(52, 51, 51);
+    width: 30px;
+    height: 30px;
+    border-radius: 20px;
+}
+.scrollbox{
+    width: 100%;
+    height: 50%;
+    overflow-y: scroll;   
+}
+.scrollbox::-webkit-scrollbar {
+    width: 0.8em;
+}  
+.scrollbox::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}   
+.scrollbox::-webkit-scrollbar-thumb {
+    background-color: rgb(105, 105, 105);
+}
+.box1{
+    margin: 10px 10px 23px;
+    padding: 20px;
+    background-color: rgb(31,31,31);
+    border-radius: 5px;
+    color: white;
+}
+.box1 p{
+    padding: 5px 0px 20px;
+}
+.box1 h5{
+    width: 44%;
+    padding: 8px 10px;
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+}
+.box1 h5:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.02);
+    background-color: whitesmoke;
+}
+.cookies{
+    padding: 30px 10px;
+}
+.terms{
+    display: flex;
+}
+.terms p{
+    color: rgb(123, 122, 122);
+    font-size: 12px;
+    padding: 8px;
+}
+.cookies h5{
+    color: white;
+    padding: 8px;
+}
+.globe{
+    width: 23%;
+    border: 1px solid gray;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 5px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+.globe:hover{
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.1);
+    background-color: transparent;
+    border: 1px solid white;
+}
+.playlist{
+    width: 74%;
+    height: 600px;
+    background: rgb(32,32,32);
+    border-radius: 10px;
+    margin-left: 440px;
+    overflow-y: scroll;
+    background: rgb(32,32,32);
+    background: linear-gradient(184deg, rgba(32,32,32,0.9164915966386554) 13%, rgba(21,21,21,1) 49%, rgba(0,0,0,1) 84%);
+}
+.playlist::-webkit-scrollbar {
+    width: 0.8em;
+}  
+.playlist::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}   
+.playlist::-webkit-scrollbar-thumb {
+    background-color: rgb(105, 105, 105);
+}
+.row1{
+    width: 100%;
+}
+.view{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+.view h2{
+    color: white;
+}
+.view h4{
+    color: gray;
+}
+.view h2:hover{
+    text-decoration: underline;
+    color: white;
+}
+.view h4:hover{
+    text-decoration: underline;
+    color: 0.5px solid white;
+}
+.options{
+    display: flex;
+}
+.artist{
+    width: 170px;
+    height: 250px;
+    padding-top: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.artist img{
+    width: 150px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.options h4{
+    color: white;
+    padding: 25px 20px 5px;
+}
+.options p{
+    color: rgb(147, 147, 147);
+    padding-left: 20px;
+    font-size: 15px;
+}
+.icon{
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    margin-left: 100px;
+    margin-top: -75px;
+    visibility: hidden;
+}
+.options h4:hover{
+    text-decoration: underline;
+}
+.artist:hover{
+    width: 170px;
+    height: 250px;
+    border-radius: 6px;
+    background-color: rgb(36, 36, 36);
+    transition: 0.2s all;
+}
+.artist:hover .icon{
+    visibility: visible;
+}
+.artists{
+    width: 170px;
+    height: 250px;
+    padding-top: 8px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.artists img{
+    width: 150px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.artists:hover{
+    width: 170px;
+    height: 250px;
+    border-radius: 6px;
+    background-color: rgb(36, 36, 36);
+    transition: 0.2s all;
+}
+.artists:hover .icon{
+    visibility: visible;
+}
+.last{
+    padding: 80px 30px;
+}
+.footer{
+    display: flex;
+}
+.part1{
+    width: 20%;
+    padding-bottom: 40px;
+}
+.footer ul{
+    color: white;
+    list-style: none;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footer li{
+    font-weight: 500;
+    color: gray;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.footer li:hover{
+    text-decoration: underline;
+}
+.part2{
+    display: flex;
+}
+.apps{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    padding: 7px;
+    margin: 0px 15px;
+    background-color: rgb(34, 34, 34);
+    cursor: pointer;
+}
+.last p{
+    color: gray;
+    font-size: 15px;
+    padding: 40px 0px;
+}
+@media (min-width:400px) and (max-width:576px){
+    .nav{
+        width: 100%;
+    }
+    .logo{
+        width: 12%;
+    }
+    .logo img{
+        margin: 10px 20px;
+    }
+    .search{
+        width: 8%;
+        padding: 5px;
+    }
+    .search input{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+    .signup{
+        font-size: 14px;
+        transform: translateX(170px);
+    }
+    .login{
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+        transform: translateX(160px);
+    }
+    .hero{
+        height: 270px;
+    }
+    .side{
+        height: 260px;
+        width: 330px;
+    }
+    .plus{
+        height: 30px;
+        padding: 10px;
+    }
+    .plus h3{
+        font-size: 12px;
+    }
+    .box1{
+        margin: 10px;
+    }
+    .box1 h4{
+        font-size: 12px;
+    }
+    .box1 p{
+        font-size: 10px;
+    }
+    .box1 h5{
+        font-size: 10px;
+        width: 110px;
+        padding: 7px;
+    }
+    .scrollbox{
+        height: 110px;
+    }
+    .cookies{
+        padding: 10px;
+    }
+    .terms p{
+        font-size: 7px;
+    }
+    .cookies h5{
+        font-size: 8px;
+        padding: 5px 10px;
+    }
+    .hero{
+        margin-top: 55px;
+    }
+    .playlist{
+        height: 260px;
+    }
+    .globe{
+        width: 60px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .playlist{
+        margin-left: 340px;
+        height: 242px;
+    }
+    .options{
+        width: 30%;
+        overflow-y: scroll;
+    }
+    .last{
+        padding: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+    .part2{
+        margin-bottom: 10px;
+    }
+}
+@media (min-width:576px) and (max-width:768px){
+    .nav{
+        width: 100%;
+    }
+    .logo{
+        width: 12%;
+    }
+    .logo img{
+        margin: 10px 20px;
+    }
+    .search{
+        width: 30%;
+        padding: 5px;
+    }
+    .search input{
+        display: none;
+    }
+    .two{
+        display: none;
+    }
+    .signup{
+        font-size: 14px;
+        transform: translateX(270px);
+    }
+    .login{
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+        transform: translateX(260px);
+    }
+    .hero{
+        height: 270px;
+    }
+    .side{
+        height: 260px;
+        width: 330px;
+    }
+    .plus{
+        height: 30px;
+        padding: 10px;
+    }
+    .plus h3{
+        font-size: 12px;
+    }
+    .box1{
+        margin: 10px;
+    }
+    .box1 h4{
+        font-size: 12px;
+    }
+    .box1 p{
+        font-size: 10px;
+    }
+    .box1 h5{
+        font-size: 10px;
+        width: 110px;
+        padding: 7px;
+    }
+    .scrollbox{
+        height: 110px;
+    }
+    .cookies{
+        padding: 10px;
+    }
+    .terms p{
+        font-size: 7px;
+    }
+    .cookies h5{
+        font-size: 8px;
+        padding: 5px 10px;
+    }
+    .playlist{
+        height: 260px;
+    }
+    .globe{
+        width: 60px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .hero{
+        margin-top: 55px;
+    }
+    .playlist{
+        margin-left: 340px;
+        height: 242px;
+    }
+    .options{
+        width: 50%;
+        overflow-y: scroll;
+    }
+    .last{
+        padding: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .part2{
+        margin-bottom: 10px;
+    }
+} 
+@media (min-width:768px) and (max-width:992px){
+    .nav{
+        width: 100%;
+    }
+    .logo{
+        width: 12%;
+    }
+    .logo img{
+        margin: 10px 20px;
+    }
+    .search{
+        width: 50%;
+        padding: 5px;
+    }
+    .two{
+        display: none;
+    }
+    .signup{
+        font-size: 14px;
+        transform: translateX(70px);
+    }
+    .login{
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+        transform: translateX(60px);
+    }
+    .hero{
+        height: 270px;
+    }
+    .side{
+        height: 360px;
+        width: 430px;
+    }
+    .plus{
+        height: 35px;
+        padding: 10px;
+    }
+    .plus h3{
+        font-size: 16px;
+    }
+    .box1{
+        margin: 10px;
+    }
+    .box1 h4{
+        font-size: 15px;
+    }
+    .box1 p{
+        font-size: 13px;
+    }
+    .box1 h5{
+        font-size: 15px;
+        width: 150px;
+        padding: 7px;
+    }
+    .scrollbox{
+        height: 110px;
+    }
+    .cookies{
+        padding: 10px;
+    }
+    .terms p{
+        font-size: 10px;
+    }
+    .cookies h5{
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    .hero{
+        margin-top: 55px;
+    }
+    .playlist{
+        height: 260px;
+    }
+    .globe{
+        width: 60px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .playlist{
+        margin-left: 440px;
+        height: 242px;
+    }
+    .options{
+        width: 60%;
+        overflow-y: scroll;
+    }
+    .last{
+        padding: 20px;
+    }
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        overflow: scroll;
+    }
+    .part2{
+        margin-bottom: 10px;
+    }
+} 
+@media (min-width:992px) and (max-width:1496px){
+    .nav{
+        width: 100%;
+    }
+    .logo{
+        width: 12%;
+    }
+    .logo img{
+        margin: 10px 80px 10px 50px;
+    }
+    .home{
+        margin-left: 15%;
+    }
+    .search{
+        width: 35%;
+        padding: 5px;
+    }
+    .two{
+        display: none;
+    }
+    .signup{
+        font-size: 14px;
+        transform: translateX(70px);
+    }
+    .login{
+        width: 80px;
+        height: 40px;
+        padding: 10px;
+        transform: translateX(60px);
+    }
+    .hero{
+        height: 270px;
+    }
+    .side{
+        height: 360px;
+        width: 480px;
+    }
+    .plus{
+        height: 35px;
+        padding: 20px;
+    }
+    .box1{
+        margin: 10px;
+    }
+    .box1 h5{
+        width: 150px;
+        padding: 7px;
+    }
+    .scrollbox{
+        height: 120px;
+    }
+    .cookies{
+        padding: 10px;
+    }
+    .hero{
+        margin-top: 55px;
+    }
+    .playlist{
+        height: 260px;
+    }
+    .globe{
+        width: 60px;
+        padding: 5px;
+        font-size: 10px;
+    }
+    .playlist{
+        margin-left: 490px;
+        height: 242px;
+    }
+    .view{
+        width: 93%;
+    }
+    .options{
+        width: 90%;
+        overflow-y: scroll;
+    }
+    .last{
+        padding: 20px;
+    }
+    .footer{
+       flex-wrap: wrap;
+        overflow: scroll;
+    }
+    .part2{
+        margin-bottom: 10px;
+    }
+} 
+.gradient{
+    width: 100%;
+    height: 59px;
+    display: flex;
+    background: rgb(174,40,150);
+    transform: translateY(670px);
+    background: linear-gradient(94deg, rgba(174,40,150,1) 9%, rgba(162,57,164,1) 19%, rgba(147,73,177,1) 36%, rgba(126,99,199,1) 52%, rgba(114,113,211,1) 68%, rgba(97,135,228,1) 77%, rgba(93,138,231,1) 89%);
+}
+.gradient .left{
+    width: 85%;
+}
+.gradient h4{
+    color: white;
+    padding: 10px 10px 5px;
+}
+.gradient p{
+    color: white;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.right{
+    margin: 5px;
+    cursor: pointer;
+}
+.right h4{
+    background-color: white;
+    color: black;
+    padding: 15px 40px;
+    border-radius: 50px;
+}

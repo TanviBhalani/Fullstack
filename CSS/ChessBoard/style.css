@@ -1,0 +1,20 @@
+*{
+    text-align: center;
+}
+.line{
+    display: flex;
+    margin: 0 25% 0 27% ;
+    border: 1px solid black;
+}
+.black{
+    width: 90px;
+    height: 90px;
+    color: white;
+    font-size: 60px;
+    background-color: black;
+}
+.white{
+    width: 90px;
+    height: 90px; 
+    font-size: 60px;
+}

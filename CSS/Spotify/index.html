@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" href="unnamed.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <img src="Spotify_Primary_Logo_RGB_White.png" alt="">
+        </div>
+        <div class="home">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#fff" d="M4 19v-9q0-.475.213-.9t.587-.7l6-4.5q.525-.4 1.2-.4t1.2.4l6 4.5q.375.275.588.7T20 10v9q0 .825-.588 1.413T18 21h-3q-.425 0-.712-.288T14 20v-5q0-.425-.288-.712T13 14h-2q-.425 0-.712.288T10 15v5q0 .425-.288.713T9 21H6q-.825 0-1.412-.587T4 19"/></svg>
+        </div>
+        <div class="search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#fff" fill-rule="evenodd" d="m16.31 15.561l4.114 4.115l-.848.848l-4.123-4.123a7 7 0 1 1 .857-.84M16.8 11a5.8 5.8 0 1 0-11.6 0a5.8 5.8 0 0 0 11.6 0"/></svg>
+            <input type="text" placeholder="What do you want to play?">
+            <div class="two">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 20 20"><path fill="#fff" fill-rule="evenodd" d="M10 .5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 1 0V1a.5.5 0 0 0-.5-.5" clip-rule="evenodd"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#cfcece" d="M19 2H9a3 3 0 0 0-3 3v1H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3v-1h1a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3m-3 17a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-7h12Zm0-9H4V9a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Zm4 5a1 1 0 0 1-1 1h-1V9a3 3 0 0 0-.18-1H20Zm0-9H8V5a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1Z"/></svg>
+            </div>
+        </div>
+        <div class="signup">
+            <p>Sign up</p>
+        </div>
+        <div class="login">
+            <h4>Log in</h4>
+        </div>
+    </div>
+    
+    <div class="hero">
+        <div class="side">
+             <div class="plus">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 16 16"><path fill="#cfcece" d="M2.249 2C1.559 2 1 2.56 1 3.25v9.495c0 .69.56 1.25 1.249 1.25h.5c.69 0 1.249-.56 1.249-1.25V3.249c0-.69-.56-1.249-1.25-1.249zm3.997 0c-.69 0-1.25.56-1.25 1.25v9.495c0 .69.56 1.25 1.25 1.25h.5a1.25 1.25 0 0 0 1.248-1.25V3.249A1.25 1.25 0 0 0 6.745 2zm5.726 2.777a1.25 1.25 0 0 0-1.571-.713l-.582.204a1.25 1.25 0 0 0-.746 1.645l2.937 7.304c.249.62.94.933 1.571.713l.582-.204a1.25 1.25 0 0 0 .746-1.646z"/></svg>
+                <h3>Your Library</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="#cfcece" d="M5 13v-1h6V6h1v6h6v1h-6v6h-1v-6z"/></svg>
+             </div>
+             <div class="scrollbox">
+                <div class="box1">
+                    <h4>Create your first playlist</h4>
+                    <p>It's easy, we'll help you</p>
+                    <h5>Create playlist</h5>
+                </div>
+                <div class="box1">
+                    <h4>Let's find some podcasts to follow</h4>
+                    <p>We'll keep you updated on new episodes</p>
+                    <h5>Browser podcasts</h5>
+                </div>
+             </div>
+            <div class="cookies">
+                <div class="terms">
+                    <p>Legal</p>
+                    <p>Safety&Privacy Centre</p>
+                    <p>Privacy Policy</p>
+                    <p>Cookies</p>
+                </div>
+                <div class="terms">
+                    <p>About Ads</p>
+                    <p>Accessibility</p>
+                </div>
+                <h5>Cookies</h5>
+            </div>
+            <div class="globe">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.2em" height="1.2em" viewBox="0 0 24 24"><g fill="none" stroke="#fff" stroke-width="2"><circle cx="12" cy="12" r="8"/><ellipse cx="12" cy="12" rx="3" ry="8"/><path stroke-linecap="round" d="M4 12h16"/></g></svg> 
+                English
+            </div>
+        </div>
+
+        <div class="playlist">
+            <div class="row1">
+                <div class="view">
+                    <h2>Popular artists</h2>
+                    <h4>Show all</h4>
+                </div>
+                <div class="options">
+                    <div class="artist">
+                        <img src="ab67616100005174cb6926f44f620555ba444fca.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+
+                        </div>
+                        <h4>Pritam</h4>
+                        <p>Artist</p>
+                       
+                    </div>
+
+                    <div class="artist">
+                        <img src="ab676161000051745ba2d75eb08a2d672f9b69b7.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Arijit Singh </h4>
+                        <p>Artist</p>
+                       
+                    </div>
+
+                    <div class="artist">
+                        <img src="ab67616100005174bd6fbc7d0973cc33940781ad.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Sachin-Jigar</h4>
+                        <p>Artist</p>
+                       
+                    </div>
+
+                    <div class="artist">
+                        <img src="ab67616100005174b19af0ea736c6228d6eb539c.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>A.R. Rahman</h4>
+                        <p>Artist</p>
+                       
+                    </div>
+
+                    <div class="artist">
+                        <img src="ab6761610000517490b6c3d093f9b02aad628eaf.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Vishal-Shekhar</h4>
+                        <p>Artist</p>
+                       
+                    </div>
+
+                    <div class="artist">
+                        <img src="ab67616100005174c40600e02356cc86f0debe84.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Atif Aslam</h4>
+                        <p>Artist</p>
+                       
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="row1">
+                <div class="view">
+                    <h2>Popular albums and singles</h2>
+                    <h4>Show all</h4>
+                </div>
+                <div class="options">
+                    <div class="artists">
+                        <img src="ab67616d00001e02aad3f4b601ae8763b3fc4e88.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Glory</h4>
+                        <p>Yo Yo Honey Singh</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67616d00001e02707ea5b8023ac77d31756ed4.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Yeh Jawaani Hai Deewani</h4>
+                        <p>Pritam</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67616d00001e025f3ede47954a93aa03efe5f9.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Animal</h4>
+                        <p>Jaani</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67616d00001e027f35adfbec3bb2bc8256802b.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Who (Remixes)</h4>
+                        <p>Jimin</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67616d00001e02bb25239324c4e16ae01fda36.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Making Memories</h4>
+                        <p>Karan Aujla, Ikky</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67616d00001e0272a77d038887cdc425f5ee55.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <h4>Jo Tum Mere Ho</h4>
+                        <p>Anuv Jain</p>
+                       
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div class="row1">
+                <div class="view">
+                    <h2>Popular radio</h2>
+                    <h4>Show all</h4>
+                </div>
+                <div class="options">
+                    <div class="artists">
+                        <img src="en (3).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>With Sachin-Jigar</p>
+                        <p>Vishal-Shekhar,Amit...</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="en-GB.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>With Karan Aujla</p>
+                        <p>Shubh,AP Dhillon...</p>
+                    </div>
+                    
+
+                    <div class="artists">
+                        <img src="en (2).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>With A.R. Rahman,</p>
+                        <p>Vishal-Shekhar.Atif...</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="en (4).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+    
+                        <p>With Pritam,Armaan</p>
+                        <p>Malik,Mohit Chauhan</p>
+                       
+                    </div>
+                   
+
+                    <div class="artists">
+                        <img src="en.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>With Abhijeet,Jatin-</p>
+                        <p>Lalit,Kumar Sanu and</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="en (1).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>With Harris Jayaraj,</p>
+                        <p>V. Prakash, Santhosh</p>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row1">
+                <div class="view">
+                    <h2>Featured Charts</h2>
+                    <h4>Show all</h4>
+                </div>
+                <div class="options">
+                    <div class="artists">
+                        <img src="region_global_default.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Your Weekly update</p>
+                        <p>the most played trac..</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="region_in_default.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Your Weekly update</p>
+                        <p>the most played trac..</p>
+                    </div>
+
+                    <div class="artists">
+                        <img src="region_global_default (1).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Your Weekly update</p>
+                        <p>the most played trac..</p>
+                        
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="region_in_default (1).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+    
+                        <p>Your Weekly update</p>
+                        <p>the most played trac..</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="region_global_default (2).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Your Weekly update</p>
+                        <p>the most played trac..</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="region_in_default (2).jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Your Weekly update</p>
+                        <p>the most played trac..</p>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="row1">
+                <div class="view">
+                    <h2>India's Best</h2>
+                    <h4>Show all</h4>
+                </div>
+                <div class="options">
+                    <div class="artists">
+                        <img src="ab67706f00000002efb6d4aa8af6840df5951432.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Hotter tracks from</p>
+                        <p>your favourite|-Pop..</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67706f0000000213c0e9696b1b67551355fa64.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Bollywood Central,jab</p>
+                        <p>baje toh Seedha dil...</p>
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67706f000000024d4db9a007fd2880f20d788a.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Ultimate 101 Punjabi</p>
+                        <p>Hits with Karan Aujla</p>
+                        
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67706f00000002639007e7b5d0e835871563d8.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+    
+                        <p>Finest collection of</p>
+                        <p>Tamil Music from the</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67706f00000002dda381d6e4b5ebc246bada8a.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>The Finest Set of </p>
+                        <p>Telugu music from th..</p>
+                       
+                    </div>
+
+                    <div class="artists">
+                        <img src="ab67706f00000002700d4fc1ba96b5fb0dbfee98.jpg" alt="">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="55px" height="55px" viewBox="0 0 16 16"><path fill="#1cd85f" fill-rule="evenodd" d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1m3.901 7L6 4.066v7.868z" clip-rule="evenodd" style="background-color: black;"/></svg>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Our editor's picks for</p>
+                        <p>best Malayalam song</p>
+                       
+                    </div>
+
+                </div>
+
+            </div>
+    
+
+            <div class="last">
+                <div class="footer">
+                     <div class="part1">
+                        <ul>Company
+                            <li>About</li>
+                            <li>Jobs</li>
+                            <li>For the Record</li>
+                         </ul>
+                     </div>
+
+                     <div class="part1">
+                        <ul>Communities
+                            <li>For Artists</li>
+                            <li>Developers</li>
+                            <li>Advertising</li>
+                            <li>Investors</li>
+                            <li>Vendors</li>
+                         </ul>
+                     </div>
+
+                     <div class="part1">
+                        <ul>Useful links
+                            <li>Support</li>
+                            <li>Free Moblie App</li>
+                        
+                         </ul>
+                     </div>
+
+                     <div class="part1">
+                        <ul>Spotify Plans
+                            <li>Premium Individual</li>
+                            <li>Premium Duo</li>
+                            <li>Premium Family</li>
+                            <li>Premium Student</li>
+                            <li>Spotify Free</li>
+                         </ul>
+                     </div>
+
+                     <div class="part2">
+                        <div class="apps">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 256 256"><path fill="#fff" d="M128 80a48 48 0 1 0 48 48a48.05 48.05 0 0 0-48-48m0 80a32 32 0 1 1 32-32a32 32 0 0 1-32 32m48-136H80a56.06 56.06 0 0 0-56 56v96a56.06 56.06 0 0 0 56 56h96a56.06 56.06 0 0 0 56-56V80a56.06 56.06 0 0 0-56-56m40 152a40 40 0 0 1-40 40H80a40 40 0 0 1-40-40V80a40 40 0 0 1 40-40h96a40 40 0 0 1 40 40ZM192 76a12 12 0 1 1-12-12a12 12 0 0 1 12 12"/></svg>
+                        </div>
+                        <div class="apps">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24"><path fill="#fff" d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"/></svg>
+                        </div>
+                        <div class="apps">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 24 24"><path fill="#fff" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H8v-3h2V9.5C10 7.57 11.57 6 13.5 6H16v3h-2c-.55 0-1 .45-1 1v2h3v3h-3v6.95c5.05-.5 9-4.76 9-9.95"/></svg>
+                        </div>
+                     </div>
+
+                </div>
+
+                <hr>
+
+                <p>© 2025 Spotify AB</p>
+                
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+    <div class="gradient">
+        <div class="left">
+            <h4>Preview of Spotify</h4>
+            <p>Sign up to get unlimited songs and podcasts with occasional ads. No Credit card needed.</p>
+        </div>
+        <div class="right">
+            <h4>Sign up for free</h4>
+        </div>
+    </div>
+
+    
+</body>
+</html>
