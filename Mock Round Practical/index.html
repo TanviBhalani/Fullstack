@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container{
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        .invoice-form,.invoice-output {
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            width: 48%;
+        }
+        h2{
+            text-align: center;
+        }
+        input,button {
+            padding: 6px;
+            margin: 3px;
+        }
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        table th,table td{
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: center;
+        }
+        table input{
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .right {
+            text-align: right;
+        }
+        .btn {
+            padding: 6px 12px;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+        }
+        .btn-add {
+            background: #4CAF50;
+            color: white;
+        }
+        .btn-remove{
+            background: red;
+            color: white;
+        }
+        .btn-print{
+            background: blue;
+            color: white;
+        }
+        .btn-reset{
+            background: gray;
+            color: white;
+        }
+        .box{
+            display: flex;
+            margin-top: 5px;
+        }
+        .box .left{
+            width: 140px;
+            background: #dedddd;
+            padding-top: 7px;
+            padding-left: 5px;
+        }
+        .box .right {
+            margin-left: 0px;
+        }
+        #invoiceOutput{
+            background-color:aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="invoice-form">
+            <h2>INVOICE</h2>
+            
+            <div class="flex">
+                <div class="left">
+                    <div class="box">
+                        <div class="left">
+                            <label>Customer:
+                        </div>
+                        <div class="right">
+                            <input type="text" id="customer" placeholder="Enter Customer Name">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <label>Address:
+                        </div>
+                        <div class="right">
+                            <input type="text" id="address" placeholder="Full Address">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <label>City:
+                        </div>
+                        <div class="right">
+                            <input type="text" id="city" placeholder="City Name">
+                        </div>
+                    </div>
+                </div>
+                <div class="left">
+                    <div class="box">
+                        <div class="left">
+                            <label>Invoice No.:
+                        </div>
+                        <div class="right">
+                            <input type="text" id="invNo" value="1001">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="left">
+                            <label>Invoice Date:
+                        </div>
+                        <div class="right">
+                            <input type="date" id="invDate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <table id="itemTable">
+                <tr>
+                    <th>#</th>
+                    <th>Particular</th>
+                    <th>Qty</th>
+                    <th>Rate</th>
+                    <th>Discount (%)</th>
+                    <th>Amount</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+            <button class="btn btn-add" onclick="addItem()">+ Add Item</button>
+            <br>
+            <button class="btn btn-print" onclick="generateInvoice()">Print</button>
+            <button class="btn btn-reset" onclick="resetForm()">Reset</button>
+        </div>
+
+        <div class="invoice-output" id="invoiceOutput">
+            <h2>INVOICE</h2>
+            <div id="customerDetails"></div>
+            <table id="outputTable"></table>
+            <div class="right">
+                <p id="subtotal"></p>
+                <p id="discount"></p>
+                <p id="tax"></p>
+                <p id="grandTotal"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let itemCount = 0;
+
+        function addItem() {
+            itemCount++;
+            const table = document.getElementById("itemTable");
+            const row = table.insertRow();
+            row.innerHTML = `
+        <td>${itemCount}</td>
+        <td><input type="text" placeholder="Item Name"></td>
+        <td><input type="number" min="1" value="1" oninput="calculate()"></td>
+        <td><input type="number" min="1" value="0" oninput="calculate()"></td>
+        <td><input type="number" min="0" max="100" value="0" oninput="calculate()"></td>
+        <td class="amount">0</td>
+        <td><button class="btn btn-remove" onclick="removeItem(this)">X</button></td>
+      `;
+        }
+
+        function removeItem(button) {
+            button.parentElement.parentElement.remove();
+            calculate();
+        }
+
+        function calculate() {
+            let subtotal = 0;
+            let totalDiscount = 0;
+            const rows = document.querySelectorAll("#itemTable tr:not(:first-child)");
+
+            rows.forEach(row => {
+                const qty = parseFloat(row.cells[2].children[0].value) || 0;
+                const rate = parseFloat(row.cells[3].children[0].value) || 0;
+                const discountPercent = parseFloat(row.cells[4].children[0].value) || 0;
+
+                let amount = qty * rate;
+                let discount = (amount * discountPercent) / 100;
+                let finalAmount = amount - discount;
+
+                row.cells[5].textContent = finalAmount.toFixed(2);
+                subtotal += amount;
+                totalDiscount += discount;
+            });
+
+            const tax = (subtotal - totalDiscount) * 0.05; // 5% GST
+            const grandTotal = subtotal - totalDiscount + tax;
+
+            document.getElementById("subtotal").textContent = `Subtotal: ${subtotal.toFixed(2)}`;
+            document.getElementById("discount").textContent = `Discount: ${totalDiscount.toFixed(2)}`;
+            document.getElementById("tax").textContent = `GST (5%): ${tax.toFixed(2)}`;
+            document.getElementById("grandTotal").textContent = `Grand Total: ${grandTotal.toFixed(2)}`;
+        }
+
+        function generateInvoice() {
+            calculate();
+            const customer = document.getElementById("customer").value;
+            const address = document.getElementById("address").value;
+            const city = document.getElementById("city").value;
+            const invNo = document.getElementById("invNo").value;
+            const invDate = document.getElementById("invDate").value;
+
+            document.getElementById("customerDetails").innerHTML = `
+        <p>Customer: ${customer}</p>
+        <p>Address: ${address}</p>
+        <p>City: ${city}</p>
+        <p>Inv. No: ${invNo} | Date: ${invDate}</p>
+      `;
+
+            const outputTable = document.getElementById("outputTable");
+            outputTable.innerHTML = `
+        <tr><th>#</th><th>Particular</th><th>Qty</th><th>Rate</th><th>Amount</th></tr>
+      `;
+
+       
+        const rows = document.querySelectorAll("#itemTable tr:not(:first-child)");
+
+          rows.forEach((row, i) => {
+            const [ , name, qty, price, , total ] = row.cells;
+
+               outputTable.innerHTML += `
+                 <tr>
+                   <td>${i + 1}</td>
+                   <td>${name.children[0].value}</td>
+                   <td>${qty.children[0].value}</td>
+                   <td>${price.children[0].value}</td>
+                   <td>${total.textContent}</td>
+                 </tr>
+                `;
+            });
+
+        }
+
+        function resetForm() {
+            document.getElementById("itemTable").innerHTML = `
+        <tr>
+          <th>#</th>
+          <th>Particular</th>
+          <th>Qty</th>
+          <th>Rate</th>
+          <th>Discount (%)</th>
+          <th>Amount</th>
+          <th>Action</th>
+        </tr>`;
+            document.getElementById("outputTable").innerHTML = "";
+            document.getElementById("customerDetails").innerHTML = "";
+            document.getElementById("subtotal").textContent = "";
+            document.getElementById("discount").textContent = "";
+            document.getElementById("tax").textContent = "";
+            document.getElementById("grandTotal").textContent = "";
+        }
+    </script>
+</body>
+
+</html>
